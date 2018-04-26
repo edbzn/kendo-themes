@@ -1,0 +1,12 @@
+$_theme-cache: () !default;
+
+@function cache( $key, $value ) {
+    $_theme-cache: map-merge( ($key: $value), $_theme-cache ) !global;
+    @return $value;
+}
+@function cache-hit( $key ) {
+    @return map-has-key( $_theme-cache, $key );
+}
+@function cache-get( $key ) {
+    @return map-get( $_theme-cache, $key );
+}
