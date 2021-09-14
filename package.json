@@ -45,6 +45,7 @@
     "dart:swatches": "gulp dart:swatches",
     "eslint": "eslint \"**/*.js\"",
     "sasslint": "sass-lint -v -q ",
+    "postcss": "node ./scripts/postcss.js",
     "lint": "npm run eslint && npm run sasslint",
     "docs": "gulp docs",
     "docs:check": "gulp docs:check",
@@ -63,7 +64,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run eslint && npm run sasslint",
-      "pre-push": "npm run eslint && npm run sasslint && npm run sass && npm run docs:check",
+      "pre-push": "npm run eslint && npm run sasslint && npm run sass && npm run postcss && npm run docs:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
