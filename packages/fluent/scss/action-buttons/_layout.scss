@@ -1,20 +1,27 @@
 @use "_variables.scss" as *;
 
 @mixin kendo-action-buttons--layout() {
+
     .k-actions {
-        padding-inline: var( --kendo-actions-padding-x, #{$kendo-actions-padding-x} );
-        padding-block: var( --kendo-actions-padding-y, #{$kendo-actions-padding-y} );
+        --INTERNAL--kendo-actions-padding-x: var( --kendo-actions-padding-x, #{$kendo-actions-padding-x} );
+        --INTERNAL--kendo-actions-padding-y: var( --kendo-actions-padding-y, #{$kendo-actions-padding-y} );
+        --INTERNAL--kendo-actions-border-width: var( --kendo-actions-border-width, #{$kendo-actions-border-width} );
+        --INTERNAL--kendo-actions-spacing: var( --kendo-actions-spacing, #{$kendo-actions-spacing} );
+
+        padding-inline: var( --INTERNAL--kendo-actions-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-actions-padding-y, 0 );
         box-sizing: border-box;
-        border-width: var( --kendo-actions-border-width, #{$kendo-actions-border-width} ) 0 0 0;
+        border-width: var( --INTERNAL--kendo-actions-border-width, 0 );
         border-style: solid;
         border-color: inherit;
         flex-shrink: 0;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        gap: var( --kendo-actions-button-spacing, #{$kendo-actions-button-spacing} );
+        gap: var( --INTERNAL--kendo-actions-spacing, 0 );
         overflow: hidden;
 
+        // TODO: remove for vNext
         *,
         *::before,
         *::after {
@@ -22,12 +29,26 @@
         }
     }
 
+
+    // Actions list
+    .k-actions-list {
+        --INTERNAL--kendo-actions-list-spacing: var( --kendo-actions-list-spacing, #{$kendo-actions-list-spacing} );
+        box-sizing: border-box;
+        flex-shrink: 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: var( --INTERNAL--kendo-actions-list-spacing, 0 );
+    }
+
+
     // Aliases
     .k-edit-buttons,
     .k-action-buttons,
     .k-columnmenu-actions {
         @extend .k-actions;
     }
+
 
     // Actions align
     .k-actions-start {
@@ -42,6 +63,7 @@
     .k-actions-stretched > * {
         flex: 1 0 0%;
     }
+
 
     // Actions orientation
     .k-actions-horizontal {
