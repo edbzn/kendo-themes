@@ -15,6 +15,7 @@ parser.add_argument('-p', '--port', { help: 'Port for built-in web server', defa
 parser.add_argument('--width', { help: 'Screen width', default: 1024 });
 parser.add_argument('--min-height', { help: 'Minimum height for generated images', default: 100 });
 parser.add_argument('-o', '--output-path', { help: 'Output path' });
+parser.add_argument('-n', '--parallel', { help: 'Numbers of browsers to run in parallel', default: 8 });
 const args = parser.parse_args();
 
 function pathUrl(path) {
@@ -40,7 +41,7 @@ const server = createServer({
     port: args.port
 });
 
-const chunks = arrayChunks(pages, 4);
+const chunks = arrayChunks(pages, args.parallel);
 server.listen(args.port, HOST, async() => {
     await Promise.all(chunks.map(processChunk));
     server.close();
