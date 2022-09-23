@@ -34,8 +34,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Print Firefox version
-        run: firefox --version
+      - name: Print Chrome version
+        run: google-chrome --version
 
       - name: Download artifacts
         uses: actions/download-artifact@v2
