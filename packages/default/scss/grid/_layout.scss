@@ -4,34 +4,6 @@
     // $filter-rows-span-size: calc( #{$line-height-em} + #{$kendo-input-padding-y-md * 2} + #{$kendo-input-border-width * 2}) !default;
     $filter-rows-span-size: null !default;
 
-    $grid-group-dropclue-size: 6px;
-    $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
-    $grid-group-dropclue-height: $kendo-button-calc-size !default;
-    $grid-group-dropclue-top: 3px !default;
-
-    $grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
-    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$table-cell-padding-y} );
-
-    // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$kendo-button-calc-size} - #{$line-height-em}) / 2 ) !default;
-
-    $grid-hierarchy-col-width: ($icon-size * 2) !default;
-
-    $grid-group-indicator-border-radius: $kendo-border-radius-md !default;
-    $grid-group-indicator-gap: $table-cell-padding-y !default;
-    $grid-group-indicator-button-opacity: $kendo-input-clear-value-opacity !default;
-    $grid-group-indicator-button-hover-opacity: $kendo-input-clear-value-hover-opacity !default;
-
-    $grid-grouping-row-border-top: 1px !default;
-    $grid-group-footer-border-y: 1px !default;
-    $grid-group-footer-second-cell-border: 1px !default;
-    $grid-header-first-border: 1px !default;
-    $grid-header-menu-icon-spacing: $icon-spacing !default;
-    $grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
-
-    // helper variables
-    $grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$grid-header-menu-icon-spacing} );
-
     .k-grid {
         border-width: $grid-border-width;
         border-style: solid;

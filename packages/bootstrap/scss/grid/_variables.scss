@@ -10,6 +10,8 @@ $grid-padding-y: $table-cell-padding-y !default;
 $grid-header-padding-x: $grid-padding-x !default;
 $grid-header-padding-y: $grid-padding-y !default;
 $grid-header-font-size: null !default;
+$grid-header-first-border: 1px !default;
+$grid-header-menu-icon-spacing: $icon-spacing !default;
 
 $grid-footer-padding-x: $grid-header-padding-x !default;
 $grid-footer-padding-y: $grid-header-padding-y !default;
@@ -19,6 +21,8 @@ $grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
 
 $grid-filter-cell-padding-x: $grid-padding-y !default;
 $grid-filter-cell-padding-y: $grid-filter-cell-padding-x !default;
+
+$grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$grid-header-menu-icon-spacing} );
 
 $grid-toolbar-padding-x: $toolbar-padding-x !default;
 $grid-toolbar-padding-y: $toolbar-padding-y !default;
@@ -105,6 +109,7 @@ $grid-sorting-index-height: $icon-size !default;
 $grid-sorting-index-spacing-y: 2px !default;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
+$grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
 
 $grid-focused-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
 
@@ -112,6 +117,8 @@ $grid-edit-cell-padding-x: $grid-cell-padding-x !default;
 $grid-edit-cell-padding-y: 5px !default;
 
 $grid-command-cell-button-spacing: k-map-get( $spacing, 2 ) !default;
+// be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
+$grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$kendo-button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
 $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text: $grid-text !default;
@@ -167,3 +174,22 @@ $grid-column-menu-group-header-text: $popup-text !default;
 $grid-column-menu-group-header-border: $popup-border !default;
 
 $grid-drag-cell-width: ($icon-size * 3) !default;
+
+$grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
+// $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$table-cell-padding-y} );
+
+$grid-hierarchy-col-width: ($icon-size * 2) !default;
+
+$grid-group-dropclue-size: 6px;
+$grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
+$grid-group-dropclue-height: $kendo-button-calc-size !default;
+$grid-group-dropclue-top: 3px !default;
+
+$grid-group-indicator-border-radius: $kendo-border-radius-md !default;
+$grid-group-indicator-gap: $table-cell-padding-y !default;
+$grid-group-indicator-button-opacity: $kendo-input-clear-value-opacity !default;
+$grid-group-indicator-button-hover-opacity: $kendo-input-clear-value-hover-opacity !default;
+
+$grid-grouping-row-border-top: 1px !default;
+$grid-group-footer-border-y: 1px !default;
+$grid-group-footer-second-cell-border: 1px !default;

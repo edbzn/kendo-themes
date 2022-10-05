@@ -1,8 +1,5 @@
 @include exports("grid/theme") {
 
-    $tooltip-bg: $primary !default;
-    $tooltip-text: contrast-wcag($primary) !default;
-
     .k-grid-header,
     .k-header,
     th.k-header,
