@@ -15,17 +15,17 @@
 
             .k-current-page .k-link {
                 @include fill(
-                    $pager-text,
-                    $pager-item-bg,
-                    $pager-item-border
+                    $kendo-pager-text,
+                    $kendo-pager-item-bg,
+                    $kendo-pager-item-border
                 );
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $pager-text,
-                        $pager-item-hover-bg,
-                        $pager-item-hover-border
+                        $kendo-pager-text,
+                        $kendo-pager-item-hover-bg,
+                        $kendo-pager-item-hover-border
                     );
                 }
             }

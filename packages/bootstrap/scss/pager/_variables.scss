@@ -17,18 +17,18 @@ $kendo-pager-item-group-spacing-sm: k-map-get( $spacing, 3 ) + k-map-get( $spaci
 $kendo-pager-item-group-spacing-md: k-map-get( $spacing, 4 ) !default;
 $kendo-pager-item-group-spacing-lg: k-map-get( $spacing, 4 ) + k-map-get( $spacing, thin ) !default;
 
-$pager-border-width: 1px !default;
+$kendo-pager-border-width: 1px !default;
 
-$pager-font-family: $font-family !default;
-$pager-font-size: $font-size !default;
-$pager-line-height: $line-height !default;
+$kendo-pager-font-family: $font-family !default;
+$kendo-pager-font-size: $font-size !default;
+$kendo-pager-line-height: $line-height !default;
 
-$pager-bg: $header-bg !default;
-$pager-text: $header-text !default;
-$pager-border: $header-border !default;
+$kendo-pager-bg: $header-bg !default;
+$kendo-pager-text: $header-text !default;
+$kendo-pager-border: $header-border !default;
 
-$pager-focus-bg: null !default;
-$pager-focus-shadow: inset 0 0 0 2px rgba( black, .08) !default;
+$kendo-pager-focus-bg: null !default;
+$kendo-pager-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
 $kendo-pager-section-spacing: k-map-get( $spacing, 4 ) !default;
 
@@ -38,27 +38,27 @@ $kendo-pager-item-border-width: 1px !default;
 $kendo-pager-item-border-radius: k-map-get( $spacing, 1 ) !default;
 $kendo-pager-item-spacing: (-1 * $kendo-pager-item-border-width) !default;
 
-$pager-item-bg: $component-bg !default;
-$pager-item-text: $link-text !default;
-$pager-item-border: $component-border !default;
+$kendo-pager-item-bg: $component-bg !default;
+$kendo-pager-item-text: $link-text !default;
+$kendo-pager-item-border: $component-border !default;
 
-$pager-item-hover-bg: $hovered-bg !default;
-$pager-item-hover-text: $link-hover-text !default;
-$pager-item-hover-border: $hovered-border !default;
+$kendo-pager-item-hover-bg: $hovered-bg !default;
+$kendo-pager-item-hover-text: $link-hover-text !default;
+$kendo-pager-item-hover-border: $hovered-border !default;
 
-$pager-item-selected-bg: $selected-bg !default;
-$pager-item-selected-text: $selected-text !default;
-$pager-item-selected-border: $pager-item-selected-bg !default;
+$kendo-pager-item-selected-bg: $selected-bg !default;
+$kendo-pager-item-selected-text: $selected-text !default;
+$kendo-pager-item-selected-border: $kendo-pager-item-selected-bg !default;
 
-$pager-item-focus-opacity: null !default;
-$pager-item-focus-bg: $pager-item-bg !default;
-$pager-item-focus-shadow: 0 0 0 3px rgba( $primary, .25 ) !default;
+$kendo-pager-item-focus-opacity: null !default;
+$kendo-pager-item-focus-bg: $kendo-pager-item-bg !default;
+$kendo-pager-item-focus-shadow: 0 0 0 3px rgba($primary, .25) !default;
 
-$pager-number-padding-x: $pager-item-padding-x !default;
-$pager-number-padding-y: $pager-item-padding-y !default;
-$pager-number-border-width: $pager-item-border-width !default;
-$pager-number-border-radius: 0px !default;
-$pager-number-spacing: $pager-item-spacing !default;
+$kendo-pager-number-padding-x: $kendo-pager-item-padding-x !default;
+$kendo-pager-number-padding-y: $kendo-pager-item-padding-y !default;
+$kendo-pager-number-border-width: $kendo-pager-item-border-width !default;
+$kendo-pager-number-border-radius: 0px !default;
+$kendo-pager-number-spacing: $kendo-pager-item-spacing !default;
 
 $kendo-pager-input-width: 5em !default;
 $kendo-pager-dropdown-width-sm: 5em !default;
