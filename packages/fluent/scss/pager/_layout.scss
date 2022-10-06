@@ -7,8 +7,8 @@
 
     .k-pager-wrap,
     .k-pager {
-        padding-inline: var( --kendo-pager-padding-x, #{$kendo-pager-padding-x} );
-        padding-block: var( --kendo-pager-padding-y, #{$kendo-pager-padding-y} );
+        padding-inline: var( --INTERNAL--kendo-pager-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-pager-padding-y, 0 );
         border-width: var( --kendo-pager-border-width, #{$kendo-pager-border-width} );
         border-style: solid;
         box-sizing: border-box;
@@ -19,6 +19,7 @@
         white-space: nowrap;
         display: flex;
         align-items: center;
+        gap: var( --INTERNAL--kendo-pager-spacing, 0 );
         position: relative;
         overflow: hidden;
         cursor: default;
@@ -69,10 +70,6 @@
 
     // Base pager section
     %base-pager-section {
-        @if ($kendo-pager-section-spacing) {
-            margin-inline-start: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
-            margin-inline-end: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
-        }
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -145,6 +142,14 @@
             cursor: inherit;
             z-index: 2;
         }
+
+        .k-button {
+            --INTERNAL--kendo-button-padding-x: var( --INTERNAL--kendo-button-padding-y );
+
+            .k-button-text {
+                min-width: calc( var( --kendo-line-height ) * 1em );
+            }
+        }
     }
 
 
@@ -206,14 +211,18 @@
     }
 
     // Responsive
-    .k-pager-sm {
+    .k-pager-mobile-sm {
         overflow: visible;
 
         // Show native select
         .k-pager-numbers-wrap {
             select.k-dropdown-list {
+                @extend %base-pager-section;
+                @if ($kendo-pager-section-spacing) {
+                    margin-left: $kendo-pager-section-spacing;
+                    margin-right: $kendo-pager-section-spacing;
+                }
                 width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
-                display: flex;
             }
         }
 
@@ -223,18 +232,43 @@
                 margin-inline-end: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
             }
 
-            height: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
+            height: var( --kendo-button-sm-calc-size, #{$kendo-button-sm-calc-size} );
             border-color: inherit;
         }
 
     }
 
     // Hide components
-    .k-pager-md .k-pager-info,
-    .k-pager-sm .k-pager-info,
-    .k-pager-sm .k-pager-sizes,
-    .k-pager-sm .k-pager-numbers {
+    .k-pager-mobile-md .k-pager-info,
+    .k-pager-mobile-sm .k-pager-info,
+    .k-pager-mobile-sm .k-pager-sizes,
+    .k-pager-mobile-sm .k-pager-numbers {
         display: none;
+    }
+
+    // Pager sizes
+    @each $size, $size-props in $kendo-pager-sizes {
+        $_padding-x: map-get($size-props, padding-x);
+        $_padding-y: map-get($size-props, padding-y);
+        $_item-group-spacing: map-get($size-props, item-group-spacing);
+        $_item-min-width: map-get($size-props, item-min-width);
+
+        .k-pager-#{$size} {
+            --INTERNAL--kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );
+            --INTERNAL--kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
+            --INTERNAL--kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
+
+            .k-pager-numbers-wrap {
+                .k-button {
+                    min-width: var( --kendo-pager-#{$size}-item-width, #{$_item-min-width} );
+                }
+            }
+
+            .k-pager-input {
+                margin-inline-start: var( --kendo-pager-input-margin-start, #{$_item-group-spacing} );
+                margin-inline-end: var( --kendo-pager-input-margin-end, #{$_item-group-spacing} );
+            }
+        }
     }
 
 }
