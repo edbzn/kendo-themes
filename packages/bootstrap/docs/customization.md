@@ -3334,7 +3334,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $component-bg !default;`.</div></div>
     </td>
 </tr>
 <tr>
@@ -3354,7 +3354,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: component-text !default;`.</div></div>
     </td>
 </tr>
 <tr>
@@ -3374,7 +3374,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: component-border !default;`.</div></div>
     </td>
 </tr>
 </tbody>
@@ -4098,11 +4098,227 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$grid-bg</td>
+    <td>$kendo-grid-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-table-cell-padding-x-md`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-table-cell-padding-y-md`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-grouping-header-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-filter-cell-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-cell-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`5px`
+
+</td>
+<td>
+
+`5px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-bg</td>
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-table-bg`
 
 </td>
 <td>
@@ -4118,11 +4334,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-text</td>
+    <td>$kendo-grid-text</td>
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-table-text`
 
 </td>
 <td>
@@ -4138,11 +4354,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-border</td>
+    <td>$kendo-grid-border</td>
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-table-border`
 
 </td>
 <td>
@@ -4158,11 +4374,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-header-bg</td>
+    <td>$kendo-grid-header-bg</td>
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-table-header-bg`
 
 </td>
 <td>
@@ -4178,11 +4394,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-header-text</td>
+    <td>$kendo-grid-header-text</td>
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-table-header-text`
 
 </td>
 <td>
@@ -4198,11 +4414,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-header-border</td>
+    <td>$kendo-grid-header-border</td>
     <td>Color</td>
 <td>
 
-`$header-border`
+`$kendo-table-header-border`
 
 </td>
 <td>
@@ -4218,11 +4434,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-header-gradient</td>
+    <td>$kendo-grid-header-gradient</td>
     <td>Null</td>
 <td>
 
-`$header-gradient`
+`$kendo-table-header-gradient`
 
 </td>
 <td>
@@ -4236,11 +4452,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-bg</td>
+    <td>$kendo-grid-footer-bg</td>
     <td>Color</td>
 <td>
 
-`$grid-header-bg`
+`$kendo-table-footer-bg`
 
 </td>
 <td>
@@ -4256,11 +4472,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-text</td>
+    <td>$kendo-grid-footer-text</td>
     <td>Color</td>
 <td>
 
-`$grid-header-text`
+`$kendo-table-footer-text`
 
 </td>
 <td>
@@ -4276,11 +4492,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-border</td>
+    <td>$kendo-grid-footer-border</td>
     <td>Color</td>
 <td>
 
-`$grid-header-border`
+`$kendo-table-footer-border`
 
 </td>
 <td>
@@ -4296,11 +4512,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-bg</td>
+    <td>$kendo-grid-alt-bg</td>
     <td>Color</td>
 <td>
 
-`rgba( k-contrast-color( $grid-bg ), .04 )`
+`$kendo-table-alt-row-bg`
 
 </td>
 <td>
@@ -4316,11 +4532,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-text</td>
+    <td>$kendo-grid-alt-text</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-alt-row-text`
 
 </td>
 <td>
@@ -4334,11 +4550,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-border</td>
+    <td>$kendo-grid-alt-border</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-alt-row-border`
 
 </td>
 <td>
@@ -4352,11 +4568,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-bg</td>
+    <td>$kendo-grid-hovered-bg</td>
     <td>Color</td>
 <td>
 
-`rgba( k-contrast-color( $grid-bg ), .08 )`
+`$kendo-table-hover-bg`
 
 </td>
 <td>
@@ -4372,11 +4588,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-text</td>
+    <td>$kendo-grid-hovered-text</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-hover-text`
 
 </td>
 <td>
@@ -4390,11 +4606,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-border</td>
+    <td>$kendo-grid-hovered-border</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-hover-border`
 
 </td>
 <td>
@@ -4408,11 +4624,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-bg</td>
+    <td>$kendo-grid-selected-bg</td>
     <td>Color</td>
 <td>
 
-`rgba( $selected-bg, .25 )`
+`$kendo-table-selected-bg`
 
 </td>
 <td>
@@ -4428,11 +4644,11 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-text</td>
+    <td>$kendo-grid-selected-text</td>
     <td>Color</td>
 <td>
 
-`$grid-text`
+`$kendo-table-selected-text`
 
 </td>
 <td>
@@ -4448,18 +4664,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-border</td>
-    <td>Color</td>
+    <td>$kendo-grid-selected-border</td>
+    <td>Null</td>
 <td>
 
-`$grid-border`
+`$kendo-table-selected-border`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #dee2e6"></span>
-
-`#dee2e6`
+`null`
 
 </td>
 </tr>
@@ -7829,7 +8043,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$grid-cell-vertical-border-width`
+`1px`
 
 </td>
 <td>
@@ -7847,7 +8061,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$grid-cell-horizontal-border-width`
+`0px`
 
 </td>
 <td>
@@ -7941,27 +8155,27 @@ The following table lists the available variables for customizing the Bootstrap 
     sm: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: k-map-get( $spacing, 2 ),
-        cell-padding-y: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin )
+        cell-padding-x: $kendo-table-cell-padding-x-sm,
+        cell-padding-y: $kendo-table-cell-padding-y-sm
     ),
     md: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: k-map-get( $spacing, 2 ),
-        cell-padding-y: k-map-get( $spacing, 2 )
+        cell-padding-x: $kendo-table-cell-padding-x-md,
+        cell-padding-y: $kendo-table-cell-padding-y-md
     ),
     lg: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: k-map-get( $spacing, 2 ),
-        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
+        cell-padding-x: $kendo-table-cell-padding-x-lg,
+        cell-padding-y: $kendo-table-cell-padding-y-lg
     )
 )`
 
 </td>
 <td>
 
-`(sm: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.375rem), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.5rem), lg: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.625rem))`
+`(sm: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.25rem), md: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.5rem), lg: (font-size: 1rem, line-height: 1.5, cell-padding-x: 0.5rem, cell-padding-y: 0.625rem))`
 
 </td>
 </tr>
@@ -7974,7 +8188,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-bg`
+`$component-bg`
 
 </td>
 <td>
@@ -7994,7 +8208,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-text`
+`$component-text`
 
 </td>
 <td>
@@ -8014,7 +8228,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-border`
+`$component-border`
 
 </td>
 <td>
@@ -8034,7 +8248,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-header-bg`
+`$header-bg`
 
 </td>
 <td>
@@ -8054,7 +8268,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-header-text`
+`$header-text`
 
 </td>
 <td>
@@ -8074,7 +8288,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-header-border`
+`$header-border`
 
 </td>
 <td>
@@ -8090,11 +8304,29 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-table-header-gradient</td>
+    <td>Null</td>
+<td>
+
+`$header-gradient`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of table headers.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-table-footer-bg</td>
     <td>Color</td>
 <td>
 
-`$grid-footer-bg`
+`$kendo-table-header-bg`
 
 </td>
 <td>
@@ -8114,7 +8346,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-footer-text`
+`$kendo-table-header-text`
 
 </td>
 <td>
@@ -8134,7 +8366,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-footer-border`
+`$kendo-table-header-border`
 
 </td>
 <td>
@@ -8214,7 +8446,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-alt-bg`
+`rgba( k-contrast-color( $kendo-table-bg ), .04 )`
 
 </td>
 <td>
@@ -8234,7 +8466,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Null</td>
 <td>
 
-`$grid-alt-text`
+`null`
 
 </td>
 <td>
@@ -8252,7 +8484,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Null</td>
 <td>
 
-`$grid-alt-border`
+`null`
 
 </td>
 <td>
@@ -8270,7 +8502,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-hovered-bg`
+`rgba( k-contrast-color( $kendo-table-bg ), .08 )`
 
 </td>
 <td>
@@ -8290,7 +8522,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Null</td>
 <td>
 
-`$grid-hovered-text`
+`null`
 
 </td>
 <td>
@@ -8308,7 +8540,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Null</td>
 <td>
 
-`$grid-hovered-border`
+`null`
 
 </td>
 <td>
@@ -8380,7 +8612,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>List</td>
 <td>
 
-`$grid-focused-shadow`
+`inset 0 0 0 2px rgba( 0, 0, 0, .08)`
 
 </td>
 <td>
@@ -8398,7 +8630,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-selected-bg`
+`rgba( $selected-bg, .25 )`
 
 </td>
 <td>
@@ -8418,7 +8650,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$grid-selected-text`
+`$kendo-table-text`
 
 </td>
 <td>
@@ -8435,17 +8667,15 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td>$kendo-table-selected-border</td>
-    <td>Color</td>
+    <td>Null</td>
 <td>
 
-`$grid-selected-border`
+`null`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #dee2e6"></span>
-
-`#dee2e6`
+`null`
 
 </td>
 </tr>
