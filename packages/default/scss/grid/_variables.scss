@@ -4,37 +4,120 @@ $kendo-grid-font-family: $font-family !default;
 $kendo-grid-font-size: $font-size !default;
 $kendo-grid-line-height: $line-height !default;
 
+/// Horizontal padding of the grid.
+/// @group grid
 $kendo-grid-padding-x: $table-cell-padding-x !default;
+/// Vertical padding of the grid.
+/// @group grid
 $kendo-grid-padding-y: $table-cell-padding-y !default;
 
+/// Horizontal padding of the grid header.
+/// @group grid
 $kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
+/// Vertical padding of the grid header.
+/// @group grid
 $kendo-grid-header-padding-y: $kendo-grid-padding-y !default;
+
+/// Horizontal padding of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-x: $kendo-grid-padding-y !default;
+/// Vertical padding of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-y: $kendo-grid-grouping-header-padding-x !default;
+
+/// Horizontal padding of the grid cell.
+/// @group grid
+$kendo-grid-cell-padding-x: $kendo-grid-padding-x !default;
+/// Vertical padding of the grid cell.
+/// @group grid
+$kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
+
+/// Horizontal padding of the grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
+/// Vertical padding of the grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
+
+/// Horizontal padding of the grid edit cell.
+/// @group grid
+$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
+/// Vertical padding of the grid filter cell.
+/// @group grid
+$kendo-grid-edit-cell-padding-y: 3px !default;
+
+$kendo-grid-padding-x-sm: map-get( $spacing, 2 ) !default;
+$kendo-grid-padding-y-sm: map-get( $spacing, 1 ) !default;
+$kendo-grid-header-padding-x-sm: $kendo-grid-padding-x-sm !default;
+$kendo-grid-header-padding-y-sm: $kendo-grid-padding-y-sm !default;
+$kendo-grid-grouping-header-padding-x-sm: map-get( $spacing, 1 ) !default;
+$kendo-grid-grouping-header-padding-y-sm: $kendo-grid-grouping-header-padding-x-sm !default;
+$kendo-grid-cell-padding-x-sm: $kendo-grid-padding-x-sm !default;
+$kendo-grid-cell-padding-y-sm: $kendo-grid-padding-y-sm !default;
+$kendo-grid-filter-cell-padding-x-sm: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-grid-filter-cell-padding-y-sm: $kendo-grid-filter-cell-padding-x-sm !default;
+$kendo-grid-edit-cell-padding-x-sm: $kendo-grid-cell-padding-x-sm !default;
+$kendo-grid-edit-cell-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+
+$kendo-grid-padding-x-md: $kendo-grid-padding-x !default;
+$kendo-grid-padding-y-md: $kendo-grid-padding-y !default;
+$kendo-grid-header-padding-x-md: $kendo-grid-header-padding-x !default;
+$kendo-grid-header-padding-y-md: $kendo-grid-header-padding-y !default;
+$kendo-grid-grouping-header-padding-x-md: $kendo-grid-grouping-header-padding-x !default;
+$kendo-grid-grouping-header-padding-y-md: $kendo-grid-grouping-header-padding-y !default;
+$kendo-grid-cell-padding-x-md: $kendo-grid-cell-padding-x !default;
+$kendo-grid-cell-padding-y-md: $kendo-grid-cell-padding-y !default;
+$kendo-grid-filter-cell-padding-x-md: $kendo-grid-filter-cell-padding-x !default;
+$kendo-grid-filter-cell-padding-y-md: $kendo-grid-filter-cell-padding-y !default;
+$kendo-grid-edit-cell-padding-x-md: $kendo-grid-edit-cell-padding-x !default;
+$kendo-grid-edit-cell-padding-y-md: $kendo-grid-edit-cell-padding-y !default;
+
+
+// Kendo Grid sizes
+$kendo-grid-sizes: (
+    sm: (
+        header-padding-x: $kendo-grid-header-padding-x-sm,
+        header-padding-y: $kendo-grid-header-padding-y-sm,
+        grouping-header-padding-x: $kendo-grid-grouping-header-padding-x-sm,
+        grouping-header-padding-y: $kendo-grid-grouping-header-padding-y-sm,
+        cell-padding-x: $kendo-grid-cell-padding-x-sm,
+        cell-padding-y: $kendo-grid-cell-padding-y-sm,
+        filter-cell-padding-x: $kendo-grid-filter-cell-padding-x-sm,
+        filter-cell-padding-y: $kendo-grid-filter-cell-padding-y-sm,
+        edit-cell-padding-x: $kendo-grid-edit-cell-padding-x-sm,
+        edit-cell-padding-y: $kendo-grid-edit-cell-padding-y-sm,
+        button-padding-y: $kendo-button-padding-y-sm,
+        button-calc-size: $kendo-button-calc-size-sm
+    ),
+    md: (
+        header-padding-x: $kendo-grid-header-padding-x-md,
+        header-padding-y: $kendo-grid-header-padding-y-md,
+        grouping-header-padding-x: $kendo-grid-grouping-header-padding-x-md,
+        grouping-header-padding-y: $kendo-grid-grouping-header-padding-y-md,
+        cell-padding-x: $kendo-grid-cell-padding-x-md,
+        cell-padding-y: $kendo-grid-cell-padding-y-md,
+        filter-cell-padding-x: $kendo-grid-filter-cell-padding-x-md,
+        filter-cell-padding-y: $kendo-grid-filter-cell-padding-y-md,
+        edit-cell-padding-x: $kendo-grid-edit-cell-padding-x-md,
+        edit-cell-padding-y: $kendo-grid-edit-cell-padding-y-md,
+        button-padding-y: $kendo-button-padding-y-md,
+        button-calc-size: $kendo-button-calc-size-md
+    ),
+) !default;
+
 $kendo-grid-header-font-size: null !default;
 $kendo-grid-header-first-border: 1px !default;
 $kendo-grid-header-menu-icon-spacing: $icon-spacing !default;
 
-$kendo-grid-footer-padding-x: $kendo-grid-header-padding-x !default;
-$kendo-grid-footer-padding-y: $kendo-grid-header-padding-y !default;
+$kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo-grid-header-menu-icon-spacing} ) !default;
 
-$kendo-grid-grouping-header-padding-x: $kendo-grid-padding-y !default;
-$kendo-grid-grouping-header-padding-y: $kendo-grid-grouping-header-padding-x !default;
-
-$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
-$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
-
-$kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo-grid-header-menu-icon-spacing} );
-
-$kendo-grid-toolbar-padding-x: $toolbar-padding-x !default;
-$kendo-grid-toolbar-padding-y: $toolbar-padding-y !default;
-$kendo-grid-toolbar-spacing: $toolbar-spacing !default;
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
 
-$kendo-grid-cell-padding-x: $kendo-grid-padding-x !default;
-$kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
 $kendo-grid-cell-horizontal-border-width: 0px !default;
 $kendo-grid-cell-vertical-border-width: 1px !default;
 
 $kendo-grid-cell-placeholder-line-width: 80% !default;
+
 
 /// Background color of the grid component
 /// @group grid
@@ -116,9 +199,6 @@ $kendo-grid-sorting-index-spacing-x: -$kendo-grid-sorting-index-spacing-y !defau
 
 $kendo-grid-focused-shadow: $kendo-list-item-focus-shadow !default;
 
-$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
-$kendo-grid-edit-cell-padding-y: 3px !default;
-
 $kendo-grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
 // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
 $kendo-grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$kendo-button-calc-size} - #{$line-height-em}) / 2 ) !default;
@@ -196,3 +276,4 @@ $kendo-grid-group-indicator-button-hover-opacity: $kendo-input-clear-value-hover
 $kendo-grid-grouping-row-border-top: 1px !default;
 $kendo-grid-group-footer-border-y: 1px !default;
 $kendo-grid-group-footer-second-cell-border: 1px !default;
+

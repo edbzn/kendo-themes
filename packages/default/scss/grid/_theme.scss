@@ -27,6 +27,10 @@
         );
     }
 
+    .k-grid .k-table {
+        background-color: inherit;
+    }
+
     .k-grid-toolbar {
         @include fill(
             null,

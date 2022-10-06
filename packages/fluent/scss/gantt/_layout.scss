@@ -375,13 +375,15 @@
     .k-gantt-tasks {
         position: relative;
 
-        td {
+        td,
+        .k-table-td {
             padding: 0;
             position: relative;
             vertical-align: middle;
         }
         td::after { content: "\200b"; }
     }
+
     .k-task-wrap {
         margin: 0 -21px;
         padding: 5px 21px;

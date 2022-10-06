@@ -25,6 +25,10 @@
         );
     }
 
+    .k-grid .k-table {
+        background-color: inherit;
+    }
+
     .k-grid-add-row {
         @include fill(
             $color: var( --kendo-grid-header-text, #{$kendo-grid-header-text} ),

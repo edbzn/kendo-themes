@@ -4,6 +4,10 @@
     .k-grid {
         @include fill( $kendo-grid-text, $kendo-grid-bg, $kendo-grid-border );
 
+        .k-table {
+            background-color: inherit;
+        }
+
         td,
         .k-grid-content,
         .k-grid-header-locked,
