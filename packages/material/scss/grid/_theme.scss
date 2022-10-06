@@ -1,15 +1,15 @@
 @import "~@progress/kendo-theme-default/scss/grid/_theme.scss";
 
 @include exports ("grid/theme/material") {
-    $grid-filter-button-focus: rgba( black, .12 ) !default;
+    $kendo-grid-filter-button-focus: rgba( black, .12 ) !default;
 
     .k-grid {
 
         // Selected state
         td.k-selected,
         tr.k-selected {
-            color: $grid-selected-text;
-            background-color: $grid-selected-bg;
+            color: $kendo-grid-selected-text;
+            background-color: $kendo-grid-selected-bg;
         }
         tr.k-selected > td {
             color: inherit;
@@ -29,7 +29,7 @@
             .k-detail-row > td:focus,
             .k-group-footer > td:focus {
                 color: inherit;
-                background-color: $grid-hovered-bg;
+                background-color: $kendo-grid-hovered-bg;
             }
 
             tr:hover,
@@ -37,7 +37,7 @@
                 .k-grid-header-sticky,
                 .k-grid-footer-sticky {
                     color: inherit;
-                    background-color: $grid-sticky-hovered-bg;
+                    background-color: $kendo-grid-sticky-hovered-bg;
                 }
             }
 
@@ -53,7 +53,7 @@
                 &.k-grid-content-sticky,
                 &.k-grid-footer-sticky {
                     color: inherit;
-                    background-color: $grid-sticky-hovered-bg;
+                    background-color: $kendo-grid-sticky-hovered-bg;
                 }
             }
 
@@ -79,7 +79,7 @@
             .k-grid-header {
 
                 thead > tr:not(:only-child) > th {
-                    border-right-color: $grid-border;
+                    border-right-color: $kendo-grid-border;
                 }
             }
 
@@ -88,8 +88,8 @@
             .k-grid-content-locked,
             .k-grid-header-locked thead > tr > th.k-header,
             .k-grid-content-locked td {
-                border-left-color: $grid-sticky-header-border;
-                border-right-color: $grid-sticky-header-border;
+                border-left-color: $kendo-grid-sticky-header-border;
+                border-right-color: $kendo-grid-sticky-header-border;
             }
 
             .k-group-footer td {
@@ -98,8 +98,8 @@
 
             .k-grid-header thead > tr:not(:only-child) > .k-grid-header-sticky,
             .k-grid-footer-sticky {
-                border-right-color: $grid-sticky-header-border;
-                border-left-color: $grid-sticky-header-border;
+                border-right-color: $kendo-grid-sticky-header-border;
+                border-left-color: $kendo-grid-sticky-header-border;
             }
         }
 
@@ -107,45 +107,45 @@
         .k-grid-content-locked,
         .k-grid-header-locked .k-header,
         .k-grid-content-locked td {
-            border-top-color: $grid-header-border;
-            border-bottom-color: $grid-header-border;
+            border-top-color: $kendo-grid-header-border;
+            border-bottom-color: $kendo-grid-header-border;
 
             .k-group-footer {
                 &:hover td,
                 &.k-hover td {
                     color: inherit;
-                    @include fill( $bg: $grid-sticky-footer-hovered-bg );
+                    @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
                 }
             }
         }
 
         .k-master-row {
             .k-grid-content-sticky {
-                border-color: $grid-sticky-border;
-                border-bottom-color: $grid-header-border;
+                border-color: $kendo-grid-sticky-border;
+                border-bottom-color: $kendo-grid-header-border;
             }
             .k-grid-row-sticky {
-                border-top-color: $grid-sticky-border;
-                border-bottom-color: $grid-sticky-border;
+                border-top-color: $kendo-grid-sticky-border;
+                border-bottom-color: $kendo-grid-sticky-border;
             }
         }
     }
 
     kendo-grid {
         .k-grid-content-sticky {
-            border-color: $grid-sticky-border;
-            border-bottom-color: $grid-header-border;
+            border-color: $kendo-grid-sticky-border;
+            border-bottom-color: $kendo-grid-header-border;
         }
         .k-grid-row-sticky td {
-            border-top-color: $grid-sticky-border;
-            border-bottom-color: $grid-sticky-border;
+            border-top-color: $kendo-grid-sticky-border;
+            border-bottom-color: $kendo-grid-sticky-border;
         }
     }
 
     .k-grid-header {
         .k-sorted,
         .k-link:hover {
-            color: $grid-text;
+            color: $kendo-grid-text;
 
             > .k-icon {
                 color: inherit;
@@ -157,14 +157,14 @@
         .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             &:hover {
-                color: $grid-text;
+                color: $kendo-grid-text;
                 background-color: transparent;
             }
 
             &:focus,
             &.k-focus {
-                color: $grid-text;
-                background-color: $grid-filter-button-focus;
+                color: $kendo-grid-text;
+                background-color: $kendo-grid-filter-button-focus;
                 box-shadow: none;
             }
 
@@ -175,28 +175,28 @@
         }
 
         thead > tr:not(:only-child) > th {
-            border-left-color: $grid-border;
+            border-left-color: $kendo-grid-border;
 
             &.k-grid-header-sticky {
-                border-right-color: $grid-sticky-header-border;
-                border-left-color: $grid-sticky-header-border;
+                border-right-color: $kendo-grid-sticky-header-border;
+                border-left-color: $kendo-grid-sticky-header-border;
             }
         }
 
     }
 
     thead.k-grid-header > tr:not(:only-child) > th {
-        border-left-color: $grid-border;
+        border-left-color: $kendo-grid-border;
     }
 
     .k-grouping-header .k-group-indicator {
-        background-color: $grid-selected-bg;
+        background-color: $kendo-grid-selected-bg;
 
         .k-link {
-            color: $grid-text;
+            color: $kendo-grid-text;
 
             .k-icon {
-                color: $grid-header-text;
+                color: $kendo-grid-header-text;
             }
         }
     }
@@ -204,12 +204,12 @@
     .k-group-footer {
         td,
         .k-grid-footer-sticky {
-            background: $grid-sticky-footer-bg;
+            background: $kendo-grid-sticky-footer-bg;
         }
 
         &:hover td,
         &.k-hover td {
-            @include fill( $bg: $grid-sticky-footer-hovered-bg );
+            @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
         }
     }
 

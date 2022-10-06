@@ -14,7 +14,7 @@
     .k-grid-header-locked,
     .k-filter-row > td,
     .k-filter-row > th {
-        @include fill( $border: $grid-header-border );
+        @include fill( $border: $kendo-grid-header-border );
     }
 
     .k-grid-header,
@@ -22,8 +22,8 @@
     .k-grid-add-row,
     .k-grid-footer {
         @include fill(
-            $color: $grid-header-text,
-            $bg: $grid-header-bg
+            $color: $kendo-grid-header-text,
+            $bg: $kendo-grid-header-bg
         );
     }
 
@@ -39,48 +39,48 @@
 
     .k-grid-content {
         // setting this background color resolves glitches in iOS
-        @include fill($bg: $grid-bg );
+        @include fill($bg: $kendo-grid-bg );
     }
 
     .k-group-footer td,
     .k-grouping-row td,
     tbody .k-group-cell {
         @include fill(
-            $color: $grid-grouping-row-text,
-            $bg: $grid-grouping-row-bg
+            $color: $kendo-grid-grouping-row-text,
+            $bg: $kendo-grid-grouping-row-bg
         );
     }
 
     .k-grouping-dropclue {
         &::before {
-            border-color: $grid-header-text transparent transparent;
+            border-color: $kendo-grid-header-text transparent transparent;
         }
 
         &::after {
-            background-color: $grid-header-text;
+            background-color: $kendo-grid-header-text;
         }
     }
 
     .k-grid {
-        @include fill( $grid-text, $grid-bg, $grid-border );
+        @include fill( $kendo-grid-text, $kendo-grid-bg, $kendo-grid-border );
 
         // Alt row
         tr.k-alt {
-            background-color: $grid-alt-bg;
+            background-color: $kendo-grid-alt-bg;
         }
 
         // Hover state
         tbody > tr:not(.k-detail-row):hover,
         tbody > tr:not(.k-detail-row).k-hover {
-            color: $grid-hovered-text;
-            background-color: $grid-hovered-bg;
+            color: $kendo-grid-hovered-text;
+            background-color: $kendo-grid-hovered-bg;
         }
 
         // Selected state
         td.k-selected,
         tr.k-selected > td {
-            color: $grid-selected-text;
-            background-color: $grid-selected-bg;
+            color: $kendo-grid-selected-text;
+            background-color: $kendo-grid-selected-bg;
         }
 
         // Focused state
@@ -93,26 +93,26 @@
         .k-detail-row > td:focus,
         .k-group-footer > td:focus,
         .k-grid-pager.k-focus {
-            box-shadow: $grid-focused-shadow;
+            box-shadow: $kendo-grid-focused-shadow;
         }
 
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
-            color: $grid-header-text;
+            color: $kendo-grid-header-text;
         }
 
         .k-grouping-row {
-            background-color: $grid-grouping-row-bg;
+            background-color: $kendo-grid-grouping-row-bg;
 
             .k-icon {
-                color: $grid-header-text;
+                color: $kendo-grid-header-text;
             }
 
             .k-grid-content-sticky {
-                border-color: $grid-sticky-border;
-                border-top-color: $grid-header-border;
+                border-color: $kendo-grid-sticky-border;
+                border-top-color: $kendo-grid-header-border;
             }
         }
 
@@ -121,37 +121,37 @@
         .k-grid-content-locked,
         .k-grid-header-locked .k-header,
         .k-grid-content-locked td {
-            border-color: $grid-sticky-header-border;
+            border-color: $kendo-grid-sticky-header-border;
         }
 
         .k-grid-content-locked {
             .k-group-footer td,
             .k-group-cell {
-                @include fill( $border: $grid-header-border );
+                @include fill( $border: $kendo-grid-header-border );
             }
 
             .k-grouping-row + tr td {
-                border-top-color: $grid-header-border;
+                border-top-color: $kendo-grid-header-border;
             }
 
             // Selected state
             .k-selected td {
-                @include fill( $bg: $grid-sticky-selected-bg );
+                @include fill( $bg: $kendo-grid-sticky-selected-bg );
             }
 
             .k-selected.k-alt td {
-                @include fill( $bg: $grid-sticky-selected-alt-bg );
+                @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
             }
 
             // Selected hover
             .k-selected:hover td,
             .k-selected.k-hover td {
-                @include fill( $bg: $grid-sticky-selected-hovered-bg );
+                @include fill( $bg: $kendo-grid-sticky-selected-hovered-bg );
             }
         }
 
         .k-grid-header-locked .k-header {
-            border-bottom-color: $grid-header-border;
+            border-bottom-color: $kendo-grid-header-border;
         }
 
         &[dir="rtl"],
@@ -165,7 +165,7 @@
 
     col.k-sorted,
     th.k-sorted {
-        background-color: $grid-sorted-bg;
+        background-color: $kendo-grid-sorted-bg;
     }
 
     // Grid header
@@ -176,7 +176,7 @@
         .k-i-sort-asc-small,
         .k-i-sort-desc-small,
         .k-sort-order {
-            color: $grid-sorting-indicator-text;
+            color: $kendo-grid-sorting-indicator-text;
         }
 
         .k-grid-filter,
@@ -201,47 +201,47 @@
         td.k-grid-header-sticky,
         .k-grid-header-sticky.k-sorted {
             @include fill(
-                $color: $grid-sticky-header-text,
-                $bg: $grid-sticky-header-bg
+                $color: $kendo-grid-sticky-header-text,
+                $bg: $kendo-grid-sticky-header-bg
             );
 
-            border-right-color: $grid-sticky-header-border;
-            border-left-color: $grid-sticky-header-border;
+            border-right-color: $kendo-grid-sticky-header-border;
+            border-left-color: $kendo-grid-sticky-header-border;
         }
     }
 
     // Grid footer
     .k-grid-footer {
         @include fill(
-            $grid-footer-text,
-            $grid-footer-bg,
-            $grid-footer-border
+            $kendo-grid-footer-text,
+            $kendo-grid-footer-bg,
+            $kendo-grid-footer-border
         );
         .k-grid-footer-sticky {
-            border-left-color: $grid-sticky-border;
-            border-right-color: $grid-sticky-border;
-            background-color: $grid-sticky-footer-bg;
+            border-left-color: $kendo-grid-sticky-border;
+            border-right-color: $kendo-grid-sticky-border;
+            background-color: $kendo-grid-sticky-footer-bg;
         }
     }
 
     // Content
     .k-master-row {
         .k-grid-content-sticky {
-            border-color: $grid-sticky-border;
-            border-top-color: $grid-header-border;
-            background-color: $grid-sticky-bg;
+            border-color: $kendo-grid-sticky-border;
+            border-top-color: $kendo-grid-header-border;
+            background-color: $kendo-grid-sticky-bg;
         }
 
         .k-grid-row-sticky {
-            border-top-color: $grid-sticky-border;
-            border-bottom-color: $grid-sticky-border;
-            background-color: $grid-sticky-bg;
+            border-top-color: $kendo-grid-sticky-border;
+            border-bottom-color: $kendo-grid-sticky-border;
+            background-color: $kendo-grid-sticky-bg;
         }
 
         &.k-alt {
             .k-grid-content-sticky,
             .k-grid-row-sticky {
-                @include fill( $bg: $grid-sticky-alt-bg );
+                @include fill( $bg: $kendo-grid-sticky-alt-bg );
             }
         }
 
@@ -249,13 +249,13 @@
         &.k-selected .k-grid-content-sticky,
         &.k-selected .k-grid-row-sticky,
         td.k-grid-content-sticky.k-selected {
-            @include fill( $bg: $grid-sticky-selected-bg );
+            @include fill( $bg: $kendo-grid-sticky-selected-bg );
         }
 
         &.k-selected.k-alt .k-grid-content-sticky,
         &.k-selected.k-alt .k-grid-row-sticky,
         &.k-alt td.k-grid-content-sticky.k-selected {
-            @include fill( $bg: $grid-sticky-selected-alt-bg );
+            @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
         }
 
 
@@ -264,7 +264,7 @@
         &:hover .k-grid-row-sticky,
         &.k-hover .k-grid-content-sticky,
         &.k-hover .k-grid-row-sticky {
-            background-color: $grid-sticky-hovered-bg;
+            background-color: $kendo-grid-sticky-hovered-bg;
         }
 
 
@@ -275,39 +275,39 @@
         &.k-selected.k-hover .k-grid-row-sticky,
         &:hover td.k-grid-content-sticky.k-selected,
         &.k-hover td.k-grid-content-sticky.k-selected {
-            background-color: $grid-sticky-selected-hovered-bg;
+            background-color: $kendo-grid-sticky-selected-hovered-bg;
         }
     }
 
     kendo-grid {
         .k-grid-content-sticky {
-            border-top-color: $grid-header-border;
-            border-left-color: $grid-sticky-border;
-            border-right-color: $grid-sticky-border;
-            background-color: $grid-sticky-bg;
+            border-top-color: $kendo-grid-header-border;
+            border-left-color: $kendo-grid-sticky-border;
+            border-right-color: $kendo-grid-sticky-border;
+            background-color: $kendo-grid-sticky-bg;
 
             &:hover,
             &.k-hover {
-                background-color: $grid-sticky-hovered-bg;
+                background-color: $kendo-grid-sticky-hovered-bg;
             }
         }
 
         .k-grid-row-sticky {
             td {
-                border-top-color: $grid-sticky-border;
-                border-bottom-color: $grid-sticky-border;
-                background-color: $grid-sticky-bg;
+                border-top-color: $kendo-grid-sticky-border;
+                border-bottom-color: $kendo-grid-sticky-border;
+                background-color: $kendo-grid-sticky-bg;
             }
 
             &:hover td,
             &.k-hover td {
-                background-color: $grid-sticky-hovered-bg;
+                background-color: $kendo-grid-sticky-hovered-bg;
             }
         }
 
         .k-alt .k-grid-content-sticky,
         .k-grid-row-sticky.k-alt td {
-            @include fill( $bg: $grid-sticky-alt-bg );
+            @include fill( $bg: $kendo-grid-sticky-alt-bg );
         }
 
         // Selected state
@@ -315,13 +315,13 @@
         .k-selected.k-grid-row-sticky td,
         .k-grid-row-sticky td.k-selected,
         .k-selected.k-grid-content-sticky {
-            @include fill( $bg: $grid-sticky-selected-bg );
+            @include fill( $bg: $kendo-grid-sticky-selected-bg );
         }
 
         tr.k-selected.k-alt .k-grid-content-sticky,
         .k-selected.k-alt.k-grid-row-sticky td,
         .k-alt .k-selected.k-grid-content-sticky {
-            @include fill( $bg: $grid-sticky-selected-alt-bg );
+            @include fill( $bg: $kendo-grid-sticky-selected-alt-bg );
         }
 
         // Hover state
@@ -333,7 +333,7 @@
         .k-grid-row-sticky.k-alt.k-hover td,
         .k-alt:hover .k-grid-content-sticky,
         .k-alt.k-hover .k-grid-content-sticky {
-            background-color: $grid-sticky-hovered-bg;
+            background-color: $kendo-grid-sticky-hovered-bg;
         }
 
         // Selected + Hover
@@ -349,18 +349,18 @@
         .k-grid-row-sticky.k-hover td.k-selected,
         tr:hover .k-grid-content-sticky.k-selected,
         tr.k-hover .k-grid-content-sticky.k-selected {
-            background-color: $grid-sticky-selected-hovered-bg;
+            background-color: $kendo-grid-sticky-selected-hovered-bg;
         }
     }
 
     .k-grouping-row {
         .k-grid-content-sticky {
-            @include fill( $bg: $grid-sticky-header-bg );
+            @include fill( $bg: $kendo-grid-sticky-header-bg );
         }
 
         &:hover .k-grid-content-sticky,
         &.k-hover .k-grid-content-sticky {
-            @include fill( $bg: $grid-sticky-hovered-bg );
+            @include fill( $bg: $kendo-grid-sticky-hovered-bg );
         }
     }
 
@@ -426,9 +426,9 @@
 
     .k-column-menu-group-header-text {
         @include fill(
-            $grid-column-menu-group-header-text,
-            $grid-column-menu-group-header-bg,
-            $grid-column-menu-group-header-border
+            $kendo-grid-column-menu-group-header-text,
+            $kendo-grid-column-menu-group-header-bg,
+            $kendo-grid-column-menu-group-header-border
         );
     }
 
@@ -437,8 +437,8 @@
     }
 
     .k-grid-norecords-template {
-        background-color: $grid-bg;
-        border-color: $grid-border;
+        background-color: $kendo-grid-bg;
+        border-color: $kendo-grid-border;
     }
 
 }
