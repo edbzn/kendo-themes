@@ -11,7 +11,7 @@ $kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
 $kendo-grid-header-padding-y: 16px !default;
 $kendo-grid-header-font-size: 12px !default;
 $kendo-grid-header-first-border: 1px !default;
-$kendo-grid-header-menu-icon-spacing: $icon-spacing !default;
+$kendo-grid-header-menu-icon-spacing: 14px !default;
 
 $kendo-grid-footer-padding-x: $kendo-grid-header-padding-x !default;
 $kendo-grid-footer-padding-y: $kendo-grid-header-padding-y !default;
@@ -101,7 +101,7 @@ $kendo-grid-selected-border: $kendo-grid-border !default;
 $kendo-grid-grouping-row-bg: transparent !default;
 $kendo-grid-grouping-row-text: $kendo-grid-text !default;
 
-$kendo-grid-sorted-icon-spacing: calc( #{$padding-x} - 1px ) !default;
+$kendo-grid-sorted-icon-spacing: 4px !default;
 $kendo-grid-sorted-bg: rgba( k-contrast-color( $kendo-grid-bg ), .04 ) !default;
 $kendo-grid-sorting-indicator-text: $kendo-grid-header-text !default;
 $kendo-grid-sorting-index-font-size: $font-size-sm !default;
@@ -178,18 +178,18 @@ $kendo-grid-drag-cell-width: ($icon-size * 3) !default;
 $kendo-grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
 // $kendo-grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$table-cell-padding-y} );
 
-$kendo-grid-hierarchy-col-width: ($icon-size * 2) !default;
+$kendo-grid-hierarchy-col-width: 32px !default;
 
 $kendo-grid-group-dropclue-size: 6px;
 $kendo-grid-group-dropclue-line-size: $kendo-grid-group-dropclue-size / 3;
-$kendo-grid-group-dropclue-height: $kendo-button-calc-size !default;
-$kendo-grid-group-dropclue-top: 3px !default;
+$kendo-grid-group-dropclue-height: calc( #{$font-size * 2} + #{$padding-y * 2} ) !default;
+$kendo-grid-group-dropclue-top: calc( ( #{$kendo-button-calc-size} + #{$kendo-grid-grouping-header-padding-y * 2} - #{$kendo-grid-group-dropclue-height} ) / 2) !default;
 
-$kendo-grid-group-indicator-border-radius: $kendo-border-radius-md !default;
-$kendo-grid-group-indicator-gap: $table-cell-padding-y !default;
+$kendo-grid-group-indicator-border-radius: calc( #{$font-size} + #{$kendo-button-padding-y} ) !default;
+$kendo-grid-group-indicator-gap: 8px !default;
 $kendo-grid-group-indicator-button-opacity: $kendo-input-clear-value-opacity !default;
 $kendo-grid-group-indicator-button-hover-opacity: $kendo-input-clear-value-hover-opacity !default;
 
-$kendo-grid-grouping-row-border-top: 1px !default;
+$kendo-grid-grouping-row-border-top: 0px !default;
 $kendo-grid-group-footer-border-y: 1px !default;
-$kendo-grid-group-footer-second-cell-border: 1px !default;
+$kendo-grid-group-footer-second-cell-border: 0px !default;

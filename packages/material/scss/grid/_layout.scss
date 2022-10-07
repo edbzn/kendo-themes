@@ -1,17 +1,3 @@
-$kendo-grid-hierarchy-col-width: 32px !default;
-// TODO: perhaps these should be the values for cell-padding-x/-y
-$kendo-grid-grouping-row-border-top: 0px !default;
-$kendo-grid-group-footer-border-y: 1px !default;
-$kendo-grid-group-footer-second-cell-border: 0px !default;
-$kendo-grid-header-first-border: 1px !default;
-$kendo-grid-sorted-icon-spacing: 4px !default;
-$kendo-grid-header-menu-icon-spacing: 14px !default;
-$kendo-grid-group-indicator-border-radius: calc( #{$font-size} + #{$kendo-button-padding-y} ) !default;
-$kendo-grid-group-indicator-gap: 8px !default;
-
-$kendo-grid-group-dropclue-height: calc( #{$font-size * 2} + #{$padding-y * 2} ) !default;
-$kendo-grid-group-dropclue-top: calc( ( #{$kendo-button-calc-size} + #{$kendo-grid-grouping-header-padding-y * 2} - #{$kendo-grid-group-dropclue-height} ) / 2) !default;
-
 @import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
 
 @include exports ("grid/layout/material") {
