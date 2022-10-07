@@ -18,23 +18,23 @@ root.render(
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: '50px' }} />
                                     <col />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr role="row">
-                                        <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Name</th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>ID</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
-                                    <tr role="row" className="k-filter-row">
-                                        <td></td>
-                                        <td>
+                                    <tr role="row" className="k-table-row k-filter-row">
+                                        <td className="k-table-td"></td>
+                                        <td className="k-table-td">
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <NumericTextbox />
@@ -46,7 +46,7 @@ root.render(
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td className="k-table-td">
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox />
@@ -58,7 +58,7 @@ root.render(
                                                 </div>
                                             </div>
                                         </td>
-                                        <td></td>
+                                        <td className="k-table-td"></td>
                                     </tr>
                                 </thead>
                             </table>
@@ -67,25 +67,25 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div className="k-grid-table-wrap">
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
                                         <col />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
-                                        <tr className="k-alt" role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                        <tr className="k-table-row k-table-alt-row k-alt">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -103,23 +103,23 @@ root.render(
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: '50px' }} />
                                     <col />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr role="row">
-                                        <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">ID</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">ID</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
-                                    <tr role="row" className="k-filter-row">
-                                        <td></td>
-                                        <td>
+                                    <tr role="row" className="k-table-row k-filter-row">
+                                        <td className="k-table-td"></td>
+                                        <td className="k-table-td">
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <NumericTextbox />
@@ -131,7 +131,7 @@ root.render(
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td className="k-table-td">
                                             <div className="k-filtercell">
                                                 <div className="k-filtercell-wrapper">
                                                     <Textbox />
@@ -143,7 +143,7 @@ root.render(
                                                 </div>
                                             </div>
                                         </td>
-                                        <td></td>
+                                        <td className="k-table-td"></td>
                                     </tr>
                                 </thead>
                             </table>
@@ -152,25 +152,25 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div className="k-grid-table-wrap">
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
                                         <col />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>1</td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
-                                        <tr className="k-alt" role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                        <tr className="k-table-row k-table-alt-row k-alt">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>2</td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                     </tbody>
                                 </table>

@@ -14,38 +14,38 @@ root.render(
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-locked" style={{ width: "300px" }}>
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col style={{ width: "300px" }} />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header" rowSpan={2} colSpan={1}>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={2} colSpan={1}>
                                             Name
                                         </th>
-                                    </tr><tr>
+                                    </tr><tr className="k-table-row">
                                     </tr>
                                 </thead>
                             </table>
                         </div>
                         <div className="k-grid-header-wrap" style={{ width: "434px" }}>
-                            <table style={{ width: "900px" }}>
+                            <table className="k-table k-table-md" style={{ width: "900px" }}>
                                 <colgroup>
                                     <col style={{ width: "300px" }} /><col style={{ width: "300px" }} /><col style={{ width: "300px" }} />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header" rowSpan={1} colSpan={3}>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={3}>
                                             Availability
                                         </th>
-                                    </tr><tr>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>
+                                    </tr><tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
                                             Units In Stock
                                         </th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
                                             Unit Price
                                         </th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
                                             Discontinued
                                         </th>
                                     </tr>
@@ -56,23 +56,23 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content-locked" style={{ width: "300px", height: "272px" }}>
                             <div className="k-grid-table-wrap" style={{ position: "relative" }}>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: "300px" }} />
                                     </colgroup>
-                                    <tbody>
-                                        <tr style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 Chai
                                             </td>
                                         </tr>
-                                        <tr className="k-alt" style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                        <tr className="k-table-row k-table-alt-row k-alt" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 Chang
                                             </td>
                                         </tr>
-                                        <tr style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                        <tr className="k-table-row" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 Aniseed Syrup
                                             </td>
                                         </tr>
@@ -84,35 +84,35 @@ root.render(
                             </div>
                         </div><div className="k-grid-content k-virtual-content" style={{ width: "447px" }}>
                             <div className="k-grid-table-wrap" style={{ position: "relative" }}>
-                                <table className="k-grid-table" style={{ transform: "translateY(0px)", width: "900px" }}>
+                                <table className="k-table k-table-md k-grid-table" style={{ transform: "translateY(0px)", width: "900px" }}>
                                     <colgroup>
                                         <col style={{ width: "300px" }} /><col style={{ width: "300px" }} /><col style={{ width: "300px" }} />
                                     </colgroup>
-                                    <tbody>
-                                        <tr style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 39
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 18
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 false
                                             </td>
                                         </tr>
-                                        <tr className="k-alt" style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                        <tr className="k-table-row k-table-alt-row k-alt" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 17
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 19
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 false
                                             </td>
                                         </tr>
-                                        <tr style={{ height: "37px" }}>
-                                            <td colSpan={1}>
+                                        <tr className="k-table-row" style={{ height: "37px" }}>
+                                            <td className="k-table-td" colSpan={1}>
                                                 13
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 10
-                                            </td><td colSpan={1}>
+                                            </td><td className="k-table-td" colSpan={1}>
                                                 false
                                             </td>
                                         </tr>
@@ -133,7 +133,7 @@ root.render(
                 <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "200px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col style={{ width: "160px" }} />
                                     <col style={{ width: "160px" }} />
@@ -142,15 +142,15 @@ root.render(
                                     <col style={{ width: "160px" }} />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
                                         <th scope="col" rowSpan={3} className="k-header k-with-icon">
                                             <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Company</a>
                                         </th>
-                                        <th scope="col" colSpan={5} className="k-header">Contact Info</th>
+                                        <th scope="col" colSpan={5} className="k-table-th k-header">Contact Info</th>
                                     </tr>
-                                    <tr>
+                                    <tr className="k-table-row">
                                         <th scope="col" rowSpan={2} className="k-header k-with-icon k-first">
                                             <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">First Name</a>
@@ -159,13 +159,13 @@ root.render(
                                             <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Last Name</a>
                                         </th>
-                                        <th scope="col" colSpan={2} className="k-header">Location</th>
+                                        <th scope="col" colSpan={2} className="k-table-th k-header">Location</th>
                                         <th scope="col" rowSpan={2} className="k-header k-with-icon">
                                             <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Phone</a>
                                         </th>
                                     </tr>
-                                    <tr>
+                                    <tr className="k-table-row">
                                         <th scope="col" className="k-header k-with-icon k-first">
                                             <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Country</a>
@@ -183,7 +183,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-grid-content k-auto-scrollable">
-                        <table style={{ height: 'auto' }}>
+                        <table className="k-table k-table-md" style={{ height: 'auto' }}>
                             <colgroup>
                                 <col style={{ width: "160px" }} />
                                 <col style={{ width: "160px" }} />
@@ -192,7 +192,7 @@ root.render(
                                 <col style={{ width: "160px" }} />
                                 <col />
                             </colgroup>
-                            <tbody></tbody>
+                            <tbody className="k-table-tbody"></tbody>
                         </table>
                     </div>
                 </div>

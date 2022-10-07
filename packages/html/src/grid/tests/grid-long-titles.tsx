@@ -25,12 +25,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon">
                                                 <a className="k-grid-header-menu k-grid-column-menu k-active" href="#">
                                                     <Icon name="more-vertical" />
@@ -51,12 +51,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon">
                                                 <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
@@ -81,12 +81,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon k-filterable">
                                                 <a className="k-grid-filter k-active" href="#">
                                                     <Icon name="filter" />
@@ -107,12 +107,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon k-filterable">
                                                 <a className="k-grid-filter" href="#">
                                                     <Icon name="filter" />
@@ -137,12 +137,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon">
                                                 <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
@@ -165,12 +165,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon">
                                                 <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
@@ -197,12 +197,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon k-filterable">
                                                 <a className="k-grid-filter" href="#">
                                                     <Icon name="filter" />
@@ -225,12 +225,12 @@ root.render(
                     <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
                                             <th scope="col" className="k-header k-with-icon k-filterable">
                                                 <a className="k-grid-filter" href="#">
                                                     <Icon name="filter" />
@@ -258,12 +258,12 @@ root.render(
                             {/* add padding-left or -right for scrollbar width */}
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap">
-                                    <table>
+                                    <table className="k-table k-table-md">
                                         <colgroup>
                                             <col />
                                         </colgroup>
-                                        <thead>
-                                            <tr>
+                                        <thead className="k-table-thead">
+                                            <tr className="k-table-row">
                                                 <th className="k-filterable k-header">
                                                     <div>
                                                         <a href="#" className="k-grid-filter">
@@ -290,12 +290,12 @@ root.render(
                             <div className="k-grid-header">
                                 {/* add padding-left or -right for scrollbar width */}
                                 <div className="k-grid-header-wrap">
-                                    <table>
+                                    <table className="k-table k-table-md">
                                         <colgroup>
                                             <col />
                                         </colgroup>
-                                        <thead>
-                                            <tr>
+                                        <thead className="k-table-thead">
+                                            <tr className="k-table-row">
                                                 <th className="k-filterable k-header">
                                                     <div>
                                                         <a href="#" className="k-grid-filter">

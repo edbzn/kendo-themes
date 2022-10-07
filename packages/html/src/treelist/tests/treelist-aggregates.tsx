@@ -70,7 +70,7 @@ root.render(
                                     <td>Director Facilities</td>
                                     <td>June 26, 2015</td>
                                 </tr>
-                                <tr className="k-footer-template">
+                                <tr className="k-table-row k-footer-template">
                                     <td className="k-focus"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>7 employee(s)</td>
                                     <td></td>
                                     <td>Last employee hired on July 30, 2015</td>
@@ -85,12 +85,12 @@ root.render(
                                     <td>General Counsel</td>
                                     <td>February 12, 2011</td>
                                 </tr>
-                                <tr className="k-footer-template">
+                                <tr className="k-table-row k-footer-template">
                                     <td><Icon name="none"></Icon><Icon name="none"></Icon>98 employee(s)</td>
                                     <td></td>
                                     <td>Last employee hired on August 17, 2015</td>
                                 </tr>
-                                <tr className="k-footer-template">
+                                <tr className="k-table-row k-footer-template">
                                     <td><Icon name="none"></Icon>99 employee(s)</td>
                                     <td></td>
                                     <td>Last employee hired on August 17, 2015</td>

@@ -23,13 +23,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <ColorPicker />
@@ -52,13 +52,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Autocomplete placeholder="Autocomplete..." />
@@ -79,13 +79,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Combobox placeholder="Combobox..." />
@@ -106,13 +106,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DropdownList placeholder="DropdownList..." />
@@ -133,13 +133,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <NumericTextbox placeholder="Numeric..." />
@@ -160,13 +160,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <Textbox placeholder="Textbox..." />
@@ -189,13 +189,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DatePicker placeholder="Datepicker..." />
@@ -216,13 +216,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <TimePicker placeholder="TimePicker..." />
@@ -243,13 +243,13 @@ root.render(
                 <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr className="k-filter-row">
-                                        <th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row k-filter-row">
+                                        <th className="k-table-th">
                                             <span className="k-filtercell">
                                                 <span>
                                                     <DateTimePicker placeholder="DateTimePicker..." />
