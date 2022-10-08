@@ -1,15 +1,128 @@
-$kendo-list-padding-x: 0px !default;
-$kendo-list-padding-y: 0px !default;
+// List
+$kendo-list-font-size-sm: k-var( --kendo-font-size-sm, $kendo-font-size-sm ) !default;
+$kendo-list-font-size-md: k-var( --kendo-font-size-md, $kendo-font-size-md ) !default;
+$kendo-list-font-size-lg: k-var( --kendo-font-size-lg, $kendo-font-size-lg ) !default;
 
-$kendo-list-border-width: 1px !default;
-$kendo-list-border-style: solid !default;
+$kendo-list-line-height-sm: k-var( --kendo-line-height-sm, $kendo-line-height-sm ) !default;
+$kendo-list-line-height-md: k-var( --kendo-line-height-md, $kendo-line-height-md ) !default;
+$kendo-list-line-height-lg: k-var( --kendo-line-height-lg, $kendo-line-height-lg ) !default;
 
-$kendo-list-border-radius: 0px !default;
 
-$kendo-list-font-family: $kendo-font-family !default;
-$kendo-list-font-size: $kendo-font-size-md !default;
-$kendo-list-line-height: $kendo-line-height-md !default;
+// List header
+$kendo-list-header-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-header-padding-x-md: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-list-header-padding-x-lg: k-map-get( $kendo-spacing, 4 ) !default;
 
+$kendo-list-header-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-list-header-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-header-padding-y-lg: k-map-get( $kendo-spacing, 3 ) !default;
+
+$kendo-list-header-border-width: 1px !default;
+$kendo-list-header-font-weight: var( --kendo-font-weight-bold, bold ) !default;
+
+$kendo-list-header-font-size-sm: k-var( --kendo-font-size-sm, $kendo-font-size-sm ) !default;
+$kendo-list-header-font-size-md: k-var( --kendo-font-size-md, $kendo-font-size-md ) !default;
+$kendo-list-header-font-size-lg: k-var( --kendo-font-size-lg, $kendo-font-size-lg ) !default;
+
+$kendo-list-header-line-height-sm: k-var( --kendo-line-height-sm, $kendo-line-height-sm ) !default;
+$kendo-list-header-line-height-md: k-var( --kendo-line-height-md, $kendo-line-height-md ) !default;
+$kendo-list-header-line-height-lg: k-var( --kendo-line-height-lg, $kendo-line-height-lg ) !default;
+
+
+
+// List item
+$kendo-list-item-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-item-padding-x-md: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-list-item-padding-x-lg: k-map-get( $kendo-spacing, 4 ) !default;
+
+$kendo-list-item-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-list-item-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-item-padding-y-lg: k-map-get( $kendo-spacing, 3 ) !default;
+
+$kendo-list-item-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+
+$kendo-list-item-font-size-sm: k-var( --kendo-font-size-sm, $kendo-font-size-sm ) !default;
+$kendo-list-item-font-size-md: k-var( --kendo-font-size-md, $kendo-font-size-md ) !default;
+$kendo-list-item-font-size-lg: k-var( --kendo-font-size-lg, $kendo-font-size-lg ) !default;
+
+$kendo-list-item-line-height-sm: k-var( --kendo-line-height-sm, $kendo-line-height-sm ) !default;
+$kendo-list-item-line-height-md: k-var( --kendo-line-height-md, $kendo-line-height-md ) !default;
+$kendo-list-item-line-height-lg: k-var( --kendo-line-height-lg, $kendo-line-height-lg ) !default;
+
+
+// List group item
+$kendo-list-group-item-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-group-item-padding-x-md: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-list-group-item-padding-x-lg: k-map-get( $kendo-spacing, 4 ) !default;
+
+$kendo-list-group-item-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-list-group-item-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-group-item-padding-y-lg: k-map-get( $kendo-spacing, 3 ) !default;
+
+$kendo-list-group-item-border-width: 1px !default;
+$kendo-list-group-item-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, bold ) !default;
+
+$kendo-list-group-item-font-size-sm: k-var( --kendo-font-size-sm, $kendo-font-size-sm ) !default;
+$kendo-list-group-item-font-size-md: k-var( --kendo-font-size-md, $kendo-font-size-md ) !default;
+$kendo-list-group-item-font-size-lg: k-var( --kendo-font-size-lg, $kendo-font-size-lg ) !default;
+
+$kendo-list-group-item-line-height-sm: k-var( --kendo-line-height-sm, $kendo-line-height-sm ) !default;
+$kendo-list-group-item-line-height-md: k-var( --kendo-line-height-md, $kendo-line-height-md ) !default;
+$kendo-list-group-item-line-height-lg: k-var( --kendo-line-height-lg, $kendo-line-height-lg ) !default;
+
+
+// Kendo list sizes
+$kendo-list-sizes: (
+    sm: (
+        font-size: $kendo-list-font-size-sm,
+        line-height: $kendo-list-line-height-sm,
+        header-padding-x: $kendo-list-header-padding-x-sm,
+        header-padding-y: $kendo-list-header-padding-y-sm,
+        header-font-size: $kendo-list-header-font-size-sm,
+        header-line-height: $kendo-list-header-line-height-sm,
+        item-padding-x: $kendo-list-item-padding-x-sm,
+        item-padding-y: $kendo-list-item-padding-y-sm,
+        item-font-size: $kendo-list-item-font-size-sm,
+        item-line-height: $kendo-list-item-line-height-sm,
+        group-item-padding-x: $kendo-list-group-item-padding-x-sm,
+        group-item-padding-y: $kendo-list-group-item-padding-y-sm,
+        group-item-font-size: $kendo-list-group-item-font-size-sm,
+        group-item-line-height: $kendo-list-group-item-line-height-sm
+    ),
+    md: (
+        font-size: $kendo-list-font-size-md,
+        line-height: $kendo-list-line-height-md,
+        header-padding-x: $kendo-list-header-padding-x-md,
+        header-padding-y: $kendo-list-header-padding-y-md,
+        header-font-size: $kendo-list-header-font-size-md,
+        header-line-height: $kendo-list-header-line-height-md,
+        item-padding-x: $kendo-list-item-padding-x-md,
+        item-padding-y: $kendo-list-item-padding-y-md,
+        item-font-size: $kendo-list-item-font-size-md,
+        item-line-height: $kendo-list-item-line-height-md,
+        group-item-padding-x: $kendo-list-group-item-padding-x-md,
+        group-item-padding-y: $kendo-list-group-item-padding-y-md,
+        group-item-font-size: $kendo-list-group-item-font-size-md,
+        group-item-line-height: $kendo-list-group-item-line-height-md
+    ),
+    lg: (
+        font-size: $kendo-list-font-size-lg,
+        line-height: $kendo-list-line-height-lg,
+        header-padding-x: $kendo-list-header-padding-x-lg,
+        header-padding-y: $kendo-list-header-padding-y-lg,
+        header-font-size: $kendo-list-header-font-size-lg,
+        header-line-height: $kendo-list-header-line-height-lg,
+        item-padding-x: $kendo-list-item-padding-x-lg,
+        item-padding-y: $kendo-list-item-padding-y-lg,
+        item-font-size: $kendo-list-item-font-size-lg,
+        item-line-height: $kendo-list-item-line-height-lg,
+        group-item-padding-x: $kendo-list-group-item-padding-x-lg,
+        group-item-padding-y: $kendo-list-group-item-padding-y-lg,
+        group-item-font-size: $kendo-list-group-item-font-size-lg,
+        group-item-line-height: $kendo-list-group-item-line-height-lg
+    )
+) !default;
 
 /// The background of the list.
 /// @group list
@@ -22,9 +135,10 @@ $kendo-list-text: $kendo-component-text !default;
 $kendo-list-border: $kendo-component-border !default;
 $kendo-list-shadow: null !default;
 
-
-$kendo-list-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-list-header-bg: $kendo-component-bg !default;
+$kendo-list-header-text: $kendo-component-text !default;
+$kendo-list-header-border: $kendo-component-border !default;
+$kendo-list-header-shadow: null !default;
 
 $kendo-list-item-bg: null !default;
 $kendo-list-item-text: $kendo-component-text !default;
@@ -32,47 +146,19 @@ $kendo-list-item-text: $kendo-component-text !default;
 $kendo-list-item-hover-bg: $kendo-hover-bg !default;
 $kendo-list-item-hover-text: $kendo-hover-text !default;
 
+$kendo-list-item-focus-bg: null !default;
+$kendo-list-item-focus-text: null !default;
+$kendo-list-item-focus-shadow: inset 0 0 0 2px rgba( black, .8 ) !default;
+
 $kendo-list-item-selected-bg: $kendo-selected-bg !default;
 $kendo-list-item-selected-text: $kendo-selected-text !default;
 
-$kendo-list-item-focus-bg: null !default;
-$kendo-list-item-focus-text: null !default;
-$kendo-list-item-focus-shadow: inset 0 0 0 2px rgba( black, .13 ) !default;
+$kendo-list-item-disabled-bg: null !default;
+$kendo-list-item-disabled-text: null !default;
 
+$kendo-list-group-item-bg: null !default;
+$kendo-list-group-item-text: null !default;
+$kendo-list-group-item-border: null !default;
 
-
-
-// Expose
-:root {
-    --kendo-list-padding-x: #{$kendo-list-padding-x};
-    --kendo-list-padding-y: #{$kendo-list-padding-y};
-    --kendo-list-border-width: #{$kendo-list-border-width};
-    --kendo-list-border-style: #{$kendo-list-border-style};
-
-    --kendo-list-border-radius: #{$kendo-list-border-radius};
-
-    --kendo-list-font-family: #{$kendo-list-font-family};
-    --kendo-list-font-size: #{$kendo-list-font-size};
-    --kendo-list-line-height: #{$kendo-list-line-height};
-
-    --kendo-list-bg: #{$kendo-list-bg};
-    --kendo-list-text: #{$kendo-list-text};
-    --kendo-list-border: #{$kendo-list-border};
-    --kendo-list-shadow: #{$kendo-list-shadow};
-
-    --kendo-list-item-padding-x: #{$kendo-list-item-padding-x};
-    --kendo-list-item-padding-y: #{$kendo-list-item-padding-y};
-
-    --kendo-list-item-bg: #{$kendo-list-item-bg};
-    --kendo-list-item-text: #{$kendo-list-item-text};
-
-    --kendo-list-item-hover-bg: #{$kendo-list-item-hover-bg};
-    --kendo-list-item-hover-text: #{$kendo-list-item-hover-text};
-
-    --kendo-list-item-selected-bg: #{$kendo-list-item-selected-bg};
-    --kendo-list-item-selected-text: #{$kendo-list-item-selected-text};
-
-    --kendo-list-item-focus-bg: #{$kendo-list-item-focus-bg};
-    --kendo-list-item-focus-text: #{$kendo-list-item-focus-text};
-    --kendo-list-item-focus-shadow: #{$kendo-list-item-focus-shadow};
-}
+$kendo-list-no-data-bg: null !default;
+$kendo-list-no-data-text: null !default;
