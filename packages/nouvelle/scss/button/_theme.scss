@@ -1,45 +1,253 @@
 @mixin kendo-button--theme() {
 
-    :where(.k-button) {
-        color: var( --kendo-button-text, inherit );
-        background-color: var( --kendo-button-bg, transparent );
-        border-color: var( --kendo-button-border, transparent );
-        background-image: linear-gradient( var( --kendo-button-gradient ) );
-        box-shadow: var( --kendo-button-shadow, none );
-    }
-
-    // Solid buttons
     .k-button {
+        --INTERNAL--kendo-button-bg: var( --kendo-button-bg );
+        --INTERNAL--kendo-button-text: var( --kendo-button-text );
+        --INTERNAL--kendo-button-border: var( --kendo-button-border );
+        --INTERNAL--kendo-button-gradient: var( --kendo-button-gradient );
+        --INTERNAL--kendo-button-shadow: var( --kendo-button-shadow );
+        --INTERNAL--kendo-button-outline: var( --kendo-button-outline );
 
-        // Hover
+        border-color: var( --INTERNAL--kendo-button-border, initial );
+        color: var( --INTERNAL--kendo-button-text, inherit );
+        background-color: var( --INTERNAL--kendo-button-bg, initial );
+        background-image: linear-gradient( var( --INTERNAL--kendo-button-gradient, transparent, transparent ) );
+        box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+        outline: var( --INTERNAL--kendo-button-outline, 0 );
+
+        // Hover state
         &:hover,
         &.k-hover {
-            --kendo-button-text: var( --kendo-button-hover-text );
-            --kendo-button-bg: var( --kendo-button-hover-bg );
-            --kendo-button-border: var( --kendo-button-hover-border );
-            --kendo-button-gradient: var( --kendo-button-hover-gradient );
+            --INTERNAL--kendo-button-bg: var( --kendo-button-hover-bg );
+            --INTERNAL--kendo-button-text: var( --kendo-button-hover-text );
+            --INTERNAL--kendo-button-border: var( --kendo-button-hover-border );
+            --INTERNAL--kendo-button-gradient: var( --kendo-button-hover-gradient );
+            --INTERNAL--kendo-button-shadow: var( --kendo-button-hover-shadow );
+            --INTERNAL--kendo-button-outline: var( --kendo-button-hover-outline );
         }
 
-        // Focus
+        // Focus state
         &:focus,
         &.k-focus {
-            --kendo-button-text: var( --kendo-button-focus-text );
-            --kendo-button-bg: var( --kendo-button-focus-bg );
-            --kendo-button-border: var( --kendo-button-focus-border );
-            --kendo-button-gradient: var( --kendo-button-focus-gradient );
-            --kendo-button-shadow: var( --kendo-button-focus-shadow );
+            --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
+            --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
+            --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
+            --INTERNAL--kendo-button-gradient: var( --kendo-button-focus-gradient );
+            --INTERNAL--kendo-button-shadow: var( --kendo-button-focus-shadow );
+            --INTERNAL--kendo-button-outline: var( --kendo-button-focus-outline );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-bg: var( --kendo-button-focus-hover-bg );
+                --INTERNAL--kendo-button-text: var( --kendo-button-focus-hover-text );
+                --INTERNAL--kendo-button-border: var( --kendo-button-focus-hover-border );
+                --INTERNAL--kendo-button-gradient: var( --kendo-button-focus-hover-gradient );
+                --INTERNAL--kendo-button-shadow: var( --kendo-button-focus-hover-shadow );
+                --INTERNAL--kendo-button-outline: var( --kendo-button-focus-hover-outline );
+            }
         }
 
-        // Pressed
+        // Active state
         &:active,
-        &.k-active,
-        &.k-selected {
-            --kendo-button-text: var( --kendo-button-active-text );
-            --kendo-button-bg: var( --kendo-button-active-bg );
-            --kendo-button-border: var( --kendo-button-active-border );
-            --kendo-button-gradient: var( --kendo-button-active-gradient );
+        &.k-active {
+            --INTERNAL--kendo-button-bg: var( --kendo-button-active-bg );
+            --INTERNAL--kendo-button-text: var( --kendo-button-active-text );
+            --INTERNAL--kendo-button-border: var( --kendo-button-active-border );
+            --INTERNAL--kendo-button-gradient: var( --kendo-button-active-gradient );
+            --INTERNAL--kendo-button-shadow: var( --kendo-button-active-shadow );
+            --INTERNAL--kendo-button-outline: var( --kendo-button-active-outline );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-bg: var( --kendo-button-active-hover-bg );
+                --INTERNAL--kendo-button-text: var( --kendo-button-active-hover-text );
+                --INTERNAL--kendo-button-border: var( --kendo-button-active-hover-border );
+                --INTERNAL--kendo-button-gradient: var( --kendo-button-active-hover-gradient );
+                --INTERNAL--kendo-button-shadow: var( --kendo-button-active-hover-shadow );
+                --INTERNAL--kendo-button-outline: var( --kendo-button-active-hover-outline );
+            }
         }
 
+        // Selected state
+        &.k-selected,
+        &[aria-selected="true"] {
+            --INTERNAL--kendo-button-bg: var( --kendo-button-selected-bg );
+            --INTERNAL--kendo-button-text: var( --kendo-button-selected-text );
+            --INTERNAL--kendo-button-border: var( --kendo-button-selected-border );
+            --INTERNAL--kendo-button-gradient: var( --kendo-button-selected-gradient );
+            --INTERNAL--kendo-button-shadow: var( --kendo-button-selected-shadow );
+            --INTERNAL--kendo-button-outline: var( --kendo-button-selected-outline );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-bg: var( --kendo-button-selected-hover-bg );
+                --INTERNAL--kendo-button-text: var( --kendo-button-selected-hover-text );
+                --INTERNAL--kendo-button-border: var( --kendo-button-selected-hover-border );
+                --INTERNAL--kendo-button-gradient: var( --kendo-button-selected-hover-gradient );
+                --INTERNAL--kendo-button-shadow: var( --kendo-button-selected-hover-shadow );
+                --INTERNAL--kendo-button-outline: var( --kendo-button-selected-hover-outline );
+            }
+        }
+
+        // Disabled state
+        &:disabled,
+        &[disabled],
+        &.k-disabled,
+        &[aria-disabled="true"] {
+            --INTERNAL--kendo-button-bg: var( --kendo-button-disabled-bg );
+            --INTERNAL--kendo-button-text: var( --kendo-button-disabled-text );
+            --INTERNAL--kendo-button-border: var( --kendo-button-disabled-border );
+            --INTERNAL--kendo-button-gradient: var( --kendo-button-disabled-gradient );
+            --INTERNAL--kendo-button-shadow: var( --kendo-button-disabled-shadow );
+            --INTERNAL--kendo-button-outline: var( --kendo-button-disabled-outline );
+        }
+    }
+
+    @each $variant, $theme-props in $kendo-button-theme {
+        $suffix: if( $variant == DEFAULT, "", "-#{$variant}" );
+
+        $_bg: k-map-get( $theme-props, bg );
+        $_text: k-map-get( $theme-props, text );
+        $_border: k-map-get( $theme-props, border );
+        $_gradient: k-map-get( $theme-props, gradient );
+        $_shadow: k-map-get( $theme-props, shadow );
+        $_outline: k-map-get( $theme-props, outline );
+
+        $_hover-bg: k-map-get( $theme-props, hover-bg );
+        $_hover-text: k-map-get( $theme-props, hover-text );
+        $_hover-border: k-map-get( $theme-props, hover-border );
+        $_hover-gradient: k-map-get( $theme-props, hover-gradient );
+        $_hover-shadow: k-map-get( $theme-props, hover-shadow );
+        $_hover-outline: k-map-get( $theme-props, hover-outline );
+
+        $_focus-bg: k-map-get( $theme-props, focus-bg );
+        $_focus-text: k-map-get( $theme-props, focus-text );
+        $_focus-border: k-map-get( $theme-props, focus-border );
+        $_focus-gradient: k-map-get( $theme-props, focus-gradient );
+        $_focus-shadow: k-map-get( $theme-props, focus-shadow );
+        $_focus-outline: k-map-get( $theme-props, focus-outline );
+
+        $_focus-hover-bg: k-map-get( $theme-props, focus-hover-bg );
+        $_focus-hover-text: k-map-get( $theme-props, focus-hover-text );
+        $_focus-hover-border: k-map-get( $theme-props, focus-hover-border );
+        $_focus-hover-gradient: k-map-get( $theme-props, focus-hover-gradient );
+        $_focus-hover-shadow: k-map-get( $theme-props, focus-hover-shadow );
+        $_focus-hover-outline: k-map-get( $theme-props, focus-hover-outline );
+
+        $_active-bg: k-map-get( $theme-props, active-bg );
+        $_active-text: k-map-get( $theme-props, active-text );
+        $_active-border: k-map-get( $theme-props, active-border );
+        $_active-gradient: k-map-get( $theme-props, active-gradient );
+        $_active-shadow: k-map-get( $theme-props, active-shadow );
+        $_active-outline: k-map-get( $theme-props, active-outline );
+
+        $_active-hover-bg: k-map-get( $theme-props, active-hover-bg );
+        $_active-hover-text: k-map-get( $theme-props, active-hover-text );
+        $_active-hover-border: k-map-get( $theme-props, active-hover-border );
+        $_active-hover-gradient: k-map-get( $theme-props, active-hover-gradient );
+        $_active-hover-shadow: k-map-get( $theme-props, active-hover-shadow );
+        $_active-hover-outline: k-map-get( $theme-props, active-hover-outline );
+
+        $_selected-bg: k-map-get( $theme-props, selected-bg );
+        $_selected-text: k-map-get( $theme-props, selected-text );
+        $_selected-border: k-map-get( $theme-props, selected-border );
+        $_selected-gradient: k-map-get( $theme-props, selected-gradient );
+        $_selected-shadow: k-map-get( $theme-props, selected-shadow );
+        $_selected-outline: k-map-get( $theme-props, selected-outline );
+
+        $_selected-hover-bg: k-map-get( $theme-props, selected-hover-bg );
+        $_selected-hover-text: k-map-get( $theme-props, selected-hover-text );
+        $_selected-hover-border: k-map-get( $theme-props, selected-hover-border );
+        $_selected-hover-gradient: k-map-get( $theme-props, selected-hover-gradient );
+        $_selected-hover-shadow: k-map-get( $theme-props, selected-hover-shadow );
+        $_selected-hover-outline: k-map-get( $theme-props, selected-hover-outline );
+
+        $_disabled-bg: k-map-get( $theme-props, disabled-bg );
+        $_disabled-text: k-map-get( $theme-props, disabled-text );
+        $_disabled-border: k-map-get( $theme-props, disabled-border );
+        $_disabled-gradient: k-map-get( $theme-props, disabled-gradient );
+        $_disabled-shadow: k-map-get( $theme-props, disabled-shadow );
+        $_disabled-outline: k-map-get( $theme-props, disabled-outline );
+
+        .k-button#{$suffix} {
+            --kendo-button-bg: #{k-var( --kendo-button-#{$variant}-bg, $_bg )};
+            --kendo-button-text: #{k-var( --kendo-button-#{$variant}-text, $_text )};
+            --kendo-button-border: #{k-var( --kendo-button-#{$variant}-border, $_border )};
+            --kendo-button-gradient: #{k-var( --kendo-button-#{$variant}-gradient, $_gradient )};
+            --kendo-button-shadow: #{k-var( --kendo-button-#{$variant}-shadow, $_shadow )};
+            --kendo-button-outline: #{k-var( --kendo-button-#{$variant}-outline, $_outline )};
+
+            --kendo-button-hover-bg: #{k-var( --kendo-button-#{$variant}-hover-bg, $_hover-bg )};
+            --kendo-button-hover-text: #{k-var( --kendo-button-#{$variant}-hover-text, $_hover-text )};
+            --kendo-button-hover-border: #{k-var( --kendo-button-#{$variant}-hover-border, $_hover-border )};
+            --kendo-button-hover-gradient: #{k-var( --kendo-button-#{$variant}-hover-gradient, $_hover-gradient )};
+            --kendo-button-hover-shadow: #{k-var( --kendo-button-#{$variant}-hover-shadow, $_hover-shadow )};
+            --kendo-button-hover-outline: #{k-var( --kendo-button-#{$variant}-hover-outline, $_hover-outline )};
+
+            --kendo-button-focus-bg: #{k-var( --kendo-button-#{$variant}-focus-bg, $_focus-bg )};
+            --kendo-button-focus-text: #{k-var( --kendo-button-#{$variant}-focus-text, $_focus-text )};
+            --kendo-button-focus-border: #{k-var( --kendo-button-#{$variant}-focus-border, $_focus-border )};
+            --kendo-button-focus-gradient: #{k-var( --kendo-button-#{$variant}-focus-gradient, $_focus-gradient )};
+            --kendo-button-focus-shadow: #{k-var( --kendo-button-#{$variant}-focus-shadow, $_focus-shadow )};
+            --kendo-button-focus-outline: #{k-var( --kendo-button-#{$variant}-focus-outline, $_focus-outline )};
+
+            --kendo-button-focus-hover-bg: #{k-var( --kendo-button-#{$variant}-focus-hover-bg, $_focus-hover-bg )};
+            --kendo-button-focus-hover-text: #{k-var( --kendo-button-#{$variant}-focus-hover-text, $_focus-hover-text )};
+            --kendo-button-focus-hover-border: #{k-var( --kendo-button-#{$variant}-focus-hover-border, $_focus-hover-border )};
+            --kendo-button-focus-hover-gradient: #{k-var( --kendo-button-#{$variant}-focus-hover-gradient, $_focus-hover-gradient )};
+            --kendo-button-focus-hover-shadow: #{k-var( --kendo-button-#{$variant}-focus-hover-shadow, $_focus-hover-shadow )};
+            --kendo-button-focus-hover-outline: #{k-var( --kendo-button-#{$variant}-focus-hover-outline, $_focus-hover-outline )};
+
+            --kendo-button-active-bg: #{k-var( --kendo-button-#{$variant}-active-bg, $_active-bg )};
+            --kendo-button-active-text: #{k-var( --kendo-button-#{$variant}-active-text, $_active-text )};
+            --kendo-button-active-border: #{k-var( --kendo-button-#{$variant}-active-border, $_active-border )};
+            --kendo-button-active-gradient: #{k-var( --kendo-button-#{$variant}-active-gradient, $_active-gradient )};
+            --kendo-button-active-shadow: #{k-var( --kendo-button-#{$variant}-active-shadow, $_active-shadow )};
+            --kendo-button-active-outline: #{k-var( --kendo-button-#{$variant}-active-outline, $_active-outline )};
+
+            --kendo-button-active-hover-bg: #{k-var( --kendo-button-#{$variant}-active-hover-bg, $_active-hover-bg )};
+            --kendo-button-active-hover-text: #{k-var( --kendo-button-#{$variant}-active-hover-text, $_active-hover-text )};
+            --kendo-button-active-hover-border: #{k-var( --kendo-button-#{$variant}-active-hover-border, $_active-hover-border )};
+            --kendo-button-active-hover-gradient: #{k-var( --kendo-button-#{$variant}-active-hover-gradient, $_active-hover-gradient )};
+            --kendo-button-active-hover-shadow: #{k-var( --kendo-button-#{$variant}-active-hover-shadow, $_active-hover-shadow )};
+            --kendo-button-active-hover-outline: #{k-var( --kendo-button-#{$variant}-active-hover-outline, $_active-hover-outline )};
+
+            --kendo-button-selected-bg: #{k-var( --kendo-button-#{$variant}-selected-bg, $_selected-bg )};
+            --kendo-button-selected-text: #{k-var( --kendo-button-#{$variant}-selected-text, $_selected-text )};
+            --kendo-button-selected-border: #{k-var( --kendo-button-#{$variant}-selected-border, $_selected-border )};
+            --kendo-button-selected-gradient: #{k-var( --kendo-button-#{$variant}-selected-gradient, $_selected-gradient )};
+            --kendo-button-selected-shadow: #{k-var( --kendo-button-#{$variant}-selected-shadow, $_selected-shadow )};
+            --kendo-button-selected-outline: #{k-var( --kendo-button-#{$variant}-selected-outline, $_selected-outline )};
+
+            --kendo-button-selected-hover-bg: #{k-var( --kendo-button-#{$variant}-selected-hover-bg, $_selected-hover-bg )};
+            --kendo-button-selected-hover-text: #{k-var( --kendo-button-#{$variant}-selected-hover-text, $_selected-hover-text )};
+            --kendo-button-selected-hover-border: #{k-var( --kendo-button-#{$variant}-selected-hover-border, $_selected-hover-border )};
+            --kendo-button-selected-hover-gradient: #{k-var( --kendo-button-#{$variant}-selected-hover-gradient, $_selected-hover-gradient )};
+            --kendo-button-selected-hover-shadow: #{k-var( --kendo-button-#{$variant}-selected-hover-shadow, $_selected-hover-shadow )};
+            --kendo-button-selected-hover-outline: #{k-var( --kendo-button-#{$variant}-selected-hover-outline, $_selected-hover-outline )};
+
+            --kendo-button-disabled-bg: #{k-var( --kendo-button-#{$variant}-disabled-bg, $_disabled-bg )};
+            --kendo-button-disabled-text: #{k-var( --kendo-button-#{$variant}-disabled-text, $_disabled-text )};
+            --kendo-button-disabled-border: #{k-var( --kendo-button-#{$variant}-disabled-border, $_disabled-border )};
+            --kendo-button-disabled-gradient: #{k-var( --kendo-button-#{$variant}-disabled-gradient, $_disabled-gradient )};
+            --kendo-button-disabled-shadow: #{k-var( --kendo-button-#{$variant}-disabled-shadow, $_disabled-shadow )};
+            --kendo-button-disabled-outline: #{k-var( --kendo-button-#{$variant}-disabled-outline, $_disabled-outline )};
+        }
+    }
+
+
+    // Aliases
+    @each $fill-mode in (solid, outline, flat, link) {
+        .k-button-#{$fill-mode} {
+            &-base,
+            &-secondary,
+            &-tertiary,
+            &-dark,
+            &-light,
+            &-inverse {
+                @extend .k-button-#{$fill-mode}-neutral !optional;
+            }
+        }
     }
 
 }
