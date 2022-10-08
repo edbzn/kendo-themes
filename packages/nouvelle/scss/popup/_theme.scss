@@ -1,17 +1,22 @@
 @mixin kendo-popup--theme() {
 
     .k-popup {
-        @include fill(
-            var(--kenod-popup-text),
-            var(--kendo-popup-bg),
-            var(--kendo-popup-border)
-        );
-        box-shadow: var(--kendo-popup-shadow);
+        --INTERNAL--kendo-popup-bg: #{k-var( --kendo-popup-bg, $kendo-popup-bg )};
+        --INTERNAL--kendo-popup-text: #{k-var( --kendo-popup-text, $kendo-popup-text )};
+        --INTERNAL--kendo-popup-border: #{k-var( --kendo-popup-border, $kendo-popup-border )};
+        --INTERNAL--kendo-popup-shadow: #{k-var( --kendo-popup-shadow, $kendo-popup-shadow )};
+        --INTERNAL--kendo-popup-outline: #{k-var( --kendo-popup-outline, $kendo-popup-outline )};
+
+        border-color: var( --INTERNAL--kendo-popup-border, initial );
+        color: var( --INTERNAL--kendo-popup-text, inherit );
+        background-color: var( --INTERNAL--kendo-popup-bg, initial );
+        box-shadow: var( --INTERNAL--kendo-popup-shadow, none );
+        outline: var( --INTERNAL--kendo-popup-outline, 0 );
     }
 
 
-    .k-nodata {
-        color: rgba( $popup-text, .5 );
+    .k-no-data {
+        color: rgba( $kendo-popup-text, .5 );
     }
 
 }

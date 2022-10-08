@@ -2,14 +2,28 @@
 
     // Popup
     .k-popup {
+        --INTERNAL--kendo-popup-padding-x: #{k-var( --kendo-popup-padding-x, $kendo-popup-padding-x )};
+        --INTERNAL--kendo-popup-padding-y: #{k-var( --kendo-popup-padding-y, $kendo-popup-padding-y )};
+        --INTERNAL--kendo-popup-border-width: #{k-var( --kendo-popup-border-width, $kendo-popup-border-width )};
+        --INTERNAL--kendo-popup-border-styles: #{k-var( --kendo-popup-border-style, $kendo-popup-border-style )};
+        --INTERNAL--kendo-popup-border-radius: #{k-var( --kendo-popup-border-radius, $kendo-popup-border-radius )};
+        --INTERNAL--kendo-popup-font-size: #{k-var( --kendo-popup-font-size, $kendo-popup-font-size )};
+        --INTERNAL--kendo-popup-font-family: #{k-var( --kendo-popup-font-family, $kendo-popup-font-family )};
+        --INTERNAL--kendo-popup-line-height: #{k-var( --kendo-popup-line-height, $kendo-popup-line-height )};
+
         margin: 0;
-        padding: 0;
-        border-width: var(--kendo-popup-border-width);
-        border-style: var(--kendo-popup-border-style);
-        box-sizing: border-box;
-        font-size: var(--kendo-popup-font-size);
-        font-family: var(--kendo-popup-font-family);
-        line-height: var(--kendo-popup-line-height);
+        padding-inline: var( --INTERNAL--kendo-popup-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-popup-padding-y, 0 );
+        border-width: var( --INTERNAL--kendo-popup-border-width, 1px );
+        border-style: var( --INTERNAL--kendo-popup-border-style, solid );
+        border-radius: var( --INTERNAL--kendo-popup-border-radius, 0 );
+        outline: 0;
+        color: inherit;
+        background: none;
+        font-size: var( --INTERNAL--kendo-popup-font-size, 1rem );
+        font-family: var( --INTERNAL--kendo-popup-font-family, inherit );
+        line-height: var( --INTERNAL--kendo-popup-line-height, normal );
+        flex-shrink: 0;
     }
 
 
@@ -35,12 +49,17 @@
 
 
     // No data
-    .k-nodata {
+    .k-no-data {
         min-height: 10em;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+    }
+
+    // Alias
+    .k-nodata {
+        @extend .k-no-data;
     }
 }
 
