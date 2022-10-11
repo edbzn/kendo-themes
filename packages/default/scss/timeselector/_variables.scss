@@ -8,9 +8,11 @@ $time-selector-bg: $component-bg !default;
 $time-selector-text: $component-text !default;
 $time-selector-border: $component-border !default;
 
-$time-selector-header-padding-x: map-get( $spacing, 1 ) !default;
-$time-selector-header-padding-y: map-get( $spacing, 1 ) !default;
+$time-selector-header-padding-x: map-get( $spacing, 4 ) !default;
+$time-selector-header-padding-y: map-get( $spacing, 3 ) !default;
 $time-selector-header-border-width: 0px !default;
+
+$time-selector-fast-selection-gap: map-get( $spacing, 2 ) !default;
 
 $time-list-width: 4em !default;
 $time-list-height: 240px !default;

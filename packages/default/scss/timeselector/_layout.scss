@@ -35,7 +35,7 @@
 
         .k-title,
         .k-time-selector-header-title {
-            padding: $kendo-button-padding-y $kendo-button-padding-x;
+            padding: $kendo-button-padding-y 0;
             font-weight: bold;
             display: inline-block;
         }
@@ -44,6 +44,12 @@
             border-width: 0;
             line-height: inherit;
             cursor: pointer;
+        }
+
+        &.k-time-fast-selection {
+            justify-content: left;
+            flex-wrap: wrap;
+            gap: $time-selector-fast-selection-gap;
         }
     }
 
@@ -171,11 +177,6 @@
             margin: auto;
         }
 
-        .k-rtl &
-        [dir="rtl"] & {
-            @include hide-scrollbar("left");
-        }
-
         .k-scrollable-placeholder {
             position: absolute;
             width: 1px;
@@ -232,6 +233,25 @@
             .k-time-list .k-item {
                 padding: $_list-item-padding-y $_list-item-padding-x;
             }
+        }
+    }
+
+}
+
+@include exports("timeselector/layout/rtl") {
+
+    .k-rtl,
+    [dir="rtl"] {
+
+        // Time list header
+        .k-time-fast-selection {
+            justify-content: right;
+        }
+
+        // Time list content
+        .k-time-container,
+        .k-time-list-content {
+            @include hide-scrollbar("left");
         }
     }
 
