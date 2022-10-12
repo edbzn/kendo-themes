@@ -52,7 +52,7 @@ root.render(
                                 </ul>
                             </div>
                             <div className="k-tabstrip-content k-active">
-                                <div className="k-form k-form-horizontal">
+                                <div className="k-form k-form-md k-form-horizontal">
                                     <div className="k-form-field">
                                         <div className="k-form-label">
                                             <label>Find What:</label>
@@ -116,7 +116,7 @@ root.render(
                                 </ul>
                             </div>
                             <div className="k-tabstrip-content k-active">
-                                <div className="k-form k-form-horizontal">
+                                <div className="k-form k-form-md k-form-horizontal">
                                     <div className="k-form-field">
                                         <div className="k-form-label">
                                             <label>Find What:</label>
