@@ -5,7 +5,6 @@
 
 @mixin kendo-pager--layout() {
 
-    .k-pager-wrap,
     .k-pager {
         padding-inline: var( --INTERNAL--kendo-pager-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-pager-padding-y, 0 );
@@ -31,19 +30,6 @@
         *::before,
         *::after {
             box-sizing: border-box;
-        }
-
-        .k-link {
-            text-decoration: none;
-            outline: 0;
-            font: inherit;
-            background-color: inherit;
-
-            // Focused state
-            &:focus,
-            &.k-focus {
-                z-index: 3;
-            }
         }
 
         .k-rtl &,
@@ -78,8 +64,6 @@
 
     // Base pager item
     %base-pager-item {
-        min-width: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
-        height: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
         color: inherit;
         text-align: center;
         display: inline-flex;
@@ -97,10 +81,6 @@
     .k-pager-nav {
         @extend %base-pager-item;
         @include border-radius( var( --kendo-pager-item-border-radius, #{$kendo-pager-item-border-radius} ) );
-        padding-inline: var( --kendo-pager-item-padding-x, #{$kendo-pager-item-padding-x} );
-        padding-block: var( --kendo-pager-item-padding-y, #{$kendo-pager-item-padding-y} );
-        border-width: var( --kendo-pager-item-border-width, #{$kendo-pager-item-border-width} );
-        border-style: solid;
     }
 
 
@@ -116,26 +96,8 @@
         }
     }
     .k-pager-numbers {
-        margin: 0;
-        padding: 0;
-        list-style: none;
         display: flex;
         flex-direction: row;
-
-        li {
-            display: inline-flex;
-        }
-
-        // Links
-        .k-link {
-            @extend %base-pager-item;
-            @include border-radius( var( --kendo-pager-number-border-radius, #{$kendo-pager-number-border-radius} ) );
-            padding-inline: var( --kendo-pager-number-padding-x, #{$kendo-pager-number-padding-x} );
-            padding-block: var( --kendo-pager-number-padding-y, #{$kendo-pager-number-padding-y} );
-            border-width: var( --kendo-pager-number-border-width, #{$kendo-pager-number-border-width} );
-            border-style: solid;
-            font-weight: var( --kendo-pager-number-font-weight, #{$kendo-pager-number-font-weight} );
-        }
 
         // Selected state
         .k-selected {
@@ -156,8 +118,7 @@
     // Spacing between items
     .k-pager-nav + .k-pager-nav,
     .k-pager-nav + .k-pager-numbers-wrap,
-    .k-pager-numbers-wrap + .k-pager-nav,
-    .k-pager-numbers > li + li {
+    .k-pager-numbers-wrap + .k-pager-nav {
         @if ($kendo-pager-item-spacing) {
             margin-inline-start: var( --kendo-pager-item-spacing, #{$kendo-pager-item-spacing} );
         }
@@ -225,17 +186,6 @@
                 width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
             }
         }
-
-        .k-pager-numbers-wrap {
-            @if ($kendo-pager-section-spacing) {
-                margin-inline-start: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
-                margin-inline-end: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
-            }
-
-            height: var( --kendo-button-sm-calc-size, #{$kendo-button-sm-calc-size} );
-            border-color: inherit;
-        }
-
     }
 
     // Hide components
@@ -251,18 +201,11 @@
         $_padding-x: map-get($size-props, padding-x);
         $_padding-y: map-get($size-props, padding-y);
         $_item-group-spacing: map-get($size-props, item-group-spacing);
-        $_item-min-width: map-get($size-props, item-min-width);
 
         .k-pager-#{$size} {
             --INTERNAL--kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );
             --INTERNAL--kendo-pager-padding-y: var( --kendo-pager-#{$size}-padding-y, #{$_padding-y} );
             --INTERNAL--kendo-pager-spacing: var( --kendo-pager-#{$size}-spacing, #{$_item-group-spacing} );
-
-            .k-pager-numbers-wrap {
-                .k-button {
-                    min-width: var( --kendo-pager-#{$size}-item-width, #{$_item-min-width} );
-                }
-            }
 
             .k-pager-input {
                 margin-inline-start: var( --kendo-pager-input-margin-start, #{$_item-group-spacing} );

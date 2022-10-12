@@ -1,6 +1,5 @@
 @include exports("pager/theme") {
 
-    .k-pager-wrap,
     .k-pager {
         @include fill(
             $kendo-pager-text,
@@ -47,77 +46,16 @@
         }
     }
 
-
-    // Pager items
-    .k-pager-nav.k-link {
-        @extend %base-pager-item-theme;
-    }
-
-
-    // Pager numbers
-    .k-pager-numbers {
-        .k-link {
-            @include fill(
-                $kendo-pager-number-text,
-                $kendo-pager-number-bg,
-                $kendo-pager-number-border
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $kendo-pager-number-hover-text,
-                    $kendo-pager-number-hover-bg,
-                    $kendo-pager-number-hover-border
-                );
-            }
-
-            &:focus,
-            &.k-focus {
-                background-color: $kendo-pager-number-focus-bg;
-                @include box-shadow( $kendo-pager-number-focus-shadow );
-            }
-
-            &.k-selected {
-                @include fill(
-                    $kendo-pager-number-selected-text,
-                    $kendo-pager-number-selected-bg,
-                    $kendo-pager-number-selected-border
-                );
-            }
-        }
-    }
-
-
     // Pager refresh
     .k-pager-refresh {
         @extend %base-pager-item-theme;
     }
-
-
 
     // Responsive
     .k-pager-md,
     .k-pager-sm {
 
         .k-pager-numbers {
-
-            .k-current-page .k-link {
-                @include fill(
-                    $dropdownlist-text,
-                    $dropdownlist-bg,
-                    $dropdownlist-border
-                );
-
-                &:hover,
-                &.k-hover {
-                    @include fill(
-                        $dropdownlist-hovered-text,
-                        $dropdownlist-hovered-bg,
-                        $dropdownlist-hovered-border
-                    );
-                }
-            }
 
             &.k-expanded {
                 @include fill(
@@ -126,25 +64,6 @@
                     $popup-border
                 );
                 @include box-shadow( $popup-shadow );
-
-                .k-link {
-
-                    &:hover,
-                    &.k-hover {
-                        @include fill(
-                            $kendo-list-item-hover-text,
-                            $kendo-list-item-hover-bg
-                        );
-                    }
-
-                    &.k-selected {
-                        @include fill(
-                            $kendo-list-item-selected-text,
-                            $kendo-list-item-selected-bg
-                        );
-                    }
-
-                }
             }
 
         }
