@@ -27,20 +27,20 @@ root.render(
                             <div className="k-form-layout k-d-grid k-grid-cols-2 k-gap-x-2">
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">Country</label>
-                                    <DropdownList value="France" size={'small'} />
+                                    <DropdownList value="France" size="small" />
                                 </div>
 
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">City</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'small'} />
+                                        <Textbox size="small" />
                                     </div>
                                 </div>
 
                                 <div className="k-form-field k-form-field-error k-colspan-2 k-col-span-2">
                                     <label className="k-label k-form-label">Address Line</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'small'} />
+                                        <Textbox size="small" />
                                         <span className="k-form-error"><div>Address Line is required</div></span>
                                     </div>
                                 </div>
@@ -48,8 +48,8 @@ root.render(
                         </fieldset>
 
                         <div className="k-form-buttons">
-                            <Button themeColor="primary" className="k-form-submit" size={'small'}>Submit</Button>
-                            <Button className="k-form-clear" size={'small'}>Clear</Button>
+                            <Button themeColor="primary" className="k-form-submit" size="small">Submit</Button>
+                            <Button className="k-form-clear" size="small">Clear</Button>
                         </div>
 
                     </form>
@@ -66,20 +66,20 @@ root.render(
                             <div className="k-form-layout k-d-grid k-grid-cols-2 k-gap-x-2">
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">Country</label>
-                                    <DropdownList value="France" size={'medium'} />
+                                    <DropdownList value="France" size="medium" />
                                 </div>
 
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">City</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'medium'} />
+                                        <Textbox size="medium" />
                                     </div>
                                 </div>
 
                                 <div className="k-form-field k-form-field-error k-colspan-2 k-col-span-2">
                                     <label className="k-label k-form-label">Address Line</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'medium'} />
+                                        <Textbox size="medium" />
                                         <span className="k-form-error"><div>Address Line is required</div></span>
                                     </div>
                                 </div>
@@ -87,8 +87,8 @@ root.render(
                         </fieldset>
 
                         <div className="k-form-buttons">
-                            <Button themeColor="primary" className="k-form-submit" size={'medium'}>Submit</Button>
-                            <Button className="k-form-clear" size={'medium'}>Clear</Button>
+                            <Button themeColor="primary" className="k-form-submit" size="medium">Submit</Button>
+                            <Button className="k-form-clear" size="medium">Clear</Button>
                         </div>
 
                     </form>
@@ -105,20 +105,20 @@ root.render(
                             <div className="k-form-layout k-d-grid k-grid-cols-2 k-gap-x-2">
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">Country</label>
-                                    <DropdownList value="France" size={'large'} />
+                                    <DropdownList value="France" size="large" />
                                 </div>
 
                                 <div className="k-form-field k-colspan-1 k-col-span-1">
                                     <label className="k-label k-form-label">City</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'large'} />
+                                        <Textbox size="large" />
                                     </div>
                                 </div>
 
                                 <div className="k-form-field k-form-field-error k-colspan-2 k-col-span-2">
                                     <label className="k-label k-form-label">Address Line</label>
                                     <div className="k-form-field-wrap">
-                                        <Textbox size={'large'} />
+                                        <Textbox size="large" />
                                         <span className="k-form-error"><div>Address Line is required</div></span>
                                     </div>
                                 </div>
@@ -126,8 +126,8 @@ root.render(
                         </fieldset>
 
                         <div className="k-form-buttons">
-                            <Button themeColor="primary" size={'large'}>Submit</Button>
-                            <Button size={'large'}>Clear</Button>
+                            <Button themeColor="primary" size="large">Submit</Button>
+                            <Button size="large">Clear</Button>
                         </div>
 
                     </form>
