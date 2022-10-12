@@ -102,10 +102,6 @@
             padding: 0;
         }
 
-        .k-form-field {
-            margin-top: $kendo-form-field-margin-top;
-        }
-
         > * {
             &:not(.k-hidden):first-child,
             &.k-hidden + :not(.k-hidden) {
@@ -152,7 +148,6 @@
     // Form Buttons Container
     .k-form-buttons {
         @extend .k-actions;
-        margin-top: 2 * $kendo-form-field-margin-top;
         padding: 0;
         overflow: visible;
     }
@@ -235,6 +230,18 @@
                     margin-right: 0;
                     margin-left: $kendo-horizontal-form-label-margin-x;
                 }
+            }
+        }
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-form-sizes {
+        $_form-rows-spacing: map-get($size-props, form-rows-spacing);
+
+        .k-form-#{$size} {
+            .k-form-field,
+            .k-form-buttons {
+                margin-top: $_form-rows-spacing;
             }
         }
     }

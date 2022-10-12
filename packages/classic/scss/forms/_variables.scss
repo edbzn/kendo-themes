@@ -27,9 +27,11 @@ $kendo-form-hint-font-size: 12px !default;
 $kendo-form-hint-font-style: italic !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-field-margin-top: 1em !default;
+$kendo-form-rows-spacing-sm: 1em !default;
+$kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
+$kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
 
-$kendo-form-separator-margin: $kendo-form-field-margin-top 0 0 !default;
+$kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 $kendo-horizontal-form-label-padding-top: 5px !default;

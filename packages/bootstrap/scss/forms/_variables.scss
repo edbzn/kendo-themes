@@ -16,20 +16,22 @@ $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
 $kendo-form-legend-border-color: $component-border !default;
 $kendo-form-legend-width: 100% !default;
-$kendo-form-legend-font-size: 14px !default;
+$kendo-form-legend-font-size: $font-size-sm !default;
 $kendo-form-legend-text-transform: uppercase !default;
 
-$kendo-form-label-margin-bottom: 0px !default;
+$kendo-form-label-margin-bottom: k-map-get( $spacing, 2 ) !default;
 
 $kendo-form-button-margin-x: 8px !default;
 
-$kendo-form-hint-font-size: 12px !default;
+$kendo-form-hint-font-size: $font-size-xs !default;
 $kendo-form-hint-font-style: normal !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-field-margin-top: 1rem !default;
+$kendo-form-rows-spacing-sm: k-map-get( $spacing, 4 ) !default;
+$kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
+$kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
 
-$kendo-form-separator-margin: $kendo-form-field-margin-top 0 0 !default;
+$kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 $kendo-horizontal-form-label-padding-top: 5px !default;
@@ -46,7 +48,7 @@ $kendo-forms-invalid-color: $error !default;
 
 // Label
 $kendo-label-optional-margin-x: 6px !default;
-$kendo-label-optional-font-size: 12px !default;
+$kendo-label-optional-font-size: $font-size-xs !default;
 $kendo-label-optional-font-style: italic !default;
 
 
