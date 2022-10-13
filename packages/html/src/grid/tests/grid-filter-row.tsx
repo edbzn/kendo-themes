@@ -20,7 +20,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -49,7 +49,7 @@ root.render(
             <div></div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -76,7 +76,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -103,7 +103,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -130,7 +130,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -157,7 +157,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -186,7 +186,7 @@ root.render(
             <div></div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -213,7 +213,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
@@ -240,7 +240,7 @@ root.render(
             </div>
 
             <div className="section">
-                <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">

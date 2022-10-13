@@ -11,7 +11,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ width: "600px", height: "400px" }}>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ width: "600px", height: "400px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">
@@ -52,7 +52,7 @@ root.render(
                                     <td className="k-table-td k-hierarchy-cell"></td>
                                     <td className="k-table-td k-detail-cell" colSpan={1}>
                                         {/* hierarchy child content */}
-                                        <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "200px" }}>
+                                        <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "200px" }}>
                                             <div className="k-grid-header">
                                                 <div className="k-grid-header-wrap">
                                                     <table className="k-table k-table-md">

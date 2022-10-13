@@ -12,7 +12,7 @@ root.render(
 
             <section>
                 <span>jQuery</span>
-                <div id="treelist" className="k-treelist k-grid k-widget k-grid-display-block" style={{ height: "650px" }}>
+                <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-display-block" style={{ height: "650px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table>
@@ -103,7 +103,7 @@ root.render(
 
             <section>
                 <span>Angular</span>
-                <div className="k-widget k-grid k-treelist" style={{ height: "410px" }}>
+                <div className="k-grid k-grid-md k-treelist" style={{ height: "410px" }}>
                     <div className="k-grid-aria-root">
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap">

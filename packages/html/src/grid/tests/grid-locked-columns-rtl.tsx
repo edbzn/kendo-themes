@@ -23,7 +23,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
-            <div dir="rtl" className="k-widget k-grid k-grid-lockedcolumns grid-styling-overrides" style={{ height: "700px" }}>
+            <div dir="rtl" className="k-grid k-grid-md k-grid-lockedcolumns grid-styling-overrides" style={{ height: "700px" }}>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-locked" style={{ width: "582px" }}>

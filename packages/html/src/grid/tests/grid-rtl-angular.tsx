@@ -13,7 +13,7 @@ root.render(
             <span className="col-2">Angular grid</span>
 
             <section className="col-2">
-                <div className="k-widget k-grid k-grid-no-scrollbar" dir="rtl">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl">
                     <div className="k-grid-aria-root">
                         {/* add padding-left or -right for scrollbar width */}
                         <div className="k-grid-header">
@@ -99,7 +99,7 @@ root.render(
 
             <span className="col-2">Angular -- fixed height, hierarchy, filter menu, sort icon</span>
             <section className="col-2">
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
                     <div className="k-grid-aria-root">
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap">

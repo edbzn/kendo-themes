@@ -12,7 +12,7 @@ root.render(
             <span>Interaction States</span>
 
             <section>
-                <div className="k-widget k-grid" style={{ height: "500px" }}>
+                <div className="k-grid k-grid-md" style={{ height: "500px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md" style={{ width: "1180px" }}>

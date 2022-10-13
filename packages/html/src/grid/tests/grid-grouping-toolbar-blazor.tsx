@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid">
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </div>

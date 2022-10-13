@@ -12,7 +12,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         Drag a column header and drop it here to group by that column
@@ -114,7 +114,7 @@ root.render(
                 </div>
             </div>
             <h3>Single Group</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">
@@ -243,7 +243,7 @@ root.render(
                 </div>
             </div>
             <h3>Two Groups</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">
@@ -403,7 +403,7 @@ root.render(
                 </div>
             </div>
             <h3>Expanded Template</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">

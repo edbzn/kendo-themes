@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid">
-            <div className="k-widget k-grid" role="grid" style={{ height: "400px", width: "500px" }}>
+            <div className="k-grid k-grid-md" role="grid" style={{ height: "400px", width: "500px" }}>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table className="k-table k-table-md" style={{ width: "1100px" }}>
@@ -128,7 +128,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">

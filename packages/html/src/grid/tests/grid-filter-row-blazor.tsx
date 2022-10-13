@@ -14,7 +14,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table className="k-table k-table-md k-grid-header-table" role="grid">
@@ -140,7 +140,7 @@ root.render(
                 </div>
             </div>
             <h3>With Toolbar</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </div>

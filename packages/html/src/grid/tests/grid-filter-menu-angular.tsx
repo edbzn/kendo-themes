@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid">
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -64,7 +64,7 @@ root.render(
                 </div>
             </div>
             <h3>Sortable</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -117,7 +117,7 @@ root.render(
                 </div>
             </div>
             <h3>Sortable &amp; Resizable</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">

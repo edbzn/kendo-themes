@@ -19,7 +19,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -69,7 +69,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root" style={{ overflow: "visible" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -119,7 +119,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">

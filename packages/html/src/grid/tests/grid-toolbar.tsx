@@ -29,7 +29,7 @@ root.render(
 
             <span>Toolbar</span>
             <section>
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
@@ -41,7 +41,7 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
@@ -56,7 +56,7 @@ root.render(
 
             <span>Toolbar RTL</span>
             <section>
-                <div className="k-widget k-grid k-rtl">
+                <div className="k-grid k-grid-md k-rtl">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
@@ -68,7 +68,7 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-widget k-grid" dir="rtl">
+                <div className="k-grid k-grid-md" dir="rtl">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
@@ -83,7 +83,7 @@ root.render(
 
             <span>Search</span>
             <section>
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
@@ -92,7 +92,7 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Spacer</Button>
                         <div className="k-spacer"></div>
@@ -105,7 +105,7 @@ root.render(
 
             <span>Search RTL</span>
             <section>
-                <div className="k-widget k-grid k-rtl">
+                <div className="k-grid k-grid-md k-rtl">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
@@ -115,7 +115,7 @@ root.render(
             </section>
             <section>
                 {/* Spacer with fixed width */}
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button>Spacer fixed width</Button>
                         <div className="k-spacer k-spacer-sized" style={{ width: "10px", flexBasis: "10px" }}></div>
@@ -126,7 +126,7 @@ root.render(
 
             <span>Multi-line</span>
             <section>
-                <div className="k-widget k-grid">
+                <div className="k-grid k-grid-md">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
@@ -141,7 +141,7 @@ root.render(
 
             <span>Multiline RTL</span>
             <section>
-                <div className="k-widget k-grid k-rtl">
+                <div className="k-grid k-grid-md k-rtl">
                     <div className="k-toolbar k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>

@@ -12,7 +12,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container"> Drag a column header and drop it here to group by that column </div>
                 </div>
@@ -76,7 +76,7 @@ root.render(
                 </div>
             </div>
             <h3>Single Group</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
@@ -161,7 +161,7 @@ root.render(
                 </div>
             </div>
             <h3>Two Groups</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
@@ -269,7 +269,7 @@ root.render(
                 </div>
             </div>
             <h3>Expanded Template</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">

@@ -12,7 +12,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </div>
@@ -94,7 +94,7 @@ root.render(
                 </div>
             </div>
             <h3>New Row</h3>
-            <div className="k-grid k-widget telerik-blazor">
+            <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </div>

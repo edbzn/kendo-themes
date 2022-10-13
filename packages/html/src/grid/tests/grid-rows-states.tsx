@@ -25,7 +25,7 @@ root.render(
 
             <section>
                 <div className="k-grid k-grid-md k-grid-no-scrollbar">
-                    <table className="k-table k-table-md">
+                    <table className="k-table">
                         <colgroup>
                             <col style={{ width: '50px' }} /><col /><col className="k-sorted" /><col /><col />
                         </colgroup>

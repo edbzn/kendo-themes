@@ -43,7 +43,7 @@ root.render(
                         </nav>
 
                         {/* View */}
-                        <div className="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
+                        <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap k-auto-scrollable">
                                     <table>
@@ -153,7 +153,7 @@ root.render(
                         </nav>
 
                         {/* View */}
-                        <div className="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
+                        <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap k-auto-scrollable">
                                     <table>
@@ -254,7 +254,7 @@ root.render(
                         </nav>
 
                         {/* View */}
-                        <div className="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
+                        <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap k-auto-scrollable">
                                     <table>

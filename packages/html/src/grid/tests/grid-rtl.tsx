@@ -11,7 +11,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>jQuery grid</span>
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar" dir="rtl">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">
@@ -82,7 +82,7 @@ root.render(
 
             <span>jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "250px" }} dir="rtl">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">

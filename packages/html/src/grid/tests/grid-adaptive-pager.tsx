@@ -16,7 +16,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <div className="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
                                     <div className="k-pager k-grid-pager k-widget k-pager-sm">
                                         <a className="k-link k-pager-nav k-pager-first"><Icon name="arrow-end-left" /></a>
                                         <a className="k-link k-pager-nav"><Icon name="arrow-w" /></a>
@@ -48,7 +48,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <div className="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
                                     <div className="k-pager k-grid-pager k-widget k-pager-sm">
                                         <a className="k-link k-pager-nav k-pager-first"><Icon name="arrow-end-left" /></a>
                                         <a className="k-link k-pager-nav"><Icon name="arrow-w" /></a>

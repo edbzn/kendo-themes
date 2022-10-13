@@ -25,7 +25,7 @@ root.render(
             <span>angular no grouping</span>
             <span>jquery no grouping</span>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -78,7 +78,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
@@ -128,7 +128,7 @@ root.render(
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
@@ -211,7 +211,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-grid k-grid-no-scrollbar k-widget k-grid-display-block">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar k-grid-display-block">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>

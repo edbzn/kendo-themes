@@ -22,7 +22,7 @@ root.render(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
-            <div className="k-widget k-grid k-grid-display-block k-reorderable k-grid-lockedcolumns">
+            <div className="k-grid k-grid-md k-grid-display-block k-reorderable k-grid-lockedcolumns">
                 <div className="k-grid-header">
                     <div className="k-grid-header-locked" style={{ width: "400px" }}>
                         <table className="k-table k-table-md">
@@ -155,7 +155,7 @@ root.render(
 
             <div>
                 <span>jQuery Grid - Frozen columns and sorting</span>
-                <div style={{ width: "1000px", height: "200px" }} className="k-grid k-widget k-grid-display-block k-grid-lockedcolumns">
+                <div style={{ width: "1000px", height: "200px" }} className="k-grid k-grid-md k-grid-display-block k-grid-lockedcolumns">
                     <div className="k-grid-header">
                         <div className="k-grid-header-locked" style={{ width: "400px" }}>
                             <table className="k-table k-table-md">
@@ -251,7 +251,7 @@ root.render(
 
             <div>
                 <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
-                <div className="k-widget k-grid k-grid-lockedcolumns grid-styling-overrides" style={{ height: "430px" }}>
+                <div className="k-grid k-grid-md k-grid-lockedcolumns grid-styling-overrides" style={{ height: "430px" }}>
                     <div className="k-grid-aria-root">
                         <div className="k-grid-header">
                             <div className="k-grid-header-locked" style={{ width: "582px" }}>

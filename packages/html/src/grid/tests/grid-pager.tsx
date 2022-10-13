@@ -14,7 +14,7 @@ root.render(
             <span>Angular grid</span>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">
@@ -70,7 +70,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-aria-root">
                         {/* add padding-left or -right for scrollbar width */}
                         <div className="k-grid-header">
@@ -144,7 +144,7 @@ root.render(
             <span>Angular grid pager top</span>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-widget k-pager k-grid-pager k-grid-pager-top">
                         <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
                         <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
@@ -200,7 +200,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-widget k-pager k-grid-pager k-grid-pager-top">
                         <div>
                             <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="seek-w" /></a>

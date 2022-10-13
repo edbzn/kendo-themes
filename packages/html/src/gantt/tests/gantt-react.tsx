@@ -38,7 +38,7 @@ root.render(
                     </span>
                 </div>
                 <div className="k-gantt-content">
-                    <div className="k-widget k-grid k-treelist-scrollable">
+                    <div className="k-grid k-grid-md k-treelist-scrollable">
                         <table className="k-table-layout-fixed" style={{ width: "4500px" }}>
                             <colgroup>
                                 <col style={{ width: "100px" }} />

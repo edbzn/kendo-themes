@@ -14,7 +14,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button>Add new</Button>
                     <Button>Save Changes</Button>
@@ -83,7 +83,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-toolbar k-grid-toolbar">
                     <Button icon="add">Add new record</Button>
                 </div>

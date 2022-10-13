@@ -12,7 +12,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <p>React Grid - Sticky columns - RTL</p>
-            <div className="k-widget k-grid k-rtl" role="grid" style={{ height: "700px", width: "500px" }}>
+            <div className="k-grid k-grid-md k-rtl" role="grid" style={{ height: "700px", width: "500px" }}>
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container" style={{ touchAction: "none" }}>
                         <div className="k-group-indicator">

@@ -22,7 +22,7 @@ root.render(
         <div id="test-area">
             <div className="sections-wrapper">
                 <div className="section">
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -48,7 +48,7 @@ root.render(
 
                 <div className="section k-rtl">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -78,7 +78,7 @@ root.render(
 
                 <div className="section">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -104,7 +104,7 @@ root.render(
 
                 <div className="section k-rtl">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -134,7 +134,7 @@ root.render(
 
                 <div className="section">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -162,7 +162,7 @@ root.render(
 
                 <div className="section k-rtl">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -194,7 +194,7 @@ root.render(
 
                 <div className="section">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -222,7 +222,7 @@ root.render(
 
                 <div className="section k-rtl">
 
-                    <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div id="grid" className="k-grid k-grid-md k-grid-display-block k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap k-auto-scrollable">
                                 <table className="k-table k-table-md">
@@ -253,7 +253,7 @@ root.render(
             {/* Angular Specific */}
             <div className="sections-wrapper">
                 <div className="section">
-                    <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "60px" }}>
+                    <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "60px" }}>
                         <div className="k-grid-aria-root">
                             {/* add padding-left or -right for scrollbar width */}
                             <div className="k-grid-header">
@@ -285,7 +285,7 @@ root.render(
 
                 {/* Angular Specific */}
                 <div className="section">
-                    <div className="k-widget k-grid k-grid-no-scrollbar" dir="rtl" style={{ height: "60px" }}>
+                    <div className="k-grid k-grid-md k-grid-no-scrollbar" dir="rtl" style={{ height: "60px" }}>
                         <div className="k-grid-aria-root">
                             <div className="k-grid-header">
                                 {/* add padding-left or -right for scrollbar width */}

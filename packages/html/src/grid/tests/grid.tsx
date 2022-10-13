@@ -13,7 +13,7 @@ root.render(
             <span className="col-2">jQuery grid</span>
 
             <section className="col-2">
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">
@@ -84,7 +84,7 @@ root.render(
 
             <span className="col-2">jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
             <section className="col-2">
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "250px" }}>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "250px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table className="k-table k-table-md">
@@ -163,7 +163,7 @@ root.render(
 
             <span>Drag column</span>
             <section className="col-2">
-                <div id="grid" data-role="grid" className="k-grid k-widget k-grid-display-block">
+                <div id="grid" data-role="grid" className="k-grid k-grid-md k-grid-display-block">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">

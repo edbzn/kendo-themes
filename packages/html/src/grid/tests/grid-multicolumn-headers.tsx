@@ -10,7 +10,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div style={{ height: "300px" }} className="k-widget k-grid k-grid-lockedcolumns k-grid-no-scrollbar">
+            <div style={{ height: "300px" }} className="k-grid k-grid-md k-grid-lockedcolumns k-grid-no-scrollbar">
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-locked" style={{ width: "300px" }}>
@@ -130,7 +130,7 @@ root.render(
 
             <div className="k-rtl">
 
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "200px" }}>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "200px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap k-auto-scrollable">
                             <table className="k-table k-table-md">
