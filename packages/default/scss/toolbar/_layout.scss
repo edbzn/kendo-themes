@@ -73,23 +73,7 @@
 
         // Overflow anchor
         .k-overflow-anchor {
-            @include border-radius( 0 );
-            margin: 0;
-            padding: $toolbar-padding-y;
-            width: auto;
-            height: 100%;
-            aspect-ratio: 1;
-            border-width: 0;
-            border-color: inherit;
-            box-sizing: border-box;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            right: 0;
-
-            &::before {
-                display: block;
-            }
+            margin-inline-start: auto;
         }
 
 
@@ -111,12 +95,6 @@
         }
 
 
-        // Template
-        .k-toolbar-template {
-            align-self: center;
-            align-items: center;
-        }
-
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
@@ -137,11 +115,54 @@
 
 
     // Angular specific
-    kendo-toolbar-renderer {
+    .k-toolbar-renderer {
         display: inline-block;
         border-color: inherit;
     }
 
+}
+
+
+
+
+@include exports( "floating-toolbar/layout" ) {
+
+    // sass-lint:disable class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        padding: $toolbar-padding-y $toolbar-padding-x !important; // sass-lint:disable-line no-important
+        border-width: $toolbar-border-width;
+        border-style: solid;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: $toolbar-spacing;
+        align-items: center;
+
+        .k-toolbar {
+            padding: 0;
+            border-width: 0;
+            flex-shrink: 1;
+            color: inherit;
+            background: none;
+        }
+    }
+    .k-editortoolbar-dragHandle {
+        cursor: move;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        flex-shrink: 0;
+    }
+    // sass-lint:enable class-name-format
+
+}
+
+
+
+
+// Remove once the Overflow Popup uses
+// the proper Menu rendering in all suites.
+@include exports("toolbar/layout/legacy") {
 
     // Overflow container
     .k-overflow-container {
@@ -205,61 +226,5 @@
             display: none;
         }
     }
-
-
-
-
-    // RTL
-    .k-toolbar {
-
-        &.k-rtl,
-        .k-rtl &,
-        &[dir="rtl"],
-        [dir="rtl"] & {
-            .k-overflow-anchor {
-                margin: 0;
-                right: auto;
-                left: 0;
-            }
-        }
-
-    }
-
-}
-
-
-
-
-@include exports( "floating-toolbar/layout" ) {
-
-
-    // sass-lint:disable class-name-format
-    .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
-        padding: $toolbar-padding-y $toolbar-padding-x !important; // sass-lint:disable-line no-important
-        border-width: $toolbar-border-width;
-        border-style: solid;
-        display: flex;
-        flex-flow: row nowrap;
-        gap: $toolbar-spacing;
-        align-items: center;
-
-        .k-toolbar {
-            padding: 0;
-            border-width: 0;
-            flex-shrink: 1;
-            color: inherit;
-            background: none;
-        }
-    }
-    .k-editortoolbar-dragHandle {
-        cursor: move;
-        display: flex;
-        align-items: center;
-        align-self: stretch;
-        flex-shrink: 0;
-    }
-    // sass-lint:enable class-name-format
-
 
 }
