@@ -26,26 +26,35 @@ $kendo-table-cell-padding-x: null !default;
 /// @group table
 $kendo-table-cell-padding-y: null !default;
 
+$kendo-table-cell-padding-x-sm: map-get( $spacing, 2 );
+$kendo-table-cell-padding-y-sm: map-get( $spacing, 1 );
+
+$kendo-table-cell-padding-x-md: map-get( $spacing, 3 );
+$kendo-table-cell-padding-y-md: map-get( $spacing, 2 );
+
+$kendo-table-cell-padding-x-lg: map-get( $spacing, 2 );
+$kendo-table-cell-padding-y-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin );
+
 /// The sizes of the table.
 /// @group table
 $kendo-table-sizes: (
     sm: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
+        cell-padding-x: $kendo-table-cell-padding-x-sm,
+        cell-padding-y: $kendo-table-cell-padding-y-sm
     ),
     md: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 )
+        cell-padding-x: $kendo-table-cell-padding-x-md,
+        cell-padding-y: $kendo-table-cell-padding-y-md
     ),
     lg: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: $kendo-table-cell-padding-x-lg,
+        cell-padding-y: $kendo-table-cell-padding-y-lg
     )
 ) !default;
 
