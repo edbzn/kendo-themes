@@ -32,9 +32,9 @@ $chat-bubble-border-radius-sm: 2px !default;
 $chat-avatar-size: 32px !default;
 $chat-avatar-spacing: $chat-item-spacing-x !default;
 
-$chat-toolbar-padding-x: $toolbar-padding-x !default;
-$chat-toolbar-padding-y: $toolbar-padding-y !default;
-$chat-toolbar-spacing: $toolbar-spacing !default;
+$chat-toolbar-padding-x: $kendo-toolbar-padding-x-md !default;
+$chat-toolbar-padding-y: $kendo-toolbar-padding-y-md !default;
+$chat-toolbar-spacing: $kendo-toolbar-spacing-md !default;
 $chat-toolbar-bg: $toolbar-bg !default;
 $chat-toolbar-text: $toolbar-text !default;
 $chat-toolbar-border: inherit !default;

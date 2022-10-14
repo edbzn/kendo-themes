@@ -3,7 +3,7 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding: $toolbar-padding-y $toolbar-padding-x;
+        padding: $kendo-toolbar-padding-y $kendo-toolbar-padding-x;
         border-width: $toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -14,7 +14,7 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: $toolbar-spacing;
+        gap: $kendo-toolbar-spacing;
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -26,7 +26,7 @@
         &::before {
             content: "";
             height: $kendo-button-calc-size;
-            margin-inline-start: -$toolbar-spacing;
+            margin-inline-start: -$kendo-toolbar-spacing;
         }
 
         &.k-toolbar-resizable {
@@ -40,7 +40,7 @@
             vertical-align: middle;
 
             > label {
-                margin-inline-end: $toolbar-spacing;
+                margin-inline-end: $kendo-toolbar-spacing;
                 align-self: center;
             }
         }
@@ -120,6 +120,37 @@
         border-color: inherit;
     }
 
+    // Toolbar sizes
+    @each $size, $size-props in $kendo-toolbar-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_spacing: map-get( $size-props, spacing );
+
+        .k-toolbar-#{$size} {
+            padding: $_padding-y $_padding-x;
+            gap: $_spacing;
+
+            // Remove once we decide to not size empty containers
+            &::before {
+                margin-inline-start: -$_spacing;
+            }
+
+            > * > label {
+                margin-inline-end: $_spacing;
+            }
+        }
+    }
+    // Remove once we decide to not size empty containers
+    .k-toolbar-sm::before {
+        height: $kendo-button-calc-size-sm;
+    }
+    .k-toolbar-md::before {
+        height: $kendo-button-calc-size-md;
+    }
+    .k-toolbar-lg::before {
+        height: $kendo-button-calc-size-lg;
+    }
+
 }
 
 
@@ -130,12 +161,12 @@
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
-        padding: $toolbar-padding-y $toolbar-padding-x !important; // sass-lint:disable-line no-important
+        padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md !important; // sass-lint:disable-line no-important
         border-width: $toolbar-border-width;
         border-style: solid;
         display: flex;
         flex-flow: row nowrap;
-        gap: $toolbar-spacing;
+        gap: $kendo-toolbar-spacing-md;
         align-items: center;
 
         .k-toolbar {

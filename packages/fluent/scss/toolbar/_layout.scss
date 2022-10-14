@@ -7,8 +7,8 @@
     // Base
     .k-toolbar {
         margin: 0;
-        padding-inline: var( --kendo-toolbar-padding-x, #{$kendo-toolbar-padding-x} );
-        padding-block: var( --kendo-toolbar-padding-y, #{$kendo-toolbar-padding-y} );
+        padding-inline: var( --INTERNAL--kendo-toolbar-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-toolbar-padding-y, 0 );
         border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
         border-style: solid;
         box-sizing: border-box;
@@ -19,7 +19,7 @@
         list-style: none;
         display: flex;
         flex-flow: row wrap;
-        gap: var( --kendo-toolbar-spacing, #{$kendo-toolbar-spacing} );
+        gap: var( --INTERNAL--kendo-toolbar-spacing, 0 );
         align-items: center;
         justify-content: flex-start;
         position: relative;
@@ -31,7 +31,7 @@
         &::before {
             content: "";
             height: $kendo-button-inner-calc-size;
-            margin-inline-start: -#{$kendo-toolbar-spacing};
+            margin-inline-start: calc( var( --INTERNAL--kendo-toolbar-spacing, 0 ) * -1 );
         }
 
         &.k-toolbar-resizable {
@@ -45,7 +45,7 @@
             vertical-align: middle;
 
             > label {
-                margin-inline-end: var( --kendo-toolbar-spacing, #{$kendo-toolbar-spacing} );
+                margin-inline-end: var( --INTERNAL--kendo-toolbar-spacing, 0 );
                 align-self: center;
             }
         }
@@ -103,16 +103,39 @@
         border-color: inherit;
     }
 
+    // Toolbar sizes
+    @each $size, $size-props in $kendo-toolbar-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_spacing: map-get( $size-props, spacing );
+
+        .k-toolbar-#{$size} {
+            --INTERNAL--kendo-toolbar-padding-x: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
+            --INTERNAL--kendo-toolbar-padding-y: var( --kendo-toolbar-#{$size}-padding-y, #{$_padding-y} );
+            --INTERNAL--kendo-toolbar-spacing: var( --kendo-toolbar-#{$size}-spacing, #{$_spacing} );
+        }
+    }
+    // Remove once we decide to not size empty containers
+    .k-toolbar-sm::before {
+        height: var( --kendo-button-inner-calc-size-sm, #{$kendo-button-inner-calc-size-sm} );
+    }
+    .k-toolbar-md::before {
+        height: var( --kendo-button-inner-calc-size-md, #{$kendo-button-inner-calc-size-md} );
+    }
+    .k-toolbar-lg::before {
+        height: var( --kendo-button-inner-calc-size-lg, #{$kendo-button-inner-calc-size-lg} );
+    }
+
     // sass-lint:disable class-name-format
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
-        padding-inline: var( --kendo-toolbar-padding-x, #{$kendo-toolbar-padding-x} ) !important; // sass-lint:disable-line no-important
-        padding-block: var( --kendo-toolbar-padding-y, #{$kendo-toolbar-padding-y} ) !important; // sass-lint:disable-line no-important
+        padding-inline: var( --kendo-toolbar-padding-x-md, #{$kendo-toolbar-padding-x-md} ) !important; // sass-lint:disable-line no-important
+        padding-block: var( --kendo-toolbar-padding-y-md, #{$kendo-toolbar-padding-y-md} ) !important; // sass-lint:disable-line no-important
         border-width: var( --kendo-toolbar-border-width, #{$kendo-toolbar-border-width} );
         border-style: solid;
         display: flex;
         flex-flow: row nowrap;
-        gap: var( --kendo-toolbar-spacing, #{$kendo-toolbar-spacing} );
+        gap: var( --kendo-toolbar-spacing-md, #{$kendo-toolbar-spacing-md} );
         align-items: center;
 
         .k-toolbar {
