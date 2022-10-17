@@ -282,7 +282,7 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
+            margin-left: calc( #{$icon-size / 2} - #{$kendo-grid-cell-padding-x} );
             margin-right: ($icon-size / 2);
             text-decoration: none;
         }
@@ -302,7 +302,7 @@
             overflow: visible;
 
             > .k-icon {
-                padding: $table-cell-padding-y 0;
+                padding: $kendo-grid-cell-padding-y 0;
                 width: 100%;
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
@@ -479,7 +479,7 @@
 
             .k-grouping-row .k-icon {
                 margin-left: #{$icon-size / 2};
-                margin-right: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
+                margin-right: calc( #{$icon-size / 2} - #{$kendo-grid-cell-padding-x} );
             }
 
             .k-column-resizer {
