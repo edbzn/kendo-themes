@@ -21,24 +21,24 @@ $kendo-toolbar-spacing-sm: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !d
 $kendo-toolbar-spacing-md: map-get( $spacing, 2 ) !default;
 $kendo-toolbar-spacing-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
 
-$toolbar-border-width: 1px !default;
-$toolbar-border-radius: null !default;
+$kendo-toolbar-border-width: 1px !default;
+$kendo-toolbar-border-radius: null !default;
 
-$toolbar-font-family: $font-family !default;
-$toolbar-font-size: $font-size !default;
-$toolbar-line-height: $line-height !default;
+$kendo-toolbar-font-family: $font-family !default;
+$kendo-toolbar-font-size: $font-size !default;
+$kendo-toolbar-line-height: $line-height !default;
 
-$toolbar-bg: $base-bg !default;
-$toolbar-text: $base-text !default;
-$toolbar-border: $base-border !default;
-$toolbar-gradient: null !default;
-$toolbar-shadow: null !default;
+$kendo-toolbar-bg: $base-bg !default;
+$kendo-toolbar-text: $base-text !default;
+$kendo-toolbar-border: $base-border !default;
+$kendo-toolbar-gradient: null !default;
+$kendo-toolbar-shadow: null !default;
 
-$toolbar-separator-border: inherit !default;
+$kendo-toolbar-separator-border: inherit !default;
 
-$toolbar-input-width: 10em !default;
+$kendo-toolbar-input-width: 10em !default;
 
-$toolbar-item-shadow: $kendo-button-focus-shadow !default;
+$kendo-toolbar-item-shadow: $kendo-button-focus-shadow !default;
 
 $kendo-toolbar-sizes: (
     sm: (

@@ -21,24 +21,24 @@ $kendo-toolbar-spacing-sm: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !d
 $kendo-toolbar-spacing-md: map-get( $spacing, 2 ) !default;
 $kendo-toolbar-spacing-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
 
-$toolbar-border-width: 0 !default;
-$toolbar-border-radius: null !default;
+$kendo-toolbar-border-width: 0 !default;
+$kendo-toolbar-border-radius: null !default;
 
-$toolbar-font-family: $font-family !default;
-$toolbar-font-size: $font-size !default;
-$toolbar-line-height: k-math-div( 20, 14 ) !default;
+$kendo-toolbar-font-family: $font-family !default;
+$kendo-toolbar-font-size: $font-size !default;
+$kendo-toolbar-line-height: k-math-div( 20, 14 ) !default;
 
-$toolbar-bg: $component-bg !default;
-$toolbar-text: $component-text !default;
-$toolbar-border: null !default;
-$toolbar-gradient: null !default;
-$toolbar-shadow: $box-shadow-depth-2 !default;
+$kendo-toolbar-bg: $component-bg !default;
+$kendo-toolbar-text: $component-text !default;
+$kendo-toolbar-border: null !default;
+$kendo-toolbar-gradient: null !default;
+$kendo-toolbar-shadow: $box-shadow-depth-2 !default;
 
-$toolbar-separator-border: $component-border !default;
+$kendo-toolbar-separator-border: $component-border !default;
 
-$toolbar-input-width: 10em !default;
+$kendo-toolbar-input-width: 10em !default;
 
-$toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
+$kendo-toolbar-item-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12) !default;
 
 $kendo-toolbar-sizes: (
     sm: (

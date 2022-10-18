@@ -3,25 +3,25 @@
     // Theme
     .k-toolbar {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
+            $kendo-toolbar-text,
+            $kendo-toolbar-bg,
+            $kendo-toolbar-border,
+            $kendo-toolbar-gradient
         );
-        @include box-shadow( $toolbar-shadow );
+        @include box-shadow( $kendo-toolbar-shadow );
 
 
         // Separator
         .k-separator,
         .k-toolbar-separator {
-            border-color: $toolbar-separator-border;
+            border-color: $kendo-toolbar-separator-border;
         }
 
 
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
-            @include box-shadow( $toolbar-item-shadow );
+            @include box-shadow( $kendo-toolbar-item-shadow );
         }
 
 
@@ -41,10 +41,10 @@
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
+            $kendo-toolbar-text,
+            $kendo-toolbar-bg,
+            $kendo-toolbar-border,
+            $kendo-toolbar-gradient
         );
     }
 

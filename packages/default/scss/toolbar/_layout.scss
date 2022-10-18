@@ -4,13 +4,13 @@
     .k-toolbar {
         margin: 0;
         padding: $kendo-toolbar-padding-y $kendo-toolbar-padding-x;
-        border-width: $toolbar-border-width;
+        border-width: $kendo-toolbar-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $toolbar-font-family;
-        font-size: $toolbar-font-size;
-        line-height: $toolbar-line-height;
+        font-family: $kendo-toolbar-font-family;
+        font-size: $kendo-toolbar-font-size;
+        line-height: $kendo-toolbar-line-height;
         list-style: none;
         display: flex;
         flex-flow: row wrap;
@@ -65,7 +65,7 @@
         // Input
         .k-input,
         .k-picker {
-            width: $toolbar-input-width;
+            width: $kendo-toolbar-input-width;
         }
         .k-color-picker {
             width: min-content;
@@ -162,7 +162,7 @@
     .k-floating-toolbar,
     .editorToolbarWindow.k-window-content {
         padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md !important; // sass-lint:disable-line no-important
-        border-width: $toolbar-border-width;
+        border-width: $kendo-toolbar-border-width;
         border-style: solid;
         display: flex;
         flex-flow: row nowrap;
