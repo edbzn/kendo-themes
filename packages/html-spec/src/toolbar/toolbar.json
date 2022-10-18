@@ -1,0 +1,179 @@
+[
+    {
+        "component": "toolbar",
+        "selector": [
+            ".k-toolbar"
+        ],
+        "states": [
+            {
+                "name": "focus",
+                "selector": [
+                    ":focus",
+                    ":focus-within",
+                    ".k-focus"
+                ]
+            },
+            {
+                "name": "disabled",
+                "selector": [
+                    ":disabled",
+                    "[disabled]",
+                    ".k-disabled"
+                ]
+            }
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-toolbar-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-toolbar-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-toolbar-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "toolbar-spacer",
+                "selector": [
+                    ".k-spacer",
+                    ".k-toolbar-spacer"
+                ]
+            },
+            {
+                "name": "toolbar-separator",
+                "selector": [
+                    ".k-separator",
+                    ".k-toolbar-separator"
+                ]
+            },
+            {
+                "name": "toolbar-item",
+                "selector": [
+                    ".k-toolbar-item"
+                ],
+                "states": [
+                    {
+                        "name": "focus",
+                        "selector": [
+                            ":focus",
+                            ".k-focus"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "toolbar-overflow-button",
+                "$ref": "button",
+                "selector": [
+                    ".k-toolbar-overflow-button"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    },
+                    {
+                        "name": "fillMode",
+                        "value": "flat"
+                    }
+                ]
+            },
+            {
+                "name": "toolbar-button",
+                "$ref": "button",
+                "selector": [
+                    ".k-toolbar-button"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            },
+            {
+                "name": "toolbar-menu-button",
+                "$ref": "menu-button",
+                "selector": [
+                    ".k-toolbar-menu-button"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            },
+            {
+                "name": "toolbar-split-button",
+                "$ref": "split-button",
+                "selector": [
+                    ".k-toolbar-split-button"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            },
+            {
+                "name": "toolbar-combobox",
+                "$ref": "combobox",
+                "selector": [
+                    ".k-toolbar-item .k-toolbar-combobox"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "component": "toolbar-popup",
+        "$ref": "popup",
+        "selector": [
+            ".k-toolbar-popup"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "value": "{parent.size}"
+            }
+        ],
+        "children": [
+            {
+                "name": "menu",
+                "$ref": "menu",
+                "selector": [
+                    ".k-menu"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            }
+        ]
+    }
+]
