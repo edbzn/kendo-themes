@@ -1,0 +1,123 @@
+[
+    {
+        "component": "grid",
+        "selector": [
+            ".k-grid"
+        ],
+        "children": [
+            {
+                "name": "grid-toolbar",
+                "$ref": "toolbar",
+                "selector": [
+                    ".k-grid-toolbar"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            },
+            {
+                "name": "grid-grouping-header",
+                "selector": [
+                    ".k-grouping-header",
+                    ".k-grid-grouping-header"
+                ],
+                "children": [
+                    {
+                        "name": "grid-grouping-indicator",
+                        "$ref": "chip-list",
+                        "selector": [
+                            ".k-chip-list"
+                        ],
+                        "options": [
+                            {
+                                "name": "size",
+                                "value": "{parent.size}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "grid-header",
+                "selector": [
+                    ".k-grid-header"
+                ],
+                "children": [
+                    {
+                        "name": "grid-header-wrap",
+                        "selector": [
+                            ".k-grid-header-wrap"
+                        ]
+                    },
+                    {
+                        "name": "grid-header-table",
+                        "$ref": "table",
+                        "selector": [
+                            ".k-table",
+                            ".k-grid-header-table"
+                        ],
+                        "options": [
+                            {
+                                "name": "size",
+                                "value": "{parent.size}"
+                            }
+                        ],
+                        "children": [
+                            {
+                                "name": "grid-header-cell",
+                                "selector": [
+                                    ".k-header",
+                                    ".k-table-th",
+                                    ".k-grid-header-cell"
+                                ],
+                                "states": [
+                                    {
+                                        "name": "focus",
+                                        "selector": [
+                                            ":focus",
+                                            ".k-focus"
+                                        ]
+                                    },
+                                    {
+                                        "name": "sorted",
+                                        "selector": [
+                                            ".k-sorted"
+                                        ]
+                                    },
+                                    {
+                                        "name": "locked",
+                                        "selector": [
+                                            ".k-locked"
+                                        ]
+                                    },
+                                    {
+                                        "name": "sticky",
+                                        "selector": [
+                                            ".k-sticky"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "grid-pager",
+                "$ref": "pager",
+                "selector": [
+                    ".k-grid-pager"
+                ],
+                "options": [
+                    {
+                        "name": "size",
+                        "value": "{parent.size}"
+                    }
+                ]
+            }
+        ]
+    }
+]
