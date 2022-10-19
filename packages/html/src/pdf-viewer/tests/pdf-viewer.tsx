@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
-import { Textbox } from '../../textbox';
+import { Pager } from '../../pager';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -20,13 +20,7 @@ root.render(
 
             <div className="k-widget k-pdf-viewer">
                 <div className="k-toolbar k-widget k-toolbar-resizable">
-                    <div className="k-pager">
-                        <Button fillMode="flat" icon="arrow-end-left" className="k-pager-nav k-pager-first"></Button>
-                        <Button fillMode="flat" icon="arrow-60-left" className="k-pager-nav"></Button>
-                        <span className="k-pager-input k-label"><Textbox />of 4 pages</span>
-                        <Button fillMode="flat" icon="arrow-60-right" className="k-pager-nav"></Button>
-                        <Button fillMode="flat" icon="arrow-end-right" className="k-pager-nav k-pager-last"></Button>
-                    </div>
+                    <Pager type="input" pageSizes={false} refresh={false} info={false} />
                     <span className="k-spacer"></span>
                     <Button fillMode="flat" icon="file-pdf"></Button>
                     <Button fillMode="flat" icon="print"></Button>
