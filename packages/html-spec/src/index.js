@@ -6,5 +6,6 @@ module.exports = {
     ...require('./list'),
     ...require('./popup'),
     ...require('./dropdownlist'),
-    ...require('./textbox')
+    ...require('./textbox'),
+    ...require('./pager')
 };
