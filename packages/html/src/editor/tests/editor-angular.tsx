@@ -34,7 +34,7 @@ root.render(
                                 <Button icon="redo"></Button>
                             </ButtonGroup>
                         </div>
-                        <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                     </Toolbar>
                     <div className="k-editor-content">
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
@@ -50,7 +50,7 @@ root.render(
                                 <Button icon="redo"></Button>
                             </ButtonGroup>
                         </div>
-                        <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                     </Toolbar>
                     <div className="k-editor-content">
                         <div className="ProseMirror">

@@ -36,7 +36,7 @@ root.render(
                         <ColorPicker size="small" />
                     </ToolbarItem>
                     <Switch size="small" checked />
-                    <Button size="small" icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                    <Button size="small" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </Toolbar>
             </section>
 
@@ -60,7 +60,7 @@ root.render(
                         <ColorPicker size="medium" />
                     </ToolbarItem>
                     <Switch size="medium" checked />
-                    <Button size="medium" icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                    <Button size="medium" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </Toolbar>
             </section>
 
@@ -84,7 +84,7 @@ root.render(
                         <ColorPicker size="large" />
                     </ToolbarItem>
                     <Switch size="large" checked />
-                    <Button size="large" icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                    <Button size="large" icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </Toolbar>
             </section>
 

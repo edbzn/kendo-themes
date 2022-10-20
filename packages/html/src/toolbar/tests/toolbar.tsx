@@ -38,7 +38,7 @@ root.render(
                         <ColorPicker />
                     </ToolbarItem>
                     <Switch checked />
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </Toolbar>
             </section>
 
@@ -62,7 +62,7 @@ root.render(
                         <ColorPicker />
                     </ToolbarItem>
                     <Switch checked />
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                 </Toolbar>
             </section>
 
@@ -83,7 +83,7 @@ root.render(
                     <Button icon="bold" active></Button>
                     <Button icon="bold" selected></Button>
                     <Button icon="bold" disabled></Button>
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} hover></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} hover></Button>
                 </Toolbar>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -94,7 +94,7 @@ root.render(
                     <Button icon="align-left" className="k-toggle-button" active>Active</Button>
                     <Button icon="align-left" className="k-toggle-button" selected>Selected</Button>
                     <Button icon="align-left" className="k-toggle-button" disabled>Disabled</Button>
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} focus></Button>
                 </Toolbar>
             </section>
             <section className="k-colspan-all k-col-span-full">
@@ -105,7 +105,7 @@ root.render(
                     <Button themeColor="primary" icon="align-left" active>Active</Button>
                     <Button themeColor="primary" icon="align-left" selected>Selected</Button>
                     <Button themeColor="primary" icon="align-left" disabled>Disabled</Button>
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} active></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} active></Button>
                 </Toolbar>
             </section>
 
@@ -119,7 +119,7 @@ root.render(
                         <Button icon="align-left" disabled focus>Button 1</Button>
                         <Button icon="align-center" disabled>Button 2</Button>
                     </ButtonGroup>
-                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} disabled focus></Button>
+                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null} disabled focus></Button>
                 </Toolbar>
             </section>
 

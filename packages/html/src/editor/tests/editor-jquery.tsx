@@ -35,7 +35,7 @@ root.render(
                                         <Button icon="align-right"></Button>
                                         <Button icon="align-justify"></Button>
                                     </div>
-                                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                                 </Toolbar>
                             </td>
                         </tr>
@@ -66,7 +66,7 @@ root.render(
                                         <Button icon="align-right"></Button>
                                         <Button icon="align-justify"></Button>
                                     </div>
-                                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
+                                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
                                 </Toolbar>
                             </td>
                         </tr>
