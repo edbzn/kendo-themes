@@ -17,7 +17,7 @@ root.render(
             <section>
                 <span>React Treelist</span>
                 <div className="k-grid k-grid-md k-treelist-scrollable">
-                    <table>
+                    <table className="k-table k-table-md">
                         <colgroup>
                             <col style={{ width: "200px" }} />
                             <col style={{ width: "300px" }} />
@@ -25,21 +25,21 @@ root.render(
                             <col style={{ width: "400px" }} />
                             <col style={{ width: "100px" }} />
                         </colgroup>
-                        <thead className="k-grid-header">
-                            <tr>
-                                <th className="k-header">
+                        <thead className="k-table-thead k-grid-header">
+                            <tr className="k-table-row">
+                                <th className="k-table-th k-header">
                                     <a className="k-link">id</a>
                                 </th>
-                                <th className="k-header">
+                                <th className="k-table-th k-header">
                                     <a className="k-link">text</a>
                                 </th>
-                                <th className="k-header">
+                                <th className="k-table-th k-header">
                                     <a className="k-link">price</a>
                                 </th>
-                                <th className="k-header">
+                                <th className="k-table-th k-header">
                                     <a className="k-link">manufactured</a>
                                 </th>
-                                <th className="k-header">
+                                <th className="k-table-th k-header">
                                     <a className="k-link">discontinued</a>
                                 </th>
                             </tr>
@@ -82,8 +82,8 @@ root.render(
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr className="k-master-row">
+                        <tbody className="k-table-tbody">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="collapse"></Icon>
                                     1
@@ -93,7 +93,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>false</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="none"></Icon>
@@ -104,7 +104,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>false</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="none"></Icon>
@@ -115,7 +115,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>true</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="none"></Icon>
@@ -126,7 +126,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>false</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="collapse"></Icon>
                                     2
@@ -136,7 +136,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>false</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="none"></Icon>
@@ -147,7 +147,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>false</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="collapse"></Icon>
@@ -158,7 +158,7 @@ root.render(
                                 <td>8/12/1996</td>
                                 <td>true</td>
                             </tr>
-                            <tr className="k-master-row">
+                            <tr className="k-table-row k-master-row">
                                 <td>
                                     <Icon name="none"></Icon>
                                     <Icon name="none"></Icon>

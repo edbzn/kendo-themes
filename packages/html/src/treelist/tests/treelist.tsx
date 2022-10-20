@@ -14,13 +14,13 @@ root.render(
                 <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-header" style={{ paddingRight: '0px' }}>
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col style={{ width: "250px" }}/>
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
                                         <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">First
                                                 Name</a></th>
                                         <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">Last
@@ -31,13 +31,13 @@ root.render(
                         </div>
                     </div>
                     <div className="k-grid-content k-auto-scrollable">
-                        <table>
+                        <table className="k-table k-table-md">
                             <colgroup>
                                 <col style={{ width: "250px" }}/>
                                 <col />
                             </colgroup>
-                            <tbody>
-                                <tr>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
                                     <td><Icon name="expand"></Icon>Daryl</td>
                                     <td>Sweeney</td>
                                 </tr>
@@ -52,14 +52,14 @@ root.render(
                 <div id="treelist" className="k-treelist k-grid k-grid-md">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col style={{ width: "280px" }} />
                                     <col style={{ width: "160px" }} />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
                                         <th className="k-header k-with-icon k-filterable">
                                             <a className="k-grid-filter"><Icon name="filter"></Icon></a>
                                             <a className="k-link">First Name</a>
@@ -78,13 +78,13 @@ root.render(
                         </div>
                     </div>
                     <div className="k-grid-content k-auto-scrollable">
-                        <table>
+                        <table className="k-table k-table-md">
                             <colgroup>
                                 <col style={{ width: "280px" }} />
                                 <col style={{ width: "160px" }}/>
                                 <col />
                             </colgroup>
-                            <tbody>
+                            <tbody className="k-table-tbody">
                                 <tr className="k-treelist-group">
                                     <td><Icon name="collapse"></Icon>Daryl</td>
                                     <td>Sweeney</td>
@@ -107,7 +107,7 @@ root.render(
                                     <td>Hood</td>
                                     <td>Team Lead</td>
                                 </tr>
-                                <tr>
+                                <tr className="k-table-row">
                                     <td><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>Akeem</td>
                                     <td>Carr</td>
                                     <td>Junior Software Developer</td>

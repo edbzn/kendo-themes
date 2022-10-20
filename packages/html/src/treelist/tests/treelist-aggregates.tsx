@@ -15,14 +15,14 @@ root.render(
                 <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-display-block" style={{ height: "650px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md">
                                 <colgroup>
                                     <col />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
                                         <th className="k-header k-with-icon k-filterable" rowSpan={1}>
                                             <a className="k-grid-filter" href="#"><Icon name="filter"></Icon></a><a className="k-link" href="#">Name</a>
                                         </th>
@@ -38,13 +38,13 @@ root.render(
                         </div>
                     </div>
                     <div className="k-grid-content k-auto-scrollable" style={{ display: "block", height: "591px" }}>
-                        <table>
+                        <table className="k-table k-table-md">
                             <colgroup>
                                 <col />
                                 <col />
                                 <col />
                             </colgroup>
-                            <tbody>
+                            <tbody className="k-table-tbody">
                                 <tr className="k-treelist-group">
                                     <td style={{ whiteSpace: "nowrap" }}><Icon name="collapse"></Icon>Daryl Sweeney</td>
                                     <td>CEO</td>
@@ -107,17 +107,17 @@ root.render(
                     <div className="k-grid-aria-root">
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap">
-                                <table>
+                                <table className="k-table k-table-md">
                                     <colgroup>
                                         <col style={{ width: "250px" }} />
                                         <col style={{ width: "180px" }} />
                                         <col style={{ width: "180px" }} />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th className="k-header" rowSpan={1} colSpan={1}>Name</th>
-                                            <th className="k-header" rowSpan={1} colSpan={1}>Title</th>
-                                            <th className="k-header" rowSpan={1} colSpan={1}>hireDate</th>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Title</th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>hireDate</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -132,38 +132,38 @@ root.render(
                                             <col style={{ width: "180px" }} />
                                             <col style={{ width: "180px" }} />
                                         </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td colSpan={1}>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td colSpan={1} className="k-table-td">
                                                     <Icon name="collapse"></Icon>
                                                     Daryl Sweeney
                                                 </td>
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     Chief Executive Officer
                                                 </td>
-                                                <td colSpan={1}>1/15/2019</td>
+                                                <td colSpan={1} className="k-table-td">1/15/2019</td>
                                             </tr>
                                             <tr className="k-alt">
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     <Icon name="none"></Icon>
                                                     <Icon name="collapse"></Icon>
                                                     Guy Wooten
                                                 </td>
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     Chief Technical Officer
                                                 </td>
-                                                <td colSpan={1}>2/19/2019</td>
+                                                <td colSpan={1} className="k-table-td">2/19/2019</td>
                                             </tr>
-                                            <tr>
-                                                <td colSpan={1}>
+                                            <tr className="k-table-row">
+                                                <td colSpan={1} className="k-table-td">
                                                     <Icon name="none"></Icon><Icon name="none"></Icon>
                                                     <Icon name="expand"></Icon>
                                                     Buffy Weber
                                                 </td>
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     VP, Engineering
                                                 </td>
-                                                <td colSpan={1}>4/13/2019</td>
+                                                <td colSpan={1} className="k-table-td">4/13/2019</td>
                                             </tr>
                                             <tr className="k-footer">
                                                 <td className="k-focus">
@@ -176,15 +176,15 @@ root.render(
                                                 </td>
                                             </tr>
                                             <tr className="k-alt">
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     <Icon name="none"></Icon>
                                                     <Icon name="expand"></Icon>
                                                     Priscilla Frank
                                                 </td>
-                                                <td colSpan={1}>
+                                                <td colSpan={1} className="k-table-td">
                                                     Chief Product Officer
                                                 </td>
-                                                <td colSpan={1}>4/22/2019</td>
+                                                <td colSpan={1} className="k-table-td">4/22/2019</td>
                                             </tr>
                                             <tr className="k-footer">
                                                 <td>
