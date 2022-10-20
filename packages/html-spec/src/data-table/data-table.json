@@ -1,0 +1,325 @@
+[
+    {
+        "component": "data-table",
+        "selector": [
+            ".k-data-table"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-table-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-table-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-table-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "data-table-header",
+                "$ref": "data-table-header",
+                "selector": [
+                    ".k-table-header"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-header-wrap",
+                        "selector": [
+                            ".k-table-header-wrap"
+                        ]
+                    },
+                    {
+                        "name": "data-table-header-table",
+                        "$ref": "data-table-header-table",
+                        "selector": [
+                            ".k-table"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "data-table-scroller",
+                "selector": [
+                    ".k-table-scroller"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-scroller-table",
+                        "$ref": "data-table-scroller-table",
+                        "selector": [
+                            ".k-table"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "data-table-footer",
+                "selector": [
+                    ".k-table-footer"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-footer-table",
+                        "$ref": "data-table-footer-table",
+                        "selector": [
+                            ".k-table"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "component": "data-table-header-table",
+        "selector": [
+            ".k-table"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-table-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-table-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-table-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "data-table-header-table-head",
+                "selector": [
+                    ".k-table-thead"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-header-table-row",
+                        "selector": [
+                            ".k-table-row"
+                        ],
+                        "children": [
+                            {
+                                "name": "data-table-header-table-cell",
+                                "selector": [
+                                    ".k-table-th"
+                                ],
+                                "states": [
+                                    {
+                                        "name": "focus",
+                                        "selector": [
+                                            ":focus",
+                                            ".k-focus"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "component": "data-table-scroller-table",
+        "selector": [
+            ".k-table"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-table-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-table-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-table-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "data-table-scroller-table-body",
+                "selector": [
+                    ".k-table-tbody"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-scroller-table-row",
+                        "selector": [
+                            ".k-table-row"
+                        ],
+                        "states": [
+                            {
+                                "name": "hover",
+                                "selector": [
+                                    ":hover",
+                                    ".k-hover"
+                                ]
+                            },
+                            {
+                                "name": "focus",
+                                "selector": [
+                                    ":focus",
+                                    ".k-focus"
+                                ]
+                            },
+                            {
+                                "name": "selected",
+                                "selector": [
+                                    ".k-selected"
+                                ]
+                            },
+                            {
+                                "name": "alt",
+                                "selector": [
+                                    ".k-table-alt-row"
+                                ]
+                            }
+                        ],
+                        "children": [
+                            {
+                                "name": "data-table-scroller-table-cell",
+                                "selector": [
+                                    ".k-table-td"
+                                ],
+                                "states": [
+                                    {
+                                        "name": "hover",
+                                        "selector": [
+                                            ":hover",
+                                            ".k-hover"
+                                        ]
+                                    },
+                                    {
+                                        "name": "focus",
+                                        "selector": [
+                                            ":focus",
+                                            ".k-focus"
+                                        ]
+                                    },
+                                    {
+                                        "name": "selected",
+                                        "selector": [
+                                            ".k-selected"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "data-table-scroller-table-group-row",
+                        "selector": [
+                            ".k-table-group-row"
+                        ],
+                        "children": [
+                            {
+                                "name": "data-table-scroller-table-group-cell",
+                                "selector": [
+                                    ".k-table-th"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "component": "data-table-footer-table",
+        "selector": [
+            ".k-table"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-table-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-table-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-table-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "data-table-footer-table-tfoot",
+                "selector": [
+                    ".k-table-tfoot"
+                ],
+                "children": [
+                    {
+                        "name": "data-table-footer-table-row",
+                        "selector": [
+                            ".k-table-row"
+                        ],
+                        "children": [
+                            {
+                                "name": "data-table-footer-table-cell",
+                                "selector": [
+                                    ".k-table-td"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
