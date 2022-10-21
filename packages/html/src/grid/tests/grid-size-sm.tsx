@@ -118,7 +118,7 @@ root.render(
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-sorted">
                                             <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Sorted<Icon name="sort-asc-sm" /></a>
+                                            <a className="k-link">Sorted<span className="k-sort-icon"><Icon name="sort-asc-small" /></span></a>
                                         </th>
                                     </tr>
                                     <tr className="k-table-row k-filter-row">
@@ -305,11 +305,11 @@ root.render(
                     <div className="k-grouping-header">
                         <div className="k-grouping-dropclue"></div>
                         <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-asc-sm" />Price</a>
+                            <a className="k-link"><span className="k-sort-icon"><Icon name="sort-asc-small" /></span>Price</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                         <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-desc-sm" />Name</a>
+                            <a className="k-link"><span className="k-sort-icon"><Icon name="sort-desc-small" /></span>Name</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>

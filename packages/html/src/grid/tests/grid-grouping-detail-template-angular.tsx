@@ -80,7 +80,7 @@ root.render(
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
+                            <a className="k-link" href="#"><Icon name="sort-asc-small" /> ID</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
@@ -165,13 +165,13 @@ root.render(
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
+                            <a className="k-link" href="#"><Icon name="sort-asc-small" /> ID</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> Name</a>
+                            <a className="k-link" href="#"><Icon name="sort-asc-small" /> Name</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
@@ -273,13 +273,13 @@ root.render(
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
+                            <a className="k-link" href="#"><Icon name="sort-asc-small" /> ID</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
                     <div className="k-indicator-container">
                         <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> Name</a>
+                            <a className="k-link" href="#"><Icon name="sort-asc-small" /> Name</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>

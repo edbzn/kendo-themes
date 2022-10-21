@@ -141,13 +141,13 @@ root.render(
                     <div className="k-grouping-dropclue"></div>
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-asc-sm" />Price</a>
+                            <a className="k-link"><Icon name="sort-asc-small" />Price</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
                     <div className="k-indicator-container">
                         <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-desc-sm" />Name</a>
+                            <a className="k-link"><Icon name="sort-desc-small" />Name</a>
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
@@ -223,11 +223,11 @@ root.render(
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <div className="k-group-indicator">
-                        <a className="k-link"><Icon name="sort-asc-sm" />Price</a>
+                        <a className="k-link"><Icon name="sort-asc-small" />Price</a>
                         <Button fillMode="flat" icon="close"></Button>
                     </div>
                     <div className="k-group-indicator">
-                        <a className="k-link"><Icon name="sort-desc-sm" />Name</a>
+                        <a className="k-link"><Icon name="sort-desc-small" />Name</a>
                         <Button fillMode="flat" icon="close"></Button>
                     </div>
                 </div>
