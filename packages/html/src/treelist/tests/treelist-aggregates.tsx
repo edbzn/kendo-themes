@@ -23,14 +23,29 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-header k-with-icon k-filterable" rowSpan={1}>
-                                            <a className="k-grid-filter" href="#"><Icon name="filter"></Icon></a><a className="k-link" href="#">Name</a>
+                                        <th className="k-header k-filterable" rowSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
-                                        <th className="k-header k-with-icon k-filterable" rowSpan={1} data-index={1}>
-                                            <a className="k-grid-filter" href="#"><Icon name="filter"></Icon></a><a className="k-link" href="#">Position</a>
+                                        <th className="k-header k-filterable" rowSpan={1} data-index={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Position</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
-                                        <th data-title="Hire Date" className="k-header k-with-icon k-filterable" rowSpan={1}>
-                                            <a className="k-grid-filter" href="#"><Icon name="filter"></Icon></a><a className="k-link" href="#">Hire Date</a>
+                                        <th data-title="Hire Date" className="k-header k-filterable" rowSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Hire Date</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -115,9 +130,27 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Title</th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>hireDate</th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Name</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Title</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">hireDate</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>

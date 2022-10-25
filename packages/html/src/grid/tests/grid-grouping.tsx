@@ -47,10 +47,34 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header">Name</th>
-                                        <th className="k-table-th k-header">Price</th>
-                                        <th className="k-table-th k-header">Available</th>
-                                        <th className="k-table-th k-header">Units</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Available</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -99,10 +123,34 @@ root.render(
                             </colgroup>
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
-                                    <th className="k-table-th k-header"><a className="k-link">Name</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Price</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Available</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Units</a></th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Available</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -163,10 +211,34 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-group-cell k-header"></th>
-                                        <th className="k-table-th k-header">Name</th>
-                                        <th className="k-table-th k-header">Price</th>
-                                        <th className="k-table-th k-header">Discontinued</th>
-                                        <th className="k-table-th k-header">Units</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -240,10 +312,34 @@ root.render(
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
                                     <th className="k-table-th k-group-cell k-header" scope="col"></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Name</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Price</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Available</a></th>
-                                    <th className="k-table-th k-header"><a className="k-link">Units</a></th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Available</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>

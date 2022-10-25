@@ -31,11 +31,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-grid-header-menu k-grid-column-menu k-active" href="#">
-                                                    <Icon name="more-vertical" />
-                                                </a>
-                                                Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
+                                                    </span>
+                                                    <a className="k-grid-header-menu k-grid-column-menu k-active" href="#"><Icon name="more-vertical" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -57,11 +59,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
-                                                    <Icon name="more-vertical" />
-                                                </a>
-                                                Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu</span>
+                                                    </span>
+                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -87,11 +91,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon k-filterable">
-                                                <a className="k-grid-filter k-active" href="#">
-                                                    <Icon name="filter" />
-                                                </a>
-                                                Active Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Active Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
+                                                    </span>
+                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon name="filter" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -113,11 +119,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon k-filterable">
-                                                <a className="k-grid-filter" href="#">
-                                                    <Icon name="filter" />
-                                                </a>
-                                                Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Filterable
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Filterable</span>
+                                                    </span>
+                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -143,13 +151,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
-                                                    <Icon name="more-vertical" />
-                                                </a>
-                                                <a className="k-link" href="#">
-                                                    Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
-                                                </a>
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Sortable Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
+                                                    </span>
+                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -171,13 +179,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
-                                                    <Icon name="more-vertical" />
-                                                </a>
-                                                <a className="k-link" href="#">
-                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu
-                                                </a>
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Column Menu</span>
+                                                    </span>
+                                                    <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -203,13 +211,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon k-filterable">
-                                                <a className="k-grid-filter" href="#">
-                                                    <Icon name="filter" />
-                                                </a>
-                                                <a className="k-link" href="#">
-                                                    Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
-                                                </a>
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Sortable Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
+                                                    </span>
+                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -231,13 +239,13 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th scope="col" className="k-header k-with-icon k-filterable">
-                                                <a className="k-grid-filter" href="#">
-                                                    <Icon name="filter" />
-                                                </a>
-                                                <a className="k-link" href="#">
-                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Filterable
-                                                </a>
+                                            <th scope="col" className="k-header k-filterable">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Sortable Filterable</span>
+                                                    </span>
+                                                    <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -265,14 +273,12 @@ root.render(
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
                                                 <th className="k-filterable k-header">
-                                                    <div>
-                                                        <a href="#" className="k-grid-filter">
-                                                            <Icon name="filter" />
-                                                        </a>
-                                                    </div>
-                                                    <a className="k-link" href="#" style={{ touchAction: "none" }}>
-                                                        Angular Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
-                                                    </a>
+                                                    <span className="k-cell-inner">
+                                                        <span className="k-link">
+                                                            <span className="k-column-title">Angular Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit</span>
+                                                        </span>
+                                                        <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                                    </span>
                                                 </th>
                                             </tr>
                                         </thead>
@@ -297,14 +303,12 @@ root.render(
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
                                                 <th className="k-filterable k-header">
-                                                    <div>
-                                                        <a href="#" className="k-grid-filter">
-                                                            <Icon name="filter" />
-                                                        </a>
-                                                    </div>
-                                                    <a className="k-link" href="#" style={{ touchAction: "none" }}>
-                                                        Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Angular Filterable
-                                                    </a>
+                                                    <span className="k-cell-inner">
+                                                        <span className="k-link">
+                                                            <span className="k-column-title">Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Angular Filterable</span>
+                                                        </span>
+                                                        <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                                    </span>
                                                 </th>
                                             </tr>
                                         </thead>

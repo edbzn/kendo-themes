@@ -30,13 +30,25 @@ root.render(
                                         <Checkbox />
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Id
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Id</span>
+                                            </span>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Name
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
                                     </th>
                                 </tr>
                                 <tr className="k-table-row k-filter-row">
@@ -159,13 +171,25 @@ root.render(
                                         <Checkbox />
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Id
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Id</span>
+                                            </span>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Name
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
                                     </th>
                                 </tr>
                                 <tr className="k-table-row k-filter-row">

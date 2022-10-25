@@ -21,10 +21,22 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">First
-                                                Name</a></th>
-                                        <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">Last
-                                                Name</a></th>
+                                        <th className="k-header k-filterable">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">First Name</span>
+                                                </span>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            </span>
+                                        </th>
+                                        <th className="k-header k-filterable">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Last Name</span>
+                                                </span>
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -60,17 +72,29 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-header k-with-icon k-filterable">
-                                            <a className="k-grid-filter"><Icon name="filter"></Icon></a>
-                                            <a className="k-link">First Name</a>
+                                        <th className="k-header k-filterable">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">First Name</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
-                                        <th className="k-header k-with-icon k-filterable">
-                                            <a className="k-grid-filter"><Icon name="filter"></Icon></a>
-                                            <a className="k-link">Last Name</a>
+                                        <th className="k-header k-filterable">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Last Name</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
-                                        <th className="k-header k-with-icon k-filterable">
-                                            <a className="k-grid-filter"><Icon name="filter"></Icon></a>
-                                            <a className="k-link">Position</a>
+                                        <th className="k-header k-filterable">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Position</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
