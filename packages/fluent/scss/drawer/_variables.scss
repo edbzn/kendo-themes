@@ -30,7 +30,7 @@ $kendo-drawer-content-padding-x: var( --kendo-padding-x, #{$kendo-padding-x} ) !
 $kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-y} ) !default;
 /// Horizontal padding of the drawer item in each level.
 /// @group drawer
-$kendo-drawer-item-level-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-drawer-item-level-padding-x: map-get( $kendo-spacing, 2 ) !default;
 
 /// Count of the drawer item levels.
 /// @group drawer

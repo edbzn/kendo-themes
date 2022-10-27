@@ -176,7 +176,7 @@
         // Hierarchy items
         @for $i from 1 through $drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: ( $drawer-item-level-padding-x * $i );
+                padding-inline-start: ( $i + 1) * $drawer-item-level-padding-x;
             }
         }
     }

@@ -220,7 +220,7 @@
         // Hierarchy items
         @for $i from 1 through $kendo-drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: calc( var( --kendo-drawer-item-level-padding-x, #{$kendo-drawer-item-level-padding-x} ) * $i );
+                padding-inline-start: calc( ( $i + 1 ) * var( --kendo-drawer-item-level-padding-x, #{$kendo-drawer-item-level-padding-x} ) );
             }
         }
     }
