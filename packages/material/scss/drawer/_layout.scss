@@ -14,6 +14,12 @@
                     padding-left: $drawer-item-padding-x;
                 }
             }
+
+            // Fallback styles when drawer item is missing k-spacer element
+            .k-i-arrow-chevron-up,
+            .k-i-arrow-chevron-down {
+                margin-inline-start: auto;
+            }
         }
 
         .k-rtl & .k-drawer-items,
