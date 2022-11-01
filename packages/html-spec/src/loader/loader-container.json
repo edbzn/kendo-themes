@@ -1,0 +1,179 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Loader Container HTML Spec",
+    "component": "loader-container",
+    "selector": [
+        ".k-loader-container"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-loader-container-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-loader-container-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-loader-container-lg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "values": [
+                {
+                    "name": "top",
+                    "selector": [
+                        ".k-loader-top"
+                    ]
+                },
+                {
+                    "name": "end",
+                    "selector": [
+                        ".k-loader-end"
+                    ]
+                },
+                {
+                    "name": "start",
+                    "selector": [
+                        ".k-loader-start"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "loader-container-overlay",
+            "selector": [
+                ".k-loader-container-overlay"
+            ],
+            "options": [
+                {
+                    "name": "themeColor",
+                    "values": [
+                        {
+                            "name": "dark",
+                            "selector": [
+                                ".k-overlay-dark"
+                            ]
+                        },
+                        {
+                            "name": "light",
+                            "selector": [
+                                ".k-overlay-light"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "loader-container-inner",
+            "selector": [
+                ".k-loader-container-inner"
+            ],
+            "options": [
+                {
+                    "name": "loader-container-panel",
+                    "selector": [
+                        ".k-loader-container-panel"
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "name": "loader",
+                    "$ref": "loader",
+                    "selector": [
+                        ".k-loader"
+                    ]
+                },
+                {
+                    "name": "loader-container-label",
+                    "selector": [
+                        ".k-loader-container-label"
+                    ],
+                    "options": [
+                        {
+                            "name": "themeColor",
+                            "values": [
+                                {
+                                    "name": "primary",
+                                    "selector": [
+                                        ".k-text-primary"
+                                    ]
+                                },
+                                {
+                                    "name": "secondary",
+                                    "selector": [
+                                        ".k-text-secondary"
+                                    ]
+                                },
+                                {
+                                    "name": "tertiary",
+                                    "selector": [
+                                        ".k-text-tertiary"
+                                    ]
+                                },
+                                {
+                                    "name": "info",
+                                    "selector": [
+                                        ".k-text-info"
+                                    ]
+                                },
+                                {
+                                    "name": "success",
+                                    "selector": [
+                                        ".k-text-success"
+                                    ]
+                                },
+                                {
+                                    "name": "warning",
+                                    "selector": [
+                                        ".k-text-warning"
+                                    ]
+                                },
+                                {
+                                    "name": "error",
+                                    "selector": [
+                                        ".k-text-error"
+                                    ]
+                                },
+                                {
+                                    "name": "dark",
+                                    "selector": [
+                                        ".k-text-dark"
+                                    ]
+                                },
+                                {
+                                    "name": "light",
+                                    "selector": [
+                                        ".k-text-light"
+                                    ]
+                                },
+                                {
+                                    "name": "inverse",
+                                    "selector": [
+                                        ".k-text-inverse"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
