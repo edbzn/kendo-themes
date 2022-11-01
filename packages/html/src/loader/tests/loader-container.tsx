@@ -1,4 +1,6 @@
 import React from 'react';
+import { LoaderContainer } from '../loader-container';
+import { Loader } from '../loader';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(
@@ -26,142 +28,60 @@ root.render(
 
             <span>Top</span>
             <span className="example">
-                <div className="k-loader-container k-loader-container-sm k-loader-top">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'small'} position={'top'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-md k-loader-top">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'medium'} position={'top'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-lg k-loader-top">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'large'} position={'top'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span>End</span>
             <span className="example">
-                <div className="k-loader-container k-loader-container-sm k-loader-end">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'small'} position={'end'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-md k-loader-end">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'medium'} position={'end'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-lg k-loader-end">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'large'} position={'end'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span>Start</span>
             <span className="example">
-                <div className="k-loader-container k-loader-container-sm k-loader-start">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'small'} position={'start'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-md k-loader-start">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'medium'} position={'start'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
 
             <span className="example">
-                <div className="k-loader-container k-loader-container-lg k-loader-start">
-                    <div className="k-loader-container-overlay k-overlay-dark"></div>
-                    <div className="k-loader-container-inner k-loader-container-panel">
-                        <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
-                            <div className="k-loader-canvas">
-                                <span className="k-loader-segment"></span>
-                                <span className="k-loader-segment"></span>
-                            </div>
-                        </div>
-                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
-                    </div>
-                </div>
+                <LoaderContainer size={'large'} position={'start'} labelThemeColor={'primary'} overlayColor={'dark'} hasPanel={true}>
+                    <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
+                </LoaderContainer>
             </span>
-
         </div>
     </>
 );

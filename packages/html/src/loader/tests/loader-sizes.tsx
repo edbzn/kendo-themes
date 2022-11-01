@@ -1,4 +1,5 @@
 import React from 'react';
+import { Loader } from '../loader';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(
@@ -17,97 +18,42 @@ root.render(
 
             <span>Small</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-sm">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-primary k-loader-sm">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'spinner-3'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-primary k-loader-sm">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'small'} themeColor={'primary'} loaderAnimationEffect={'spinner-4'} />
             </span>
 
             <span>Medium</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-md">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-primary k-loader-md">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'spinner-3'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-primary k-loader-md">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'medium'} themeColor={'primary'} loaderAnimationEffect={'spinner-4'} />
             </span>
 
             <span>Large</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'pulsing-2'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'spinner-3'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} loaderAnimationEffect={'spinner-4'} />
             </span>
-
         </div>
     </>
 );
