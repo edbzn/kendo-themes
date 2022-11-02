@@ -1,0 +1,136 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Appbar HTML Spec",
+    "component": "appbar",
+    "selector": [
+        ".k-appbar"
+    ],
+    "options": [
+        {
+            "name": "themeColor",
+            "values": [
+                {
+                    "name": "inherit",
+                    "selector": [
+                        ".k-appbar-inherit"
+                    ]
+                },
+                {
+                    "name": "primary",
+                    "selector": [
+                        ".k-appbar-primary"
+                    ]
+                },
+                {
+                    "name": "secondary",
+                    "selector": [
+                        ".k-appbar-secondary"
+                    ]
+                },
+                {
+                    "name": "tertiary",
+                    "selector": [
+                        ".k-appbar-tertiary"
+                    ]
+                },
+                {
+                    "name": "info",
+                    "selector": [
+                        ".k-appbar-info"
+                    ]
+                },
+                {
+                    "name": "success",
+                    "selector": [
+                        ".k-appbar-success"
+                    ]
+                },
+                {
+                    "name": "warning",
+                    "selector": [
+                        ".k-appbar-warning"
+                    ]
+                },
+                {
+                    "name": "error",
+                    "selector": [
+                        ".k-appbar-error"
+                    ]
+                },
+                {
+                    "name": "dark",
+                    "selector": [
+                        ".k-appbar-dark"
+                    ]
+                },
+                {
+                    "name": "light",
+                    "selector": [
+                        ".k-appbar-light"
+                    ]
+                },
+                {
+                    "name": "inverse",
+                    "selector": [
+                        ".k-appbar-inverse"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "position-mode",
+            "values": [
+                {
+                    "name": "appbar-sticky",
+                    "selector": [
+                        ".k-appbar-sticky"
+                    ]
+                },
+                {
+                    "name": "appbar-fixed",
+                    "selector": [
+                        ".k-appbar-fixed"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "values": [
+                {
+                    "name": "appbar-top",
+                    "selector": [
+                        ".k-appbar-top"
+                    ]
+                },
+                {
+                    "name": "appbar-bottom",
+                    "selector": [
+                        ".k-appbar-bottom"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "appbar-section",
+            "selector": [
+                ".k-appbar-section"
+            ]
+        },
+        {
+            "name": "appbar-separator",
+            "selector": [
+                ".k-appbar-separator"
+            ]
+        },
+        {
+            "name": "appbar-spacer",
+            "selector": [
+                ".k-appbar-spacer"
+            ]
+        }
+    ]
+}
