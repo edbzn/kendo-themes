@@ -40,11 +40,16 @@ export class UploadFileMultiple extends React.Component<UploadFileMultipleProps>
                 <div className="k-file-multiple">
                     <div className={classNames(
                         'k-progressbar',
+                        'k-progressbar-horizontal',
                         {
                             'k-hidden': status !== 'progress',
                         },
-                    )}
-                    ><span className="k-progress" style={{ width: progress + "%" }}></span></div>
+                    )}>
+                        <span className="k-progress-status-wrap k-progress-end"></span>
+                        <div className="k-selected" style={{ width: progress + "%" }}>
+                            <span className="k-progress-status-wrap k-progress-end"></span>
+                        </div>
+                    </div>
                     <span className="k-file-icon-wrapper">
                         <Icon className="k-file-icon" name="copy"></Icon>
                     </span>

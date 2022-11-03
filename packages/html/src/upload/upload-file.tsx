@@ -42,11 +42,16 @@ export class UploadFile extends React.Component<UploadFileProps> {
                 <div className="k-file-single">
                     <div className={classNames(
                         'k-progressbar',
+                        'k-progressbar-horizontal',
                         {
                             'k-hidden': status !== 'progress',
                         },
-                    )}
-                    ><span className="k-progress" style={{ width: progress + "%" }}></span></div>
+                    )}>
+                        <span className="k-progress-status-wrap k-progress-end"></span>
+                        <div className="k-selected" style={{ width: progress + "%" }}>
+                            <span className="k-progress-status-wrap k-progress-end"></span>
+                        </div>
+                    </div>
                     <span className="k-file-icon-wrapper">
                         <Icon className="k-file-icon" name={icon}></Icon>
                         {state && <span className="k-file-state">{state}</span>}
