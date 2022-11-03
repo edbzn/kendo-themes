@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
+import { Upload } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -29,12 +30,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-window-content k-dialog-content">
-                        <div className="k-upload k-upload-async k-upload-empty">
-                            <div className="k-dropzone">
-                                <Button className="k-upload-button">Select files...</Button>
-                                <em className="k-dropzone-hint">Drop files here to upload</em>
-                            </div>
-                        </div>
+                        <Upload async empty status="upload"></Upload>
                     </div>
                     <ActionButtons className="k-dialog-buttongroup" alignment="end">
                         <Button>Clear List</Button>

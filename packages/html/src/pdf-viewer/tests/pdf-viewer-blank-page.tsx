@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
+import { Upload } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -45,12 +46,7 @@ root.render(
                                     <span className="k-dropzone-hint">Drag and drop files here to upload</span>
                                 </div>
                             </div>
-                            <div className="k-upload">
-                                <div className="k-dropzone">
-                                    <Button className="k-upload-button">Select files...</Button>
-                                    <em className="k-dropzone-hint">Drop files here to upload</em>
-                                </div>
-                            </div>
+                            <Upload async empty status="upload"></Upload>
                         </div>
                     </div>
                 </div>

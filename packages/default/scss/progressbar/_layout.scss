@@ -87,7 +87,7 @@
     // Horizontal
     .k-progressbar-horizontal {
         width: $progressbar-horizontal-width;
-        height: $progressbar-height;
+        height: var( --kendo-progressbar-height, #{$progressbar-height} );
         grid-template-columns: 1fr;
         grid-template-rows: 100%;
 
@@ -133,7 +133,7 @@
 
     // Vertical
     .k-progressbar-vertical {
-        width: $progressbar-height;
+        width: var( --kendo-progressbar-height, #{$progressbar-height} );
         height: 27em;
         grid-template-columns: 100%;
         grid-template-rows: 1fr;

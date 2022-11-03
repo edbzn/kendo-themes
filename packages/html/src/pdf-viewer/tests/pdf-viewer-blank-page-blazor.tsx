@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
 import { Icon } from '../../icon';
+import { Upload } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -37,11 +38,7 @@ root.render(
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
                             <Icon name="folder-open"></Icon>
-                            <div className="k-upload">
-                                <div className="k-dropzone">
-                                    <Button className="k-upload-button">Select files...</Button>
-                                </div>
-                            </div>
+                            <Upload async empty></Upload>
                         </div>
                     </div>
                 </div>
