@@ -1,21 +1,21 @@
 // Notification
-$notification-padding-x: 8px !default;
-$notification-padding-y: 4px !default;
-$notification-border-width: 1px !default;
-$notification-border-radius: $kendo-border-radius-md !default;
+$kendo-notification-padding-x: 8px !default;
+$kendo-notification-padding-y: 4px !default;
+$kendo-notification-border-width: 1px !default;
+$kendo-notification-border-radius: $kendo-border-radius-md !default;
 
-$notification-shadow: $popup-shadow !default;
+$kendo-notification-shadow: $popup-shadow !default;
 
-$notification-font-family: $font-family !default;
-$notification-font-size: $font-size-sm !default;
-$notification-line-height: $line-height !default;
+$kendo-notification-font-family: $font-family !default;
+$kendo-notification-font-size: $font-size-sm !default;
+$kendo-notification-line-height: $line-height !default;
 
-$notification-icon-offset: null !default;
-$notification-icon-spacing: $icon-spacing !default;
+$kendo-notification-icon-offset: null !default;
+$kendo-notification-icon-spacing: $icon-spacing !default;
 
-$notification-bg: $component-bg !default;
-$notification-text: $component-text !default;
-$notification-border: $component-border !default;
+$kendo-notification-bg: $component-bg !default;
+$kendo-notification-text: $component-text !default;
+$kendo-notification-border: $component-border !default;
 
 @function notification-theme( $colors ) {
     $_theme: ();
