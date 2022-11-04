@@ -45,7 +45,7 @@ export class Notification extends React.Component<NotificationProps> {
                 <div className={classNames(
                     'k-notification-wrap'
                 )}>
-                    {icon && <Icon name={icon} />}
+                    {icon && <Icon className="k-notification-status" name={icon} />}
 
                     {children
                         ?
@@ -59,7 +59,7 @@ export class Notification extends React.Component<NotificationProps> {
                         </>
                     }
 
-                    {closable && <Icon name="close" />}
+                    {closable && <Icon className="k-notification-close" name="close" />}
                 </div>
 
             </div>

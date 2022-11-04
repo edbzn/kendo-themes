@@ -10,8 +10,7 @@
         @include box-shadow( $kendo-notification-shadow );
     }
     .k-notification-wrap {
-        > .k-i-close,
-        > .k-i-x {
+        > .k-notification-close {
             color: inherit;
         }
     }

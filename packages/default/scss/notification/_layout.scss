@@ -46,14 +46,14 @@
         display: flex;
         flex-flow: row nowrap;
 
-        > .k-icon {
+        > .k-notification-status,
+        > .k-notification-close {
             margin-top: $kendo-notification-icon-offset;
             margin-right: $kendo-notification-icon-spacing;
             flex: none;
         }
 
-        > .k-i-close,
-        > .k-i-x {
+        > .k-notification-close {
             margin-right: 0;
             margin-left: $kendo-notification-icon-spacing;
             flex: none;
@@ -71,13 +71,13 @@
 
         .k-notification-wrap {
 
-            > .k-icon {
+            > .k-notification-status,
+            > .k-notification-close {
                 margin-right: 0;
                 margin-left: $kendo-notification-icon-spacing;
             }
 
-            > .k-i-close,
-            > .k-i-x {
+            > .k-notification-close {
                 margin-left: 0;
                 margin-right: $kendo-notification-icon-spacing;
             }
