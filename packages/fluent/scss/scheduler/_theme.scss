@@ -153,6 +153,7 @@
 
     // Edit dialog
     .k-scheduler-edit-dialog {
+        .k-dialog-buttons,
         .k-dialog-buttongroup {
             border-color: var( --kendo-scheduler-border, #{$kendo-scheduler-border} );
         }

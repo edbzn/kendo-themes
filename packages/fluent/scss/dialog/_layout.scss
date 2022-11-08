@@ -49,6 +49,7 @@
     }
 
     // Buttons
+    .k-dialog-buttons,
     .k-dialog-buttongroup {
         @include border-bottom-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
         padding-inline: var( --kendo-dialog-buttongroup-padding-x, #{$kendo-dialog-buttongroup-padding-x} );
@@ -64,7 +65,8 @@
         overflow: hidden;
     }
 
-    .k-dialog-content +  .k-dialog-buttongroup {
+    .k-dialog-content + .k-dialog-buttons,
+    .k-dialog-content + .k-dialog-buttongroup {
         padding-block-start: 0;
     }
 

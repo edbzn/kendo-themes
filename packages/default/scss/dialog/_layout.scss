@@ -51,6 +51,7 @@
 
 
     // Buttons
+    .k-dialog-buttons,
     .k-dialog-buttongroup {
         @include border-bottom-radius( $kendo-window-border-radius );
         padding: $kendo-dialog-buttongroup-padding-y $kendo-dialog-buttongroup-padding-x;
@@ -67,6 +68,7 @@
 
 
     // Legacy spacing
+    .k-ie .k-dialog-buttons,
     .k-ie .k-dialog-buttongroup {
 
         .k-button ~ .k-button {
