@@ -4,6 +4,9 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
+import { Editor } from '../editor';
+import { EditorContent } from '../editor-content';
+import { EditorToolbar } from '../editor-toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -32,14 +35,14 @@ root.render(
             <span>Replace Dialog</span>
 
             <section>
-                <div className="k-window">
-                    <div className="k-window-titlebar">
-                        <div className="k-window-title">Find and Replace</div>
-                        <div className="k-window-actions">
+                <div className="k-window k-dialog k-editor-dialog">
+                    <div className="k-window-titlebar k-dialog-titlebar">
+                        <div className="k-window-title k-dialog-title">Find and Replace</div>
+                        <div className="k-window-actions k-dialog-actions">
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
-                    <div className="k-window-content">
+                    <div className="k-window-content k-dialog-content">
                         <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                             <div className="k-tabstrip-items-wrapper k-hstack">
                                 <ul className="k-tabstrip-items k-reset">
@@ -96,14 +99,14 @@ root.render(
             </section>
 
             <section>
-                <div className="k-window">
-                    <div className="k-window-titlebar">
-                        <div className="k-window-title">Find and Replace</div>
-                        <div className="k-window-actions">
+                <div className="k-window k-dialog k-editor-dialog">
+                    <div className="k-window-titlebar k-dialog-titlebar">
+                        <div className="k-window-title k-dialog-title">Find and Replace</div>
+                        <div className="k-window-actions k-dialog-actions">
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
-                    <div className="k-window-content">
+                    <div className="k-window-content k-dialog-content">
                         <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                             <div className="k-tabstrip-items-wrapper k-hstack">
                                 <ul className="k-tabstrip-items k-reset">
@@ -178,8 +181,8 @@ root.render(
             <span></span>
 
             <section>
-                <div className="k-widget k-editor" style={{ height: "150px" }}>
-                    <div className="k-widget k-toolbar">
+                <Editor style={{ height: "150px" }}>
+                    <EditorToolbar resizable>
                         <span className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -188,9 +191,11 @@ root.render(
                                 <Button icon="find" selected></Button>
                             </div>
                         </span>
-                    </div>
-                    <div className="k-editor-content"><div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div></div>
-                </div>
+                    </EditorToolbar>
+                    <EditorContent>
+                        <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
+                    </EditorContent>
+                </Editor>
             </section>
         </div>
     </>

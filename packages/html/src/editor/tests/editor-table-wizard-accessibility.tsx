@@ -26,14 +26,14 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <div className="k-window k-editor-dialog k-editor-table-wizard-dialog">
-                    <div className="k-window-titlebar">
-                        <span className="k-window-title">Table Wizard</span>
-                        <div className="k-window-actions">
+                <div className="k-window k-dialog k-editor-dialog k-editor-table-wizard-dialog">
+                    <div className="k-window-titlebar k-dialog-titlebar">
+                        <span className="k-window-title k-dialog-title">Table Wizard</span>
+                        <div className="k-window-actions k-dialog-actions">
                             <Button fillMode="flat" icon="close"></Button>
                         </div>
                     </div>
-                    <div className="k-window-content">
+                    <div className="k-window-content k-dialog-content">
                         <div className="k-tabstrip k-tabstrip-top">
                             <div className="k-tabstrip-items-wrapper k-hstack">
                                 <ul className="k-tabstrip-items k-reset">
@@ -96,7 +96,7 @@ root.render(
                             </div>
                         </div>
                     </div>
-                    <ActionButtons className="k-window-buttons" alignment="end">
+                    <ActionButtons className="k-window-buttons k-dialog-buttons" alignment="end">
                         <Button>Cancel</Button>
                         <Button themeColor="primary">Update</Button>
                     </ActionButtons>
