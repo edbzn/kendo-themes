@@ -1,29 +1,29 @@
 // Progressbar
-$progressbar-height: 22px !default;
-$progressbar-horizontal-width: 100% !default;
-$progressbar-animation-timing: 1s linear infinite !default;
-$progressbar-border-width: 0px !default;
-$progressbar-font-family: $font-family !default;
-$progressbar-font-size: $font-size-sm !default;
-$progressbar-line-height: 1 !default;
+$kendo-progressbar-height: 22px !default;
+$kendo-progressbar-horizontal-width: 100% !default;
+$kendo-progressbar-animation-timing: 1s linear infinite !default;
+$kendo-progressbar-border-width: 0px !default;
+$kendo-progressbar-font-family: $font-family !default;
+$kendo-progressbar-font-size: $font-size-sm !default;
+$kendo-progressbar-line-height: 1 !default;
 
-$progressbar-bg: k-try-shade( $component-bg, 1 ) !default;
-$progressbar-text: $component-text !default;
-$progressbar-border: $component-border !default;
-$progressbar-gradient: null !default;
+$kendo-progressbar-bg: k-try-shade( $component-bg, 1 ) !default;
+$kendo-progressbar-text: $component-text !default;
+$kendo-progressbar-border: $component-border !default;
+$kendo-progressbar-gradient: null !default;
 
-$progressbar-fill-bg: $primary !default;
-$progressbar-fill-text: contrast-wcag( $progressbar-fill-bg ) !default;
-$progressbar-fill-border: k-try-shade( $progressbar-fill-bg ) !default;
-$progressbar-fill-gradient: null !default;
+$kendo-progressbar-fill-bg: $primary !default;
+$kendo-progressbar-fill-text: contrast-wcag( $kendo-progressbar-fill-bg ) !default;
+$kendo-progressbar-fill-border: k-try-shade( $kendo-progressbar-fill-bg ) !default;
+$kendo-progressbar-fill-gradient: null !default;
 
-$progressbar-indeterminate-bg: $progressbar-bg !default;
-$progressbar-indeterminate-text: $progressbar-text !default;
-$progressbar-indeterminate-border: $progressbar-border !default;
-$progressbar-indeterminate-gradient: null !default;
+$kendo-progressbar-indeterminate-bg: $kendo-progressbar-bg !default;
+$kendo-progressbar-indeterminate-text: $kendo-progressbar-text !default;
+$kendo-progressbar-indeterminate-border: $kendo-progressbar-border !default;
+$kendo-progressbar-indeterminate-gradient: null !default;
 
-$progressbar-chunk-border: $body-bg !default;
+$kendo-progressbar-chunk-border: $body-bg !default;
 
 // Circular Progressbar
 $kendo-circular-progressbar-arc-stroke: $primary !default;
-$kendo-circular-progressbar-scale-stroke: $progressbar-bg !default;
+$kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
