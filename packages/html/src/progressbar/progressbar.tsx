@@ -63,7 +63,7 @@ export class ProgressBar extends React.Component<ProgressBarProps> {
                     {label && <span className="k-progress-status">{this.props.value}%</span>}
                 </span>
                 {!indeterminate &&
-                <div className="k-selected">
+                <div className="k-progressbar-progress k-selected">
                     <span className={classNames(
                         'k-progress-status-wrap',
                         {

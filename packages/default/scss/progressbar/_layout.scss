@@ -26,7 +26,7 @@
 
 
         // Selection
-        > .k-selected {
+        > .k-progressbar-progress {
             border-width: 0;
             border-style: solid;
             display: flex;
@@ -93,7 +93,7 @@
             flex-direction: row;
         }
 
-        > .k-selected {
+        > .k-progressbar-progress {
             width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
 
@@ -111,7 +111,7 @@
         // Horizontal reverse
         &.k-progressbar-reverse {
 
-            > .k-selected {
+            > .k-progressbar-progress {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
             }
@@ -138,7 +138,7 @@
             writing-mode: vertical-lr;
         }
 
-        > .k-selected {
+        > .k-progressbar-progress {
             height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
@@ -159,7 +159,7 @@
         &.k-progressbar-reverse {
             flex-direction: column;
 
-            > .k-selected {
+            > .k-progressbar-progress {
                 flex-direction: column;
                 align-self: flex-start;
             }
@@ -174,7 +174,7 @@
     // Indeterminate
     .k-progressbar-indeterminate {
         .k-progress-status-wrap,
-        .k-selected,
+        .k-progressbar-progress,
         .k-progressbar-chunk {
             display: none;
         }
@@ -184,8 +184,8 @@
     // Blazor specific
     .telerik-blazor.k-progressbar-horizontal {
 
-        > .k-selected,
-        > .k-selected > .k-progress-status-wrap {
+        > .k-progressbar-progress,
+        > .k-progressbar-progress > .k-progress-status-wrap {
             transition: width .1s ease-in-out;
         }
     }
@@ -213,7 +213,7 @@
         display: -ms-inline-grid;
 
         > .k-progress-status-wrap,
-        > .k-selected {
+        > .k-progressbar-progress {
             -ms-grid-column: 1;
             -ms-grid-row: 1;
         }
@@ -222,7 +222,7 @@
         -ms-grid-columns: 1fr;
         -ms-grid-rows: $kendo-progressbar-height;
 
-        &.k-progressbar-reverse > .k-selected {
+        &.k-progressbar-reverse > .k-progressbar-progress {
             -ms-grid-column-align: end;
         }
     }
@@ -230,11 +230,11 @@
         -ms-grid-columns: $kendo-progressbar-height;
         -ms-grid-rows: 1fr;
 
-        > .k-selected {
+        > .k-progressbar-progress {
             -ms-grid-row-align: end;
         }
 
-        &.k-progressbar-reverse > .k-selected {
+        &.k-progressbar-reverse > .k-progressbar-progress {
             -ms-grid-row-align: start;
         }
     }
