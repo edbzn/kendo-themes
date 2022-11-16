@@ -1,20 +1,20 @@
 // Listbox
-$listbox-spacing: k-map-get( $spacing, 3 ) !default;
-$listbox-button-spacing: k-map-get( $spacing, 2 ) !default;
-$listbox-width: 10em !default;
-$listbox-default-height: 200px !default;
+$kendo-listbox-spacing: k-map-get( $spacing, 3 ) !default;
+$kendo-listbox-button-spacing: k-map-get( $spacing, 2 ) !default;
+$kendo-listbox-width: 10em !default;
+$kendo-listbox-default-height: 200px !default;
 
-$listbox-border-width: 1px !default;
-$listbox-font-family: $font-family !default;
-$listbox-font-size: $kendo-list-font-size-md !default;
-$listbox-line-height: $kendo-list-line-height-md !default;
+$kendo-listbox-border-width: 1px !default;
+$kendo-listbox-font-family: $font-family !default;
+$kendo-listbox-font-size: $kendo-list-font-size-md !default;
+$kendo-listbox-line-height: $kendo-list-line-height-md !default;
 
-$listbox-bg: $component-bg !default;
-$listbox-text: $component-text !default;
-$listbox-border: $component-border !default;
+$kendo-listbox-bg: $component-bg !default;
+$kendo-listbox-text: $component-text !default;
+$kendo-listbox-border: $component-border !default;
 
-$listbox-item-padding-x: $kendo-list-item-padding-x-md !default;
-$listbox-item-padding-y: $kendo-list-item-padding-y-md !default;
+$kendo-listbox-item-padding-x: $kendo-list-item-padding-x-md !default;
+$kendo-listbox-item-padding-y: $kendo-list-item-padding-y-md !default;
 
-$listbox-drop-hint-border-width: 2px !default;
-$listbox-drop-hint-width: 2px !default;
+$kendo-listbox-drop-hint-border-width: 2px !default;
+$kendo-listbox-drop-hint-width: 2px !default;
