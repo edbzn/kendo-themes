@@ -48,13 +48,13 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $slider-draghandle-focused-shadow );
+                @include focus-indicator( $slider-draghandle-focused-shadow );
             }
         }
 
         &.k-focus {
             .k-draghandle {
-                @include box-shadow( $slider-draghandle-focused-shadow );
+                @include focus-indicator( $slider-draghandle-focused-shadow );
             }
         }
 

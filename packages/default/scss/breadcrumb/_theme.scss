@@ -41,7 +41,7 @@
                 $breadcrumb-link-focused-bg,
                 $breadcrumb-link-focused-border
             );
-            @include box-shadow( $breadcrumb-link-focused-shadow );
+            @include focus-indicator( $breadcrumb-link-focused-shadow, true );
         }
     }
 
@@ -72,7 +72,7 @@
                 $breadcrumb-root-link-focused-bg,
                 $breadcrumb-root-link-focused-border
             );
-            @include box-shadow( $breadcrumb-root-link-focused-shadow );
+            @include focus-indicator( $breadcrumb-root-link-focused-shadow, true );
         }
     }
 

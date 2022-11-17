@@ -14,6 +14,16 @@
     "components": [],
     "groups": [
         {
+            "name": "Theme Settings",
+            "variables": {
+                "enable-focus-contrast": {
+                    "name": "Enable focus indicator contrast",
+                    "type": "boolean",
+                    "value": true
+                }
+            }
+        },
+        {
             "name": "Theme colors",
             "variables": {
                 "primary": {
@@ -44,7 +54,7 @@
                 "warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#F5A600"
+                    "value": "#FDCE3E"
                 },
                 "error": {
                     "name": "Error",
@@ -185,6 +195,26 @@
                     "name": "Input clear value button opacity",
                     "type": "number",
                     "value": "80%"
+                }
+            }
+        },
+        {
+            "name": "TaskBoard",
+            "variables": {
+                "taskboard-column-focus-border": {
+                    "name": "TaskBoard column focus border",
+                    "type": "color",
+                    "value": "#424242"
+                }
+            }
+        },
+        {
+            "name": "ColorEditor",
+            "variables": {
+                "coloreditor-colorgradient-focus-outline-color": {
+                    "name": "ColorEditor gradient focus outline color",
+                    "type": "color",
+                    "value": "#424242"
                 }
             }
         },

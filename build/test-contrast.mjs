@@ -402,6 +402,8 @@ const getContrastViolations = async() => {
             // CircularProgressBar has a black text label element overlapping an svg with white background
             if (filePath.indexOf('mediaplayer') > -1 ||
                 filePath.indexOf('barcode') > -1 ||
+
+                //filePath.indexOf('scheduler') > -1 ||
                 filePath.indexOf('circular-progressbar') > -1) {
                 continue;
             }
@@ -487,6 +489,8 @@ const printViolations = (result) => {
     /* eslint-disable no-console */
     console.dir(result.focusContrast, { depth: 3 });
 
+    console.dir(result.focusContrast, { depth: 3 });
+    console.dir(result.violations, { depth: 5 });
     /* eslint-disable no-console */
     console.log(count);
     // console.log(incompleteTypes);

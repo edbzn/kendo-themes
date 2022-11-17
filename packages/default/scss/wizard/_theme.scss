@@ -8,7 +8,7 @@
 
         .k-ie &:focus,
         .k-ie &.k-focus {
-            @include box-shadow($wizard-focused-shadow);
+            @include focus-indicator( $wizard-focused-shadow, true );
             outline: none;
         }
     }

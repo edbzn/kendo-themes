@@ -33,7 +33,7 @@
             .k-step-link:focus  {
                 // Labels only
                 .k-step-label:only-child {
-                    @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-border );
+                    @include focus-indicator( $indicator: ( inset 0 0 0 $stepper-indicator-focus-size $component-border ), $inset: true );
                 }
             }
 

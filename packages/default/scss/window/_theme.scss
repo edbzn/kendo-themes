@@ -13,7 +13,7 @@
     .k-window {
         &:focus,
         &.k-focus {
-            @include box-shadow( $window-focused-shadow );
+            @include focus-indicator( $window-focused-shadow );
         }
     }
 

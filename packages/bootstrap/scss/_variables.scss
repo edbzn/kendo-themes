@@ -11,6 +11,7 @@ $enable-gradients: $enable-gradients !default;
 $enable-transitions: $enable-transitions !default;
 $enable-flex-classes: true !default;
 $enable-grid-classes: true !default;
+$enable-focus-contrast: false !default;
 
 $use-calc-badge-size: true !default;
 $use-input-button-width: false !default;

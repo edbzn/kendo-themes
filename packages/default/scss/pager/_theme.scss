@@ -11,7 +11,7 @@
         &:focus,
         &.k-focus {
             @include fill( $bg: $pager-focus-bg );
-            @include box-shadow( $pager-focus-shadow );
+            @include focus-indicator( $pager-focus-shadow, true );
         }
     }
 
@@ -43,7 +43,7 @@
         &:focus,
         &.k-focus {
             background-color: $pager-item-focus-bg;
-            @include box-shadow( $pager-item-focus-shadow );
+            @include focus-indicator( $pager-item-focus-shadow, true );
         }
     }
 
@@ -75,7 +75,7 @@
             &:focus,
             &.k-focus {
                 background-color: $pager-number-focus-bg;
-                @include box-shadow( $pager-number-focus-shadow );
+                @include focus-indicator( $pager-number-focus-shadow, true );
             }
 
             &.k-selected {

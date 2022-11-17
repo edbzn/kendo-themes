@@ -19,7 +19,7 @@
                 $listview-item-focus-bg,
                 $listview-item-focus-border
             );
-            @include box-shadow( $listview-item-focus-shadow );
+            @include focus-indicator( $listview-item-focus-shadow, true );
         }
 
         > .k-selected {
