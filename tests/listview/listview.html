@@ -9,56 +9,54 @@
 </head>
 <body id="app" class="k-body">
     <style>
+        .k-listview-header,
+        .k-listview-footer,
         .k-listview-item {
             padding: 10px;
-            display: inline-block;
-            outline: 1px dashed;
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <section>
-            <span>No layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - bottom pager</span>
+            <div class="k-listview">
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-column">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item k-focus">Focus Item</div>
+                    <div class="k-listview-item k-selected">Selected Item</div>
+                    <div class="k-listview-item k-focus k-selected">Focus Selected Item</div>
                 </div>
+                <div class="k-listview-footer">Footer</div>
+                <div class="k-listview-pager k-pager k-pager-md k-listview-pager-bottom">Pager</div>
             </div>
         </section>
         <section>
-            <span>Flex layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content k-d-flex k-flex-col k-flex-nowrap">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - top pager</span>
+            <div class="k-listview">
+                <div class="k-listview-pager k-pager k-pager-md k-listview-pager-top">Pager</div>
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-column">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
                 </div>
+                <div class="k-listview-footer">Footer</div>
             </div>
         </section>
         <section>
-            <span>Grid layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content k-d-grid k-grid-cols-2">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - top pager</span>
+            <div class="k-listview k-disabled">
+                <div class="k-listview-pager k-pager k-pager-md k-listview-pager-top">Pager</div>
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-column">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Interactive states</span>
-            <div class="k-widget k-listview k-listview-grid">
-                <div class="k-listview-content k-d-grid k-grid-cols-2">
-                    <div class="k-listview-item">Normal item</div>
-                    <div class="k-listview-item k-focus">Focus item</div>
-                    <div class="k-listview-item k-selected">Selected item</div>
-                    <div class="k-listview-item k-selected k-focus">Selected focus item</div>
-                </div>
+                <div class="k-listview-footer">Footer</div>
             </div>
         </section>
     </div>
