@@ -18,7 +18,11 @@
                         "rounded",
                         "fillMode",
                         "themeColor",
-                        "orientation"
+                        "orientation",
+                        "layout",
+                        "flex-direction",
+                        "borders",
+                        "position"
                     ]
                 },
                 "value": {

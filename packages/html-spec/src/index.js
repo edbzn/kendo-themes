@@ -4,5 +4,6 @@ module.exports = {
     ...require('./combobox'),
     ...require('./icon'),
     ...require('./list'),
+    ...require('./listview'),
     ...require('./popup')
 };
